@@ -1,24 +1,14 @@
 <!DOCTYPE html>
 html(lang="pt-br" ng-app)
 head
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1")
-    meta(name="description" content="")
     title Document
+    include includes/meta-tags.pug
     include includes/stylesheets.pug
     include includes/scripts.pug
       
 body
-    header(class='header')
-        nav(class='header__primary--nav')
-            a(href="#") logo 
-            a(href="#") login 
-            a(href="#") language 
-        nav(class='header__secondary--nav')
-            a(href="#") sobre 
-            a(href="#") serviços 
-            a(href="#") cursos 
-            a(href="#") blog 
+   
+    include includes/header.pug
     
     section(class='content')
         h1
@@ -48,24 +38,6 @@ body
         footer
 
 
-    footer(class='footer')
-        section
-            header
-                h3
-                div
-            footer
-        
-        section
-            header
-                h3
-                div                    
-                    p rodapé
-            footer
-
-        section
-            header
-                h3
-                div
-            footer
+    include includes/footer.pug
 
 
