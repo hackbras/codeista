@@ -9,6 +9,7 @@ html, body, ul, ol {
 
 .header__primary--nav a,
 .header__secondary--nav a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #fff; }
 
 /*# sourceMappingURL=custom.css.map */

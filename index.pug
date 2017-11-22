@@ -5,9 +5,8 @@ head
     meta(name="viewport" content="width=device-width, initial-scale=1")
     meta(name="description" content="")
     title Document
-    link(href="style/custom.css", rel="stylesheet")  
-    script(src="scripts/main.js")
-    script(src="scripts/lib/angular/angular.min.js")
+    include includes/stylesheets.pug
+    include includes/scripts.pug
       
 body
     header(class='header')
@@ -22,8 +21,51 @@ body
             a(href="#") blog 
     
     section(class='content')
+        h1
+        section
+            header
+                h2
+                article
+            footer
+        
+        section
+            header
+                h2
+                article
+            footer
+        
+        section
+            header
+                h2
+                article
+            footer
+        
 
     aside(class='aside')
+        header
+            h3
+            div
+        footer
+
 
     footer(class='footer')
-        p rodapé
+        section
+            header
+                h3
+                div
+            footer
+        
+        section
+            header
+                h3
+                div                    
+                    p rodapé
+            footer
+
+        section
+            header
+                h3
+                div
+            footer
+
+
