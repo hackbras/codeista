@@ -1,0 +1,9 @@
+[{
+    "language": "pt-br",
+    "title": "Codeista",
+    "description": "Desenvolvimento web e mobile",
+    "phone": "(31) 9 9562-6585",
+    "email": "contato@codeista.com",
+    "contacts": ["email", "celular", "chat"],
+    "header_primary-menu": ["sobre", "serviços", "cursos", "blog", "faq"]
+}]
