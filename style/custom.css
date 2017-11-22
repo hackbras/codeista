@@ -7,9 +7,24 @@ html, body, ul, ol {
   background-color: #333;
   color: #fff; }
 
+.header {
+  height: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.header__primary--nav,
+.header__secondary--nav {
+  height: 50px; }
+
 .header__primary--nav a,
 .header__secondary--nav a {
+  margin-left: 5px;
+  margin-right: 5px;
   text-decoration: none;
-  color: #fff; }
+  color: #fff;
+  width: 50px; }
+
+.content {
+  background-color: gray; }
 
 /*# sourceMappingURL=custom.css.map */
