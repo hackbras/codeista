@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-html(lang="pt-br")
+html(lang="pt-br" ng-app)
 head
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1")
@@ -7,13 +7,19 @@ head
     title Document
     link(href="style/custom.css", rel="stylesheet")  
     script(src="scripts/main.js")
+    script(src="scripts/lib/angular/angular.min.js")
       
 body
     header(class='header')
         nav(class='header__primary--nav')
-            a(href="#", title="title") 
-            a(href="#", title="title") 
-        nav(class='header__secondary-nav')
+            a(href="#") logo 
+            a(href="#") login 
+            a(href="#") language 
+        nav(class='header__secondary--nav')
+            a(href="#") sobre 
+            a(href="#") serviços 
+            a(href="#") cursos 
+            a(href="#") blog 
     
     section(class='content')
 

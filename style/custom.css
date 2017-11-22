@@ -1,3 +1,4 @@
+/*reset */
 html, body, ul, ol {
   margin: 0;
   padding: 0; }
@@ -5,5 +6,9 @@ html, body, ul, ol {
 .header, .footer, body {
   background-color: #333;
   color: #fff; }
+
+.header__primary--nav a,
+.header__secondary--nav a {
+  text-decoration: none; }
 
 /*# sourceMappingURL=custom.css.map */
