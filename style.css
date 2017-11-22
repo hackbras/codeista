@@ -3,6 +3,7 @@ html, body, ul, ol {
   padding: 0; }
 
 .header, .footer {
-  background-color: #333; }
+  background-color: #333;
+  color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
