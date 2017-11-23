@@ -10,7 +10,7 @@ html, body, ul, ol {
 /*menu */
 /*alert colors */
 /* Fonte size */
-.contaigner {
+.container {
   padding: 15px; }
 
 /*Phones */
@@ -24,7 +24,7 @@ html, body, ul, ol {
   .phone-third-part-col {
     width: 30%; }
 
-  .phone-half-of-half-col {
+  .phone-half-of-half {
     width: 23%; } }
 /* Tablet */
 @media screen and (max-width: 768px) and (min-width: 481px) {
@@ -52,7 +52,6 @@ html, body, ul, ol {
 
   .pc-half-of-half-col {
     width: 23%; } }
-/* '_custom-bootstrap.scss' */
 .header, .footer {
   background-color: #4285f4;
   color: #333; }
@@ -62,7 +61,7 @@ html, body, ul, ol {
 
 .header__primary--nav,
 .header__secondary--nav {
-  height: 50px; }
+  height: 50p; }
 
 .header__primary--nav a,
 .header__secondary--nav a {
