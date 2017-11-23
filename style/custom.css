@@ -3,14 +3,16 @@ html, body, ul, ol {
   margin: 0;
   padding: 0; }
 
-.header, .footer, body {
+/* Fonte size */
+.contaigner {
+  padding: 15px; }
+
+.header, .footer {
   background-color: #333;
   color: #fff; }
 
-.header {
-  height: 100px;
-  margin-top: 10px;
-  margin-bottom: 10px; }
+.header, .footer {
+  padding-top: 15px; }
 
 .header__primary--nav,
 .header__secondary--nav {
@@ -18,13 +20,16 @@ html, body, ul, ol {
 
 .header__primary--nav a,
 .header__secondary--nav a {
+  padding: 10px;
   margin-left: 5px;
   margin-right: 5px;
   text-decoration: none;
   color: #fff;
-  width: 50px; }
+  width: 50px;
+  font-size: 22px;
+  font-weight: bold; }
 
-.content {
-  background-color: gray; }
+.footer_section div {
+  font-size: 18px; }
 
 /*# sourceMappingURL=custom.css.map */
