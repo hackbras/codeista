@@ -1,0 +1,7 @@
+script.
+    var myJSON = '{ "celular":"(31)9 9562-6585)", "email":"hackbras@outlook.com", "atendimento":"08:00 às 18:00", "developer":"codeista" }';
+    var myObj = JSON.parse(myJSON);
+    document.getElementById("celular").innerHTML = myObj.celular;
+    document.getElementById("email").innerHTML = myObj.email;
+    document.getElementById("atendimento").innerHTML = myObj.atendimento;
+    document.getElementById("desenvolvedor").innerHTML = myObj.developer;

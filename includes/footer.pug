@@ -3,19 +3,33 @@ footer(class='footer container row')
         header
             h3
             div
-                p rodapé header
+                p 
         footer
             
     section(class='[footer_section container] [col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-4]')
         header
-            h3
+            h3 Contactos
             div                    
-                p rodapé content
+                label Celular: 
+                span#celular
+                br                
+                
+                label Email:
+                span#email
+                br
+
+                label Horário de Atendimento:
+                span#atendimento
+                br
+
+                include script.pug
         footer
 
     section(class='[footer_section container] [col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12]')
         header
             h3
             div
-                p rodapé rodapé
+                label 
+                span#desenvolvedor
         footer
+    

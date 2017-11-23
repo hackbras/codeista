@@ -60,16 +60,26 @@
       <header>
         <h3></h3>
         <div>
-          <p>rodapé header</p>
+          <p> </p>
         </div>
       </header>
       <footer></footer>
     </section>
     <section class="[footer_section container] [col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-4]">
       <header>
-        <h3></h3>
+        <h3>Contactos</h3>
         <div>                   
-          <p>rodapé content</p>
+          <label>Celular: </label><span id="celular"></span><br/>
+          <label>Email:</label><span id="email"></span><br/>
+          <label>Horário de Atendimento:</label><span id="atendimento"></span><br/>
+          <script>
+            var myJSON = '{ "celular":"(31)9 9562-6585)", "email":"hackbras@outlook.com", "atendimento":"08:00 às 18:00", "developer":"codeista" }';
+            var myObj = JSON.parse(myJSON);
+            document.getElementById("celular").innerHTML = myObj.celular;
+            document.getElementById("email").innerHTML = myObj.email;
+            document.getElementById("atendimento").innerHTML = myObj.atendimento;
+            document.getElementById("desenvolvedor").innerHTML = myObj.developer;
+          </script>
         </div>
       </header>
       <footer></footer>
@@ -78,7 +88,7 @@
       <header>
         <h3></h3>
         <div>
-          <p>rodapé rodapé</p>
+          <label> </label><span id="desenvolvedor"></span>
         </div>
       </header>
       <footer></footer>
