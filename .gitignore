@@ -1,4 +1,6 @@
 style/custom.css.map
+style/lib/*
+
 .sass-cache/*
 
 scripts/lib/*

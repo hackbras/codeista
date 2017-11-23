@@ -1,8 +1,8 @@
 @import 'imports/_imports.sass'
 
 .header
-    background-color: $second-color
-    color: $first-color
+    background-color: $second-background-color
+    color: $second-color
 
 .header
     padding-top: 15px
@@ -17,14 +17,20 @@
     margin-left: 5px
     margin-right: 5px
     text-decoration: none
-    color: $first-color
+    color: $second-text-color
     width: 50px
     font-size: $font-size-menu
-    font-weight: bold
+    &:hover
+        color: $correct-color
+
+.content__section
+    font-size: $default-font-size
+    color: $first-text-color
 
 .footer
     @extend .header
 
 .footer_section div
     font-size: $default-font-size
+    color: $second-text-color
 
