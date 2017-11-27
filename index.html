@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" ng-app="ng-app"></html>
+<html lang="pt-br" ng-app="site"></html>
 <head>
   <title>Document</title>
   <meta charset="UTF-8"/>
@@ -81,21 +81,11 @@
         <h3></h3>
         <div>
           <label>by:</label><span id="dev"></span><br/>
+          <buttom onclick="onload()">botão</buttom>
         </div>
       </header>
       <footer></footer>
       <script>
-           var xhttp = new XMLHttpRequest();     
-            xhttp.open("GET", "pt-br.json", true);
-            
-            xhttp.onload = function() {            
-                var ourData = JSON.parse(xhttp.responseText);
-                document.getElementById("lang").innerHTML = ourData[0];            
-            };
-        
-            xhttp.send();
-        
-        
         var myJSON = '{ "celular":"(31)9 9562-6585", "email":"hackbras@outlook.com", "atendimento":"08:00 às 18:00","teste":"sfasdf", "dev":"codeista" }';
         var myObj = JSON.parse(myJSON);
         document.getElementById("celular").innerHTML = myObj.celular;
