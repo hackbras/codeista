@@ -4,4 +4,4 @@ style/lib/*
 .sass-cache/*
 
 scripts/lib/*
-script/TestesJasmine/*
+scripts/TestesJasmine/*
