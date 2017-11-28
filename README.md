@@ -1,3 +1,12 @@
-Project's name: Codeísta
-Description: site de divulgação de serviços, cursos e informativo
-url: codeista.com
+**Project's name:** Codeísta,
+**Description:** Web site about technology, services, courses and informations.
+**URL:** http://codeista.com
+
+---
+TECHNOLOGY AND METHODOS UTILIZEDS:
+
+* javascript,ajax, json, 
+* html5, pug 
+* css3, sass,BEM,
+* git svc 
+

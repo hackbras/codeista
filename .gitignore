@@ -1,7 +1,10 @@
-style/custom.css.map
-style/lib/*
+view/style/custom.css.map
+view/style/lib/*
 
 .sass-cache/*
 
-scripts/lib/*
-scripts/TestesJasmine/*
+controller/lib/*
+
+controller/TestesJasmine/*
+
+debug.log

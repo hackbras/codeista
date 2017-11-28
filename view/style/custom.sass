@@ -1,0 +1,85 @@
+@import 'imports/_imports.sass'
+
+.header
+    background-color: $second-background-color
+    color: $second-color        
+    padding-top: 15px
+
+.header__primary--nav, 
+.header__secondary--nav    
+    height: 50px
+
+#header__primary--nav-logo
+    margin-left: 7%
+    margin-right: 65%
+
+.header__primary--nav a, 
+.header__secondary--nav a
+    padding: 10px
+    margin-left: 5px
+    margin-right: 5px
+    text-decoration: none
+    color: $second-text-color
+    width: 50px
+    font-size: $font-size-menu
+    &:hover
+        color: $correct-color
+
+.content
+    display: flex
+
+.content__section
+    font-size: $default-font-size
+    color: $first-text-color
+    width: 74.97% 
+
+.content__aside
+    width: 24.99%  
+
+.footer
+    background-color: $second-background-color
+    color: $second-color 
+
+.footer_section div
+    font-size: $default-font-size
+    color: $second-text-color
+
+
+/*Phones*/
+@media (max-width: 480px)
+    .content
+        display: block
+
+    .content__section
+        font-size: $default-font-size
+        color: $first-text-color
+        width: 100% 
+
+    .content__aside
+        width: 100%  
+/* Tablet */     
+@media screen and (max-width: 768px) and (min-width: 481px)
+    
+    .content
+        display: flex
+
+    .content__section
+        font-size: $default-font-size
+        color: $first-text-color
+        width: 74.97% 
+
+    .content__aside
+        width: 24.99%  
+
+/*desktop*/
+@media screen and (min-width: 769px)
+    .content
+        display: flex
+
+    .content__section
+        font-size: $default-font-size
+        color: $first-text-color
+        width: 74.97% 
+
+    .content__aside
+        width: 24.99%  

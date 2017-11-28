@@ -6,18 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="description" content=""/>
   <link href="style/custom.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="style/lib/_custom-bootstrap.css"/>
+  <!--link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", rel="stylesheet")  -->
+  <!--link(rel="stylesheet", href="style/lib/_custom-bootstrap.css")-->
   <script src="scripts/main.js"></script>
   <script src="scripts/lib/angular/angular.min.js"></script>
 </head>
-<body onload="onload()" ng-app="">
+<body class="row" onload="onload()" ng-app="">
   <header class="header">
-    <nav class="header__primary--nav container"><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a></nav>
-    <nav class="header__secondary--nav container"><a href="#"></a><a href="#"> </a><a href="#"></a><a href="#"></a></nav>
+    <nav class="header__primary--nav container"><a id="header__primary--nav-logo" href="#">logo </a><a href="#">procure </a><a href="#">modo</a><a href="#">Idioma</a></nav>
+    <nav class="header__secondary--nav container"><a href="#">sobre </a><a href="#">serviços </a><a href="#">cursos </a><a href="#">blog </a></nav>
   </header>
   <section class="content">
-    <section class="content__section"> 
-      <div class="content__section--subsection container col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12">
+    <section class="content__section container"> 
+      <div class="content__section--subsection container">
         <header>
           <h2></h2>
           <article>
@@ -26,7 +27,7 @@
         </header>
         <footer></footer>
       </div>
-      <div class="content__section--subsection container col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12">
+      <div class="content__section--subsection container">
         <header>
           <h2></h2>
           <article>
@@ -35,7 +36,7 @@
         </header>
         <footer></footer>
       </div>
-      <div class="content__section--subsection container col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12">
+      <div class="content__section--subsection container">
         <header>
           <h2></h2>
           <article>
@@ -45,7 +46,7 @@
         <footer></footer>
       </div>
     </section>
-    <aside class="content__aside container col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+    <aside class="content__aside container">
       <header>
         <h3></h3>
         <div>
@@ -56,7 +57,7 @@
     </aside>
   </section>
   <footer class="footer container row">
-    <section class="footer_section container col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <section class="footer_section container">
       <header>
         <h3></h3>
         <div>
@@ -65,7 +66,7 @@
       </header>
       <footer></footer>
     </section>
-    <section class="footer_section container col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+    <section class="footer_section container">
       <header>
         <h3>Contactos</h3>
         <div>                   
@@ -76,7 +77,7 @@
       </header>
       <footer></footer>
     </section>
-    <section class="footer_section container col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <section class="footer_section container">
       <header>
         <h3></h3>
         <div>

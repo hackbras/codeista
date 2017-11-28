@@ -2,16 +2,14 @@
 html(lang="pt-br")
 head
     title Document
-    include includes/meta-tags.pug
-    include includes/stylesheets.pug
-    include includes/scripts.pug
+    include view/includes/meta-tags.pug
+    include view/includes/stylesheets.pug
+    include view/includes/scripts.pug
       
-body(onload="onload()" ng-app="")
+body(onload="onload()" ng-app="" class="row")
    
-    include includes/header.pug
+    include view/includes/header.pug
     
-    include includes/content.pug
+    include view/includes/content.pug
 
-    include includes/footer.pug
-
-
+    include view/includes/footer.pug
