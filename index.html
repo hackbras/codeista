@@ -7,46 +7,45 @@
   <meta name="description" content=""/>
   <link href="style/custom.css" rel="stylesheet"/>
   <link rel="stylesheet" href="style/lib/_custom-bootstrap.css"/>
-  <script src="../scripts/main.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-  <!--script(src="../scripts/angular-1.6.6/angular.js")-->
+  <script src="scripts/main.js"></script>
+  <script src="scripts/lib/angular/angular.min.js"></script>
 </head>
-<body ng-app="">
+<body onload="onload()" ng-app="">
   <header class="header">
     <nav class="header__primary--nav container"><a href="#">logo </a><a href="#">procure </a><a href="#">modo</a><a href="#">Idioma</a></nav>
     <nav class="header__secondary--nav container"><a href="#">sobre </a><a href="#">serviços </a><a href="#">cursos </a><a href="#">blog </a></nav>
   </header>
   <section class="content">
     <section class="content__section"> 
-      <div class="content__section--subsection container col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12">
+      <div class="content__section--subsection container col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12" id="content__first-section">
         <header>
           <h2></h2>
           <article>
-            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+            <p> </p>
           </article>
         </header>
         <footer></footer>
       </div>
-      <div class="content__section--subsection container col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12">
+      <div class="content__section--subsection container col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12" id="content__second-section">
         <header>
           <h2></h2>
           <article>
-            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur"</p>
+            <p> </p>
           </article>
         </header>
         <footer></footer>
       </div>
-      <div class="content__section--subsection container col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12">
+      <div class="content__section--subsection container col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12" id="content__third-section">
         <header>
           <h2></h2>
           <article>
-            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+            <p> </p>
           </article>
         </header>
         <footer></footer>
       </div>
     </section>
-    <aside class="content__aside container col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+    <aside class="content__aside container col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4" id="content__aside">
       <header>
         <h3></h3>
         <div>
@@ -81,18 +80,10 @@
       <header>
         <h3></h3>
         <div>
-          <label>by: {{ 5 + 5 }}</label><br/>
+          <label>by: {{ 5 + 5 }} </label><span id="dev"></span><br/>
         </div>
       </header>
       <footer></footer>
-      <script>
-        var myJSON = '{ "celular":"(31)9 9562-6585", "email":"hackbras@outlook.com", "atendimento":"08:00 às 18:00","teste":"sfasdf", "dev":"codeista" }';
-        var myObj = JSON.parse(myJSON);
-        document.getElementById("celular").innerHTML = myObj.celular;
-        document.getElementById("email").innerHTML = myObj.email;
-        document.getElementById("atendimento").innerHTML = myObj.atendimento;
-        document.getElementById("dev").innerHTML = myObj.dev;
-      </script>
     </section>
   </footer>
 </body>
