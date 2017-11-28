@@ -12,15 +12,15 @@ function onload() {
         document.getElementById("content__second-section").innerHTML = ourData[0].test_text;
         document.getElementById("content__third-section").innerHTML = ourData[0].test_text;
         document.getElementById("content__aside").innerHTML = ourData[0].test_text;
-        //document.getElementsByClassName("header__primary--nav")[0].children[0].innerHTML = ourData[0].header_primary-menu[0];
-        // document.getElementsByClassName("header__primary--nav")[0].children[1].innerHTML = ourData[0].header_primary-menu[1];
-        // document.getElementsByClassName("header__primary--nav")[0].children[2].innerHTML = ourData[0].header_primary-menu[2];
-        // document.getElementsByClassName("header__primary--nav")[0].children[3].innerHTML = ourData[0].header_primary-menu[3];
+        document.getElementById("header__primary--nav-logo").innerHTML = ourData[1].primary-menu_first;
+        document.getElementById("header__primary--nav-search").innerHTML = ourData[1].primary-menu_second;
+        document.getElementById("header__primary--nav-mode").innerHTML = ourData[1].primary-menu_third;
+        document.getElementById("header__primary--nav-language").innerHTML = ourData[1].primary-menu_fourth;
 
-        // document.getElementsByClassName("header__secondary--nav")[0].children[0].innerHTML = ourData[0].header_secondary-menu[0];
-        // document.getElementsByClassName("header__secondary--nav")[0].children[1].innerHTML = ourData[0].header_secondary-menu[1];
-        // document.getElementsByClassName("header__secondary--nav")[0].children[2].innerHTML = ourData[0].header_secondary-menu[2];
-        // document.getElementsByClassName("header__secondary--nav")[0].children[3].innerHTML = ourData[0].header_secondary-menu[3];
+        document.getElementById("header__secondary--nav-about").innerHTML = ourData[1].secondary-menu_first;
+        document.getElementById("header__secondary--nav-services").innerHTML = ourData[1].secondary-menu_second;
+        document.getElementById("header__secondary--nav-courses").innerHTML = ourData[1].secondary-menu_third;
+        document.getElementById("header__secondary--nav-blog").innerHTML = ourData[1].secondary-menu_fourth;
     };
     xhttp.send();
 }
