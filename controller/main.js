@@ -1,6 +1,6 @@
 function onload() {
     var xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "https://hackbras.github.io/codeista/data/pt-br.json", true);
+    xhttp.open("GET", "https://hackbras.github.io/codeista/model/pt-br.json", true);
 
     xhttp.onload = function() {
         var ourData = JSON.parse(xhttp.responseText);

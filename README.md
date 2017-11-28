@@ -5,7 +5,7 @@
 **URL:** http://codeista.com
 
 ---
-TECHNOLOGY AND METHODOS UTILIZEDS:
+**TECHNOLOGY AND METHODOS UTILIZEDS:**
 
 * javascript,ajax, json, 
 * html5, pug 

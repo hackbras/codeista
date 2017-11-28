@@ -5,16 +5,16 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="description" content=""/>
-  <link href="style/custom.css" rel="stylesheet"/>
+  <link href="view/style/custom.css" rel="stylesheet"/>
   <!--link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", rel="stylesheet")  -->
-  <!--link(rel="stylesheet", href="style/lib/_custom-bootstrap.css")-->
-  <script src="scripts/main.js"></script>
-  <script src="scripts/lib/angular/angular.min.js"></script>
+  <!--link(rel="stylesheet", href="/view/style/lib/_custom-bootstrap.css")-->
+  <script src="controller/main.js"></script>
+  <script src="controller/lib/angular/angular.min.js"></script>
 </head>
 <body class="row" onload="onload()" ng-app="">
-  <header class="header">
-    <nav class="header__primary--nav container"><a id="header__primary--nav-logo" href="#">logo </a><a href="#">procure </a><a href="#">modo</a><a href="#">Idioma</a></nav>
-    <nav class="header__secondary--nav container"><a href="#">sobre </a><a href="#">serviços </a><a href="#">cursos </a><a href="#">blog </a></nav>
+  <header class="header container">
+    <nav class="header__primary--nav"><a id="header__primary--nav-logo" href="#">logo </a><a href="#">procure </a><a href="#">modo</a><a href="#">Idioma</a></nav>
+    <nav class="header__secondary--nav"><a href="#">sobre </a><a href="#">serviços </a><a href="#">cursos </a><a href="#">blog </a></nav>
   </header>
   <section class="content">
     <section class="content__section container"> 
@@ -56,19 +56,10 @@
       <footer></footer>
     </aside>
   </section>
-  <footer class="footer container row">
+  <footer class="footer container row">           
     <section class="footer_section container">
       <header>
-        <h3></h3>
-        <div>
-          <p> </p>
-        </div>
-      </header>
-      <footer></footer>
-    </section>
-    <section class="footer_section container">
-      <header>
-        <h3>Contactos</h3>
+        <h3>Contatos</h3>
         <div>                   
           <label>Celular: </label><span id="celular"></span><br/>
           <label>Email:</label><span id="email"></span><br/>
