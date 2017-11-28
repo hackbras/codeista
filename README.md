@@ -1,5 +1,7 @@
-**Project's name:** Codeísta,
-**Description:** Web site about technology, services, courses and informations.
+**Project's name:** Codeísta;
+
+**Description:** Web site about technology, services, courses and informations;
+
 **URL:** http://codeista.com
 
 ---
