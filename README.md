@@ -7,8 +7,8 @@
 ---
 **TECHNOLOGY AND METHODOS UTILIZEDS:**
 
-* javascript,ajax, json, 
-* html5, pug 
-* css3, sass,BEM,
+* javascript,ajax, json, MVC; 
+* html5, pug; 
+* css3, sass, BEM;
 * git svc 
 
