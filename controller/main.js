@@ -20,9 +20,9 @@ function onload() {
         document.getElementById("header__secondary--nav-faq").innerHTML = ourData[1].SM_fifth;
         
         //content
-        document.getElementById("content__first-section").innerHTML = ourData[2].test_text;
-        document.getElementById("content__second-section").innerHTML = ourData[2].test_text;
-        document.getElementById("content__third-section").innerHTML = ourData[2].test_text;
+        document.getElementById("content__first--section").innerHTML = ourData[2].test_text;
+        document.getElementById("content__second--section").innerHTML = ourData[2].test_text;
+        document.getElementById("content__third--section").innerHTML = ourData[2].test_text;
         document.getElementById("content__aside").innerHTML = ourData[2].test_text;
         
          //Footer options

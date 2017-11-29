@@ -11,7 +11,12 @@
 </head>
 <body class="row" onload="onload()" ng-app="">
   <header class="header container">
-    <nav class="header__primary--nav"><a id="header__primary--nav-logo" href="#"> </a><a id="header__primary--nav-search" href="#"> </a><a id="header__primary--nav-mode" href="#"></a><a id="header__primary--nav-language" href="#"></a></nav>
+    <nav class="header__primary--nav"><a id="header__primary--nav-logo" href="#"> </a><a id="header__primary--nav-search" href="#"> </a><a id="header__primary--nav-mode" href="#">       </a>
+      <select id="header__primary--nav-language" style="width: 102px;">           
+        <option value="portuguese">Portugues</option>
+        <option value="english">English</option>
+      </select>
+    </nav>
     <nav class="header__secondary--nav"><a id="header__secondary--nav-about" href="#"></a><a id="header__secondary--nav-services" href="#"></a><a id="header__secondary--nav-courses" href="#"></a><a id="header__secondary--nav-blog" href="#"></a><a id="header__secondary--nav-faq" href="#"></a></nav>
   </header>
   <section class="content">
@@ -20,7 +25,7 @@
         <header>
           <h2></h2>
           <article>
-            <p id="content__first-section"> </p>
+            <p id="content__first--section"> </p>
           </article>
         </header>
         <footer></footer>
@@ -29,7 +34,7 @@
         <header>
           <h2></h2>
           <article>
-            <p id="content__second-section"></p>
+            <p id="content__second--section"></p>
           </article>
         </header>
         <footer></footer>
@@ -38,7 +43,7 @@
         <header>
           <h2></h2>
           <article>
-            <p id="content__third-section"></p>
+            <p id="content__third--section"></p>
           </article>
         </header>
         <footer></footer>
@@ -55,22 +60,22 @@
     </aside>
   </section>
   <footer class="footer container row">           
-    <section class="footer_section container">
+    <section class="footer__section--one container">
       <header>
-        <h2 id="lb_contact"></h2>
+        <h2 id="footer__section--one-lb_contact"></h2>
         <div>                   
-          <label id="lb_phone"> </label><span id="phone"></span><br/>
-          <label id="lb_email"></label><span id="email"></span><br/>
-          <label id="lb_business_hours"></label><span id="business_hours"></span><br/>
+          <label id="footer__section--one-lb_phone"> </label><span id="footer__section--one-phone"></span><br/>
+          <label id="footer__section--one-lb_email"></label><span id="footer__section--one-email"></span><br/>
+          <label id="footer__section--one-lb_business_hours"></label><span id="footer__section--one-business_hours"></span><br/>
         </div>
       </header>
       <footer></footer>
     </section>
-    <section class="footer_section container">
+    <section class="footer__section--two container">
       <header>
         <h3></h3>
         <div>
-          <label id="lb_dev">{{ 5 + 5 }} </label><span id="dev"></span><br/>
+          <label id="footer__section--two-lb_dev">{{ 5 + 5 }} </label><span id="footer__section--two-dev"></span><br/>
         </div>
       </header>
       <footer></footer>

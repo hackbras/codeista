@@ -3,12 +3,12 @@ html, body, ul, ol {
   margin: 0;
   padding: 0; }
 
-/*background */
-/*for to read the texts */
-/*header and footer */
-/*text */
+/****** BACKGROUND **** */
+/*Background for to read the texts */
+/*Background to header and footer */
+/***** FONT TEXT **** */
 /*menu */
-/*alert colors */
+/***** ALERTS COLOR **** */
 /* Fonte size */
 /*Phones */
 @media (max-width: 480px) {
@@ -62,13 +62,18 @@ html, body, ul, ol {
   background-color: #4285f4;
   color: #333; }
 
-.footer_section div {
+.footer__section--one div {
+  font-size: 18px;
+  color: #333;
+  background-color: #4285f4; }
+
+.footer__section--two div {
   font-size: 18px;
   color: #333; }
 
-.footer_section #lb_contact, .footer_section #lb_dev,
-.footer_section #lb_phone, .footer_section #lb_email,
-.footer_section #lb_business_hours {
+#footer__section--one-lb_contact, #footer__section--one-lb_dev,
+#footer__section--one-lb_phone, #footer__section--one-lb_email,
+#footer__section--one-lb_business_hours {
   font-weight: bold; }
 
 /*Phones */
