@@ -28,7 +28,7 @@ function onload() {
          //Footer options
         document.getElementById("lb_contact").innerHTML = ourData[3].title; 
         
-        document.getElementById("lb_dev").innerHTML = ourData[3].lb_dev
+        document.getElementById("lb_dev").innerHTML = ourData[3].lb_dev;
         document.getElementById("dev").innerHTML = ourData[3].developer;
         
         document.getElementById("lb_phone").innerHTML = ourData[3].lb_phone;        
@@ -37,7 +37,7 @@ function onload() {
         document.getElementById("lb_email").innerHTML = ourData[3].lb_email;
         document.getElementById("email").innerHTML = ourData[3].email;
         
-        document.getElementById("lb_business_hours").innerHTML = ourData[3].lb_business_hours     
+        document.getElementById("lb_business_hours").innerHTML = ourData[3].lb_business_hours;     
         document.getElementById("business_hours").innerHTML = ourData[3].business_hours;
         
     };
