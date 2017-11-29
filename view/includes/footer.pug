@@ -1,18 +1,18 @@
 footer(class='footer container row')            
     section(class='footer_section container')
         header
-            h3 Contatos
+            h3(id="lb_contact")
             div                    
-                label Celular: 
-                span#celular
+                label(id="lb_phone") 
+                span(id="phone")
                 br                
                 
-                label Email:
-                span#email
+                label(id="lb_email")
+                span(id="email")
                 br
 
-                label Horário de Atendimento:
-                span#atendimento
+                label(id="lb_business_hours")
+                span(id="business_hours")
                 br
                 
         footer
@@ -21,8 +21,8 @@ footer(class='footer container row')
         header
             h3
             div
-                label by: {{ 5 + 5 }} 
-                span#dev
+                label(id="lb_dev"){{ 5 + 5 }} 
+                span(id="dev")
                 br
 
         footer
