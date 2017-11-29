@@ -19,14 +19,18 @@
         "test_text":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur"
     },
     {  
-        "title":"Contatos",          
+        "title":"Contatos",    
+
         "developer": "codeista",
-        "lb_dev":"by",
+        "lb_dev":"by: ",
+
         "phone": "(31) 9 9562-6585",
-        "lb_phone": "Celular:",        
+        "lb_phone": "Celular: ",      
+
         "email": "contato@codeista.com",
-        "lb_email": "email",
+        "lb_email": "Email: ",
+
         "business_hours":"Segunda a sexta de 08:00 às 18:00",        
-        "lb_business_hours":"Atendimento"
+        "lb_business_hours":"Atendimento: "
     }
 ]
