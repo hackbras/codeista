@@ -31,8 +31,37 @@ html, body, ul, ol {
   padding-top: 15px; }
 
 #header__primary--nav-logo {
-  margin-left: 7%;
-  margin-right: 65%; }
+  margin-left: 3%;
+  margin-right: 58%; }
+
+.header__primary--nav {
+  margin-bottom: 1%; }
+
+#header__primary--nav-search {
+  border-radius: 5px;
+  border: 2px solid #000;
+  height: 30px;
+  padding-left: 1%; }
+
+.header__primary--nav-mode {
+  border-radius: 5px;
+  height: 30px;
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #fff; }
+
+.header__primary--nav-language {
+  border-radius: 5px;
+  height: 30px;
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #fff; }
+
+#header__secondary--nav {
+  margin-left: 7%; }
+
+#header__secondary--nav-faq {
+  margin-right: 38%; }
 
 .header__primary--nav a,
 .header__secondary--nav a {
@@ -45,7 +74,7 @@ html, body, ul, ol {
   font-size: 22px; }
   .header__primary--nav a:hover,
   .header__secondary--nav a:hover {
-    color: #34a853; }
+    color: #fff; }
 
 .content {
   display: flex; }
@@ -111,6 +140,7 @@ html, body, ul, ol {
     width: 74.97%; }
 
   .content__aside {
-    width: 24.99%; } }
+    width: 24.99%;
+    background-color: #f3f3f3; } }
 
 /*# sourceMappingURL=custom.css.map */

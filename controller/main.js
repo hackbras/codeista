@@ -9,9 +9,9 @@ function onload() {
         // document.getElementById("header__secondary--nav-blog").innerHTML = ourData[0].name_site;
         //Menu options
         document.getElementById("header__primary--nav-logo").innerHTML = ourData[1].PM_first;
-        document.getElementById("header__primary--nav-search").innerHTML = ourData[1].PM_second;
-        document.getElementById("header__primary--nav-mode").innerHTML = ourData[1].PM_third;
-        document.getElementById("header__primary--nav-language").innerHTML = ourData[1].PM_fourth;
+        //document.getElementById("header__primary--nav-search").innerHTML = ourData[1].PM_second;
+        //document.getElementById("header__primary--nav-mode").innerHTML = ourData[1].PM_third;
+        //document.getElementById("header__primary--nav-language").innerHTML = ourData[1].PM_fourth;
         
         document.getElementById("header__secondary--nav-about").innerHTML = ourData[1].SM_first;
         document.getElementById("header__secondary--nav-services").innerHTML = ourData[1].SM_second;
@@ -43,3 +43,4 @@ function onload() {
     };
     xhttp.send();
 }
+

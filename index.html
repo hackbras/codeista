@@ -11,13 +11,19 @@
 </head>
 <body class="row" onload="onload()" ng-app="">
   <header class="header container">
-    <nav class="header__primary--nav"><a id="header__primary--nav-logo" href="#"> </a><a id="header__primary--nav-search" href="#"> </a><a id="header__primary--nav-mode" href="#">       </a>
-      <select id="header__primary--nav-language" style="width: 102px;">           
+    <nav class="header__primary--nav"><a id="header__primary--nav-logo" href="#"> </a>
+      <input id="header__primary--nav-search" type="search" name="sitesearch" placeholder="procure no site"/>
+      <select class="header__primary--nav-mode">           
+        <option value="nocturnal">Modo Noturno</option>
+        <option value="daytime">Modo Diurno  </option>
+        <option value="color-blind">Modo Daltônico   </option>
+      </select>
+      <select class="header__primary--nav-language">           
         <option value="portuguese">Portugues</option>
         <option value="english">English</option>
       </select>
     </nav>
-    <nav class="header__secondary--nav"><a id="header__secondary--nav-about" href="#"></a><a id="header__secondary--nav-services" href="#"></a><a id="header__secondary--nav-courses" href="#"></a><a id="header__secondary--nav-blog" href="#"></a><a id="header__secondary--nav-faq" href="#"></a></nav>
+    <nav class="header__secondary--nav"><a id="header__secondary--nav-about" href="#"></a><a id="header__secondary--nav-services" href="#"></a><a id="header__secondary--nav-courses" href="#"></a><a id="header__secondary--nav-blog" href="#"></a><a id="header__secondary--nav-faq" href="#"></a><span>compartilhe no            </span><a id="header__secondary--nav-share_facebook" href="#">Facebook</a><a id="header__secondary--nav-share_twitter" href="#">Twitter</a><a id="header__secondary--nav-share_google_plus" href="#">Google +</a></nav>
   </header>
   <section class="content">
     <section class="content__section container"> 

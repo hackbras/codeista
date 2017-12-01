@@ -1,0 +1,23 @@
+{
+  "name": "codeista",
+  "version": "1.0.0",
+  "description": "**Project's name:** Codeísta;",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hackbras/codeista.git"
+  },
+  "author": "Miquéias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hackbras/codeista/issues"
+  },
+  "homepage": "https://github.com/hackbras/codeista#readme",
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  }
+}

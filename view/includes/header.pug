@@ -1,9 +1,12 @@
 header(class='header container')
     nav(class='header__primary--nav')
         a(id="header__primary--nav-logo" href="#") 
-        a(id="header__primary--nav-search" href="#") 
-        a(id="header__primary--nav-mode" href="#")        
-        select(id="header__primary--nav-language" style="width: 102px")            
+        input(id="header__primary--nav-search" type="search" name="sitesearch" placeholder="procure no site")
+        select(class="header__primary--nav-mode")            
+            option(value="nocturnal") Modo Noturno
+            option(value="daytime") Modo Diurno  
+            option(value="color-blind") Modo Daltônico   
+        select(class="header__primary--nav-language")            
             option(value="portuguese") Portugues
             option(value="english") English
 
@@ -13,3 +16,7 @@ header(class='header container')
         a(id="header__secondary--nav-courses" href="#")
         a(id="header__secondary--nav-blog" href="#")
         a(id="header__secondary--nav-faq" href="#")
+        span compartilhe no            
+        a(id="header__secondary--nav-share_facebook" href="#") Facebook
+        a(id="header__secondary--nav-share_twitter" href="#") Twitter
+        a(id="header__secondary--nav-share_google_plus" href="#") Google +
