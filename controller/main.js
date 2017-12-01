@@ -19,27 +19,27 @@ function onload() {
         document.getElementById("header__secondary--nav-blog").innerHTML = ourData[1].SM_fourth;
         document.getElementById("header__secondary--nav-faq").innerHTML = ourData[1].SM_fifth;
         
-        //content
-        document.getElementById("content__first--section").innerHTML = ourData[2].test_text;
-        document.getElementById("content__second--section").innerHTML = ourData[2].test_text;
-        document.getElementById("content__third--section").innerHTML = ourData[2].test_text;
-        document.getElementById("content__aside").innerHTML = ourData[2].test_text;
+        //Footer options
+        document.getElementById("footer__section--one-lb_contact").innerHTML = ourData[2].title; 
         
-         //Footer options
-        document.getElementById("footer__section--one-lb_contact").innerHTML = ourData[3].title; 
+        document.getElementById("footer__section--two-lb_dev").innerHTML = ourData[2].lb_dev;
+        document.getElementById("footer__section--two-dev").innerHTML = ourData[2].developer;
         
-        document.getElementById("footer__section--two-lb_dev").innerHTML = ourData[3].lb_dev;
-        document.getElementById("footer__section--two-dev").innerHTML = ourData[3].developer;
-        
-        document.getElementById("footer__section--one-lb_phone").innerHTML = ourData[3].lb_phone;        
-        document.getElementById("footer__section--one-phone").innerHTML = ourData[3].phone;
+        document.getElementById("footer__section--one-lb_phone").innerHTML = ourData[2].lb_phone;        
+        document.getElementById("footer__section--one-phone").innerHTML = ourData[2].phone;
 
-        document.getElementById("footer__section--one-lb_email").innerHTML = ourData[3].lb_email;
-        document.getElementById("footer__section--one-email").innerHTML = ourData[3].email;
+        document.getElementById("footer__section--one-lb_email").innerHTML = ourData[2].lb_email;
+        document.getElementById("footer__section--one-email").innerHTML = ourData[2].email;
         
-        document.getElementById("footer__section--one-lb_business_hours").innerHTML = ourData[3].lb_business_hours;     
-        document.getElementById("footer__section--one-business_hours").innerHTML = ourData[3].business_hours;
-        
+        document.getElementById("footer__section--one-lb_business_hours").innerHTML = ourData[2].lb_business_hours;     
+        document.getElementById("footer__section--one-business_hours").innerHTML = ourData[2].business_hours;
+ 
+        //content
+        document.getElementById("content__first--section").innerHTML = ourData[3].test_text;
+        document.getElementById("content__second--section").innerHTML = ourData[3].test_text;
+        document.getElementById("content__third--section").innerHTML = ourData[3].test_text;
+        document.getElementById("content__aside").innerHTML = ourData[3].test_text;        
+   
     };
     xhttp.send();
 }
