@@ -1,59 +1,4 @@
 @import 'imports/_imports.sass'
-
-.header
-    background-color: $second-background-color
-    color: $second-color        
-    padding-top: 15px
-
-#header__primary--nav-logo
-    margin-left: 3%
-    margin-right: 58%
-
-.header__primary--nav
-    margin-bottom: 1%
-
-#header__primary--nav-search
-    border-radius: 5px
-    border: 2px solid $first-text-color
-    height: 30px
-    padding-left: 1%
-
-.header__primary--nav-mode
-    border-radius: 5px
-    height: 30px
-    background-color: $third-background-color
-    color: $third-text-color
-    border: 2px solid $third-text-color
-
-.header__primary--nav-language
-    border-radius: 5px
-    height: 30px
-    background-color: $third-background-color
-    color: $third-text-color
-    border: 2px solid $third-text-color
-
-#header__secondary--nav    
-    margin-left: 7%
-
-#header__secondary--nav-faq
-    margin-right: 38%
-
-// .header__primary--nav-mode : hover,
-// .header__primary--nav-language : hover
-//     background-color: $fourth-background-color
-
-.header__primary--nav a, 
-.header__secondary--nav a
-    padding: 10px
-    margin-left: 5px
-    margin-right: 5px
-    text-decoration: none
-    color: $second-text-color
-    width: 50px
-    font-size: $font-size-menu
-    &:hover
-        color: $third-text-color
-
 .content
     display: flex
 
@@ -67,6 +12,7 @@
 
 .footer
     background-color: $second-background-color
+    width: 100%
     color: $second-color 
 
 .footer__section--one div
@@ -84,7 +30,55 @@
     font-weight: bold
 
 /*Phones*/
-@media (max-width: 480px)
+@media (max-width: 480px)  
+    .header
+        //background-color: $second-background-color
+        color: $second-color  
+        width: 100%        
+        align-items: center
+
+    .header__menu--phone
+        display: none
+    
+    .header__menu--phone-hide
+        display: none
+
+    #header__modal--menu
+        z-index: 1
+        background-color: $background-modal
+        width: 100%
+        height: 100%
+    
+    .header__primary--nav
+        width: 100%
+
+    .header__primary--nav
+        display: inline-block
+
+    .header__second--nav
+        display: block
+    
+    .header__secondary--nav a
+        text-decoration: none
+        font-size: $phone_font-size-menu
+        font-weight: bold
+    
+    .header__menu--phone,
+    .header__primary--nav-language,
+    .header__primary--nav-mode
+        width: 55px
+        margin-left: 3px
+        margin-right: 3px
+
+    #header__primary--nav-logo,
+    #header__primary--nav-search
+        width: 20%
+        margin-left: 3px
+        margin-right: 3px
+
+    .header__menu--phone-break_line
+        display: block  
+
     .content
         display: block
 
@@ -97,7 +91,12 @@
         width: 100%  
 /* Tablet */     
 @media screen and (max-width: 768px) and (min-width: 481px)
+    .header__menu--phone
+        display: block
     
+    .header__menu--phone-break_line
+        display: none
+
     .content
         display: flex
 
@@ -110,7 +109,63 @@
         width: 24.99%  
 
 /*desktop*/
-@media screen and (min-width: 769px)
+@media screen and (min-width: 769px)        
+    .header
+        background-color: $second-background-color
+        color: $second-color        
+        padding-top: 15px
+
+    .header__menu--phone-icon
+        display: none
+    
+    .header__menu--phone-break_line
+        display: none
+
+    #header__primary--nav-logo
+        margin-left: 3%
+        margin-right: 48%
+
+    .header__primary--nav
+        margin-bottom: 1%
+
+    #header__primary--nav-search
+        border-radius: 5px
+        border: 2px solid $first-text-color
+        height: 30px
+        padding-left: 1%
+
+    .header__primary--nav-mode
+        border-radius: 5px
+        height: 30px
+        background-color: $third-background-color
+        color: $third-text-color
+        border: 2px solid $third-text-color
+
+    .header__primary--nav-language
+        border-radius: 5px
+        height: 30px
+        background-color: $third-background-color
+        color: $third-text-color
+        border: 2px solid $third-text-color
+
+    #header__secondary--nav    
+        margin-left: 7%
+
+    #header__secondary--nav-faq
+        margin-right: 46%
+
+    .header__primary--nav a, 
+    .header__secondary--nav a
+        padding: 10px
+        margin-left: 5px
+        margin-right: 5px
+        text-decoration: none
+        color: $second-text-color
+        width: 50px
+        font-size: $font-size-menu
+        &:hover
+            color: $third-text-color
+
     .content
         display: flex
 

@@ -6,10 +6,14 @@ html, body, ul, ol {
 /****** BACKGROUND **** */
 /*Background for to read the texts */
 /*Background to header and footer */
+/*Background Modal */
 /***** FONT TEXT **** */
 /*menu */
 /***** ALERTS COLOR **** */
 /* Fonte size */
+/* Desktop */
+/* Tablet */
+/* Phone */
 /*Phones */
 @media (max-width: 480px) {
   .container {
@@ -25,57 +29,6 @@ html, body, ul, ol {
 @media screen and (min-width: 769px) {
   .container {
     padding: 15px; } }
-.header {
-  background-color: #4285f4;
-  color: #333;
-  padding-top: 15px; }
-
-#header__primary--nav-logo {
-  margin-left: 3%;
-  margin-right: 58%; }
-
-.header__primary--nav {
-  margin-bottom: 1%; }
-
-#header__primary--nav-search {
-  border-radius: 5px;
-  border: 2px solid #000;
-  height: 30px;
-  padding-left: 1%; }
-
-.header__primary--nav-mode {
-  border-radius: 5px;
-  height: 30px;
-  background-color: #333;
-  color: #fff;
-  border: 2px solid #fff; }
-
-.header__primary--nav-language {
-  border-radius: 5px;
-  height: 30px;
-  background-color: #333;
-  color: #fff;
-  border: 2px solid #fff; }
-
-#header__secondary--nav {
-  margin-left: 7%; }
-
-#header__secondary--nav-faq {
-  margin-right: 38%; }
-
-.header__primary--nav a,
-.header__secondary--nav a {
-  padding: 10px;
-  margin-left: 5px;
-  margin-right: 5px;
-  text-decoration: none;
-  color: #333;
-  width: 50px;
-  font-size: 22px; }
-  .header__primary--nav a:hover,
-  .header__secondary--nav a:hover {
-    color: #fff; }
-
 .content {
   display: flex; }
 
@@ -89,6 +42,7 @@ html, body, ul, ol {
 
 .footer {
   background-color: #4285f4;
+  width: 100%;
   color: #333; }
 
 .footer__section--one div {
@@ -107,6 +61,53 @@ html, body, ul, ol {
 
 /*Phones */
 @media (max-width: 480px) {
+  .header {
+    color: #333;
+    width: 100%;
+    align-items: center; }
+
+  .header__menu--phone {
+    display: none; }
+
+  .header__menu--phone-hide {
+    display: none; }
+
+  #header__modal--menu {
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.34);
+    width: 100%;
+    height: 100%; }
+
+  .header__primary--nav {
+    width: 100%; }
+
+  .header__primary--nav {
+    display: inline-block; }
+
+  .header__second--nav {
+    display: block; }
+
+  .header__secondary--nav a {
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold; }
+
+  .header__menu--phone,
+  .header__primary--nav-language,
+  .header__primary--nav-mode {
+    width: 55px;
+    margin-left: 3px;
+    margin-right: 3px; }
+
+  #header__primary--nav-logo,
+  #header__primary--nav-search {
+    width: 20%;
+    margin-left: 3px;
+    margin-right: 3px; }
+
+  .header__menu--phone-break_line {
+    display: block; }
+
   .content {
     display: block; }
 
@@ -119,6 +120,12 @@ html, body, ul, ol {
     width: 100%; } }
 /* Tablet */
 @media screen and (max-width: 768px) and (min-width: 481px) {
+  .header__menu--phone {
+    display: block; }
+
+  .header__menu--phone-break_line {
+    display: none; }
+
   .content {
     display: flex; }
 
@@ -131,6 +138,63 @@ html, body, ul, ol {
     width: 24.99%; } }
 /*desktop */
 @media screen and (min-width: 769px) {
+  .header {
+    background-color: #4285f4;
+    color: #333;
+    padding-top: 15px; }
+
+  .header__menu--phone-icon {
+    display: none; }
+
+  .header__menu--phone-break_line {
+    display: none; }
+
+  #header__primary--nav-logo {
+    margin-left: 3%;
+    margin-right: 48%; }
+
+  .header__primary--nav {
+    margin-bottom: 1%; }
+
+  #header__primary--nav-search {
+    border-radius: 5px;
+    border: 2px solid #000;
+    height: 30px;
+    padding-left: 1%; }
+
+  .header__primary--nav-mode {
+    border-radius: 5px;
+    height: 30px;
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #fff; }
+
+  .header__primary--nav-language {
+    border-radius: 5px;
+    height: 30px;
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #fff; }
+
+  #header__secondary--nav {
+    margin-left: 7%; }
+
+  #header__secondary--nav-faq {
+    margin-right: 46%; }
+
+  .header__primary--nav a,
+  .header__secondary--nav a {
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: #333;
+    width: 50px;
+    font-size: 22px; }
+    .header__primary--nav a:hover,
+    .header__secondary--nav a:hover {
+      color: #fff; }
+
   .content {
     display: flex; }
 
