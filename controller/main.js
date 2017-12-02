@@ -16,8 +16,8 @@ function onload() {
         //document.getElementById("header__primary--nav-language").innerHTML = ourData[1].PM_fourth;
         document.getElementById("header__primary--nav-language-pt").innerHTML = ourData[1].PM_fourth_lang_pt;
         document.getElementById("header__primary--nav-language-en").innerHTML = ourData[1].PM_fifth_lang_en;
-        document.getElementById("PM_third_mode_Modo_daytime").innerHTML = ourData[1].PM_third_mode_Modo_daytime;
-        document.getElementById("PM_third_mode_Modo_nocturnal").innerHTML = ourData[1].PM_third_mode_Modo_nocturnal;        
+        document.getElementById("header__primary--nav-mode_daytime").innerHTML = ourData[1].PM_third_mode_daytime;
+        document.getElementById("header__primary--nav-mode_nocturnal").innerHTML = ourData[1].PM_third_mode_nocturnal;        
         document.getElementById("header__secondary--nav-home").innerHTML = ourData[1].SM_first;
         document.getElementById("header__secondary--nav-about").innerHTML = ourData[1].SM_second;
         document.getElementById("header__secondary--nav-services").innerHTML = ourData[1].SM_third;
