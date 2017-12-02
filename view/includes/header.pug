@@ -12,9 +12,9 @@ header(id="header" class='header container')
             option(value="nocturnal") Modo Noturno
             option(value="color-blind") Modo Daltônico  
 
-        select(class="header__primary--nav-language")            
-            option(value="portuguese") Portugues
-            option(value="english") English         
+        select(class="header__primary--nav-language" onchange="onload()")            
+            option(value="pt-br" selected) Portugues
+            option(value="en-us") English         
 
     nav(class='header__secondary--nav header__menu--phone-hide')
         a(id="header__secondary--nav-about" class="header__secondary--nav-option" href="#")            

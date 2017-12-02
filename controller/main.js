@@ -1,6 +1,8 @@
 function onload() {
+    let languageSelected = change_language();
+    const path = "https://hackbras.github.io/codeista/model/"+languageSelected+".json";
     const xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "https://hackbras.github.io/codeista/model/pt-br.json", true);
+    xhttp.open("GET", path, true);
 
     xhttp.onload = function() {
         const ourData = JSON.parse(xhttp.responseText);
@@ -44,12 +46,14 @@ function onload() {
     xhttp.send();
 }
 
-const scheema = ["daytime","nocturnal","color-blind"];
+function change_language(){
+    const languageSelected = getValueSelected("header__primary--nav-language");
+    return languageSelected;
+}
 
-function change_mode (){
-    const mode = document.getElementsByClassName('header__primary--nav-mode');
-    const index = mode[0].options.selectedIndex;
-    const valueSelected = mode[0][index].value;
+function change_mode (){  
+    const scheema = ["daytime","nocturnal","color-blind"];
+    const valueSelected = getValueSelected('header__primary--nav-mode');
 
     switch(valueSelected.toString()){
     case scheema[0]: 
@@ -92,4 +96,9 @@ function change_styles_master(var_header,var_footer,var_sections,var_aside,backg
     }    
 }
 
-//function change_others_styles
+function getValueSelected(className){
+    const classChoice = document.getElementsByClassName(className);
+    const index = classChoice[0].options.selectedIndex;
+    const valueSelected = classChoice[0][index].value;
+    return valueSelected;
+}
