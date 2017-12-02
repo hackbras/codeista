@@ -15,7 +15,7 @@ function onload() {
         //document.getElementById("header__primary--nav-mode").innerHTML = ourData[1].PM_third;
         //document.getElementById("header__primary--nav-language").innerHTML = ourData[1].PM_fourth;
         document.getElementById("header__primary--nav-language-pt").innerHTML = ourData[1].PM_fourth-lang-pt;
-        document.getElementById("header__primary--nav-language-en").innerHTML = ourData[1].PM_fourth-lang-en;
+        document.getElementById("header__primary--nav-language-en").innerHTML = ourData[1].PM_fifth-lang-en;
         document.getElementById("header__secondary--nav-home").innerHTML = ourData[1].SM_first;
         document.getElementById("header__secondary--nav-about").innerHTML = ourData[1].SM_second;
         document.getElementById("header__secondary--nav-services").innerHTML = ourData[1].SM_third;
