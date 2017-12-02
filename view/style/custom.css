@@ -9,6 +9,7 @@ html, body, ul, ol {
 /*Background Modal */
 /***** FONT TEXT **** */
 /*menu */
+/*color blind can not: green, red, blue, yellow */
 /***** ALERTS COLOR **** */
 /* Fonte size */
 /* Desktop */
@@ -40,19 +41,16 @@ html, body, ul, ol {
 .content__aside {
   width: 24.99%; }
 
-.footer {
+#footer {
   background-color: #4285f4;
   width: 100%;
   color: #333; }
 
 .footer__section--one div {
-  font-size: 18px;
-  color: #333;
-  background-color: #4285f4; }
+  font-size: 18px; }
 
 .footer__section--two div {
-  font-size: 18px;
-  color: #333; }
+  font-size: 18px; }
 
 #footer__section--one-lb_contact, #footer__section--one-lb_dev,
 #footer__section--one-lb_phone, #footer__section--one-lb_email,
@@ -84,8 +82,11 @@ html, body, ul, ol {
   .header__primary--nav {
     display: inline-block; }
 
-  .header__second--nav {
+  .header__secondary--nav {
     display: block; }
+
+  .header__secondary--nav {
+    color: #000; }
 
   .header__secondary--nav a {
     text-decoration: none;
@@ -140,7 +141,6 @@ html, body, ul, ol {
 @media screen and (min-width: 769px) {
   .header {
     background-color: #4285f4;
-    color: #333;
     padding-top: 15px; }
 
   .header__menu--phone-icon {
@@ -188,12 +188,12 @@ html, body, ul, ol {
     margin-left: 5px;
     margin-right: 5px;
     text-decoration: none;
-    color: #333;
     width: 50px;
-    font-size: 22px; }
+    font-size: 22px;
+    color: #fff; }
     .header__primary--nav a:hover,
     .header__secondary--nav a:hover {
-      color: #fff; }
+      color: #333; }
 
   .content {
     display: flex; }

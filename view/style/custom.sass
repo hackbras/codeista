@@ -10,19 +10,16 @@
 .content__aside
     width: 24.99%  
 
-.footer
+#footer
     background-color: $second-background-color
     width: 100%
     color: $second-color 
 
 .footer__section--one div
     font-size: $default-font-size
-    color: $second-text-color
-    background-color: $second-background-color
 
 .footer__section--two div
     font-size: $default-font-size
-    color: $second-text-color
 
 #footer__section--one-lb_contact,#footer__section--one-lb_dev,
 #footer__section--one-lb_phone,#footer__section--one-lb_email,
@@ -32,7 +29,6 @@
 /*Phones*/
 @media (max-width: 480px)  
     .header
-        //background-color: $second-background-color
         color: $second-color  
         width: 100%        
         align-items: center
@@ -55,9 +51,13 @@
     .header__primary--nav
         display: inline-block
 
-    .header__second--nav
+    .header__secondary--nav
         display: block
-    
+
+    .header__secondary--nav
+        color: $first-text-color
+
+
     .header__secondary--nav a
         text-decoration: none
         font-size: $phone_font-size-menu
@@ -112,7 +112,6 @@
 @media screen and (min-width: 769px)        
     .header
         background-color: $second-background-color
-        color: $second-color        
         padding-top: 15px
 
     .header__menu--phone-icon
@@ -160,11 +159,11 @@
         margin-left: 5px
         margin-right: 5px
         text-decoration: none
-        color: $second-text-color
         width: 50px
         font-size: $font-size-menu
+        color: $third-color
         &:hover
-            color: $third-text-color
+            color: $second-color
 
     .content
         display: flex

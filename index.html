@@ -11,23 +11,24 @@
 </head>
 <body class="row" onload="onload()" ng-app=""><span id="header__modal--menu"></span>
   <header class="header container" id="header">
-    <nav class="header__primary--nav"> <a href="#"> <img class="header__menu--phone-icon" src="view/style/images/menu.png"/></a><a id="header__primary--nav-logo" href="#">  <img src="view/style/images/image_default_48.png"/></a><a ref="#">
-        <input id="header__primary--nav-search" type="search" name="sitesearch" placeholder="procure no site"/></a><a href="#">
-        <select class="header__primary--nav-mode">           
-          <option value="nocturnal">Modo Noturno</option>
-          <option value="daytime">Modo Diurno  </option>
-          <option value="color-blind">Modo Daltônico  </option>
-        </select></a><a href="#">
-        <select class="header__primary--nav-language">           
-          <option value="portuguese">Portugues</option>
-          <option value="english">English         </option>
-        </select></a></nav>
-    <nav class="header__secondary--nav header__menu--phone-hide"><a id="header__secondary--nav-about" href="#">           </a><br class="header__menu--phone-break_line"/><a id="header__secondary--nav-services" href="#">           </a><br class="header__menu--phone-break_line"/><a id="header__secondary--nav-courses" href="#">           </a><br class="header__menu--phone-break_line"/><a id="header__secondary--nav-blog" href="#">           </a><br class="header__menu--phone-break_line"/><a id="header__secondary--nav-faq" href="#">           </a><br class="header__menu--phone-break_line"/>
+    <nav class="header__primary--nav"> <img class="header__menu--phone-icon" src="view/style/images/menu.png"/><img id="header__primary--nav-logo" src="view/style/images/image_default_48.png"/>
+      <input id="header__primary--nav-search" type="search" name="sitesearch" placeholder="procure no site"/>
+      <select class="header__primary--nav-mode" onchange="change_mode()">           
+        <option value="daytime" selected="selected">Modo Diurno                  </option>
+        <option value="nocturnal">Modo Noturno</option>
+        <option value="color-blind">Modo Daltônico  </option>
+      </select>
+      <select class="header__primary--nav-language">           
+        <option value="portuguese">Portugues</option>
+        <option value="english">English         </option>
+      </select>
+    </nav>
+    <nav class="header__secondary--nav header__menu--phone-hide"><a class="header__secondary--nav-option" id="header__secondary--nav-about" href="#">           </a><br class="header__menu--phone-break_line header__secondary--nav-option"/><a class="header__secondary--nav-option" id="header__secondary--nav-services" href="#">           </a><br class="header__menu--phone-break_line"/><a class="header__secondary--nav-option" id="header__secondary--nav-courses" href="#">           </a><br class="header__menu--phone-break_line"/><a class="header__secondary--nav-option" id="header__secondary--nav-blog" href="#">           </a><br class="header__menu--phone-break_line"/><a class="header__secondary--nav-option" id="header__secondary--nav-faq" href="#">           </a><br class="header__menu--phone-break_line"/>
       <label>compartilhe no:               </label><br class="header__menu--phone-break_line"/><img id="header__secondary--nav-share_facebook" alt="botão de compartilhamento dos serviços do site no facebook" src="view/style/images/icons/facebook_blue.svg" width="35"/><img id="header__secondary--nav-share_twitter" alt="botão de compartilhamento dos serviços do site no twitter" src="view/style/images/icons/twitter_black.svg" width="35"/><img id="header__secondary--nav-share_google_plus" alt="botão de compartilhamento dos serviços do site no site de relacionamentos Google Mais" src="view/style/images/icons/google_plus-red.svg" width="35"/>
     </nav>
   </header>
   <section class="content">
-    <section class="content__section container"> 
+    <section class="content__section container" id="content__section"> 
       <div class="content__section--subsection container">
         <header>
           <h2>Título Figurativo </h2>
@@ -56,7 +57,7 @@
         <footer></footer>
       </div>
     </section>
-    <aside class="content__aside container">
+    <aside class="content__aside container" id="content__aside">
       <header>
         <h3>Titulo Figurativo</h3>
         <div>
@@ -66,7 +67,7 @@
       <footer></footer>
     </aside>
   </section>
-  <footer class="footer container row">           
+  <footer class="container row" id="footer">           
     <section class="footer__section--one container">
       <header>
         <h2 id="footer__section--one-lb_contact"></h2>

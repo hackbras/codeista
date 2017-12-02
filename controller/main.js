@@ -44,3 +44,52 @@ function onload() {
     xhttp.send();
 }
 
+const scheema = ["daytime","nocturnal","color-blind"];
+
+function change_mode (){
+    const mode = document.getElementsByClassName('header__primary--nav-mode');
+    const index = mode[0].options.selectedIndex;
+    const valueSelected = mode[0][index].value;
+
+    switch(valueSelected.toString()){
+    case scheema[0]: 
+        change_color_scheema("#4285f4","#000",false);
+        break;
+    case scheema[1]:
+        change_color_scheema("#333","#fff",true); 
+        break;
+    case scheema[2]:           
+        change_color_scheema("#333","#fff",true);  
+        break;
+    }
+}
+
+function change_color_scheema(color_background,color_text,val_bool){
+    const header = document.getElementById('header');
+    const footer = document.getElementById('footer');
+    
+    const sections = document.getElementById('content__section');
+    const aside = document.getElementById('content__aside'); 
+    
+    change_styles_master(header,footer,sections,aside,color_background,color_text,val_bool);
+
+}
+
+function change_styles_master(var_header,var_footer,var_sections,var_aside,background,font_color,val_bool){
+    var_header.style.backgroundColor=background;
+    var_header.style.color=font_color;
+
+    var_footer.style.backgroundColor=background;
+    var_footer.style.color=font_color;
+
+    if(val_bool){
+        var_sections.style.backgroundColor="#f3f3f3";
+        var_aside.style.backgroundColor="#a0a0a0";
+    }
+    else {
+        var_sections.style.backgroundColor="#fff";
+        var_aside.style.backgroundColor="#f3f3f3";
+    }    
+}
+
+//function change_others_styles
