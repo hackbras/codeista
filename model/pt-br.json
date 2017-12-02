@@ -9,12 +9,17 @@
         "PM_first": "logo",
         "PM_second":"procure",
         "PM_third":"modo",
-        "PM_fourth": "idioma",
-        "SM_first": "sobre",
-        "SM_second": "serviços",
-        "SM_third": "cursos",
-        "SM_fourth": "blog",
-        "SM_fifth": "faq"
+        "PM_fourth-lang-pt": "Português",
+        "PM_fifth-lang-en": "Inglês",
+        
+        "SM_first":"home",
+        "SM_second": "sobre",
+        "SM_third": "serviços",
+        "SM_fourth": "cursos",
+        "SM_fifth": "blog",
+        "SM_sixth": "portifolio",
+        "SM_seventh":"faq",
+        "SM_eighth":"COmpartilhe: "
     },
     {  
         "title":"Contatos",    

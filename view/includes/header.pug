@@ -13,11 +13,11 @@ header(id="header" class='header container')
             option(value="color-blind") Modo Daltônico  
 
         select(class="header__primary--nav-language" onchange="onload()")            
-            option(value="pt-br" selected) Portugues
-            option(value="en-us") English         
+            option(id="header__primary--nav-language-pt" value="pt-br" selected)
+            option(id="header__primary--nav-language-en" value="en-us")       
 
     nav(class='header__secondary--nav header__menu--phone-hide')
-        a(id="header__secondary--nav-home" class="header__secondary--nav-option" href="#" onclick="changeMenu('home')") home           
+        a(id="header__secondary--nav-home" class="header__secondary--nav-option" href="#" onclick="changeMenu('home')")       
         br(class="header__menu--phone-break_line" class="header__secondary--nav-option" )   
 
         a(id="header__secondary--nav-about" class="header__secondary--nav-option" href="#" onclick="changeMenu('about')")            
@@ -32,13 +32,13 @@ header(id="header" class='header container')
         a(id="header__secondary--nav-blog" class="header__secondary--nav-option"  href="#" onclick="changeMenu('blog')")            
         br(class="header__menu--phone-break_line")  
 
-        a(id="header__secondary--nav-portifolio" class="header__secondary--nav-option"  href="#" onclick="changeMenu('portifolio')") portifólio           
+        a(id="header__secondary--nav-portifolio" class="header__secondary--nav-option"  href="#" onclick="changeMenu('portifolio')")           
         br(class="header__menu--phone-break_line") 
 
         a(id="header__secondary--nav-faq" class="header__secondary--nav-option"  href="#" onclick="changeMenu('faq')")            
         br(class="header__menu--phone-break_line")  
 
-        label compartilhe no:               
+        label(id="header__secondary--nav-to_share")               
         br(class="header__menu--phone-break_line") 
         
         img(

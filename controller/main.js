@@ -14,12 +14,16 @@ function onload() {
         //document.getElementById("header__primary--nav-search").innerHTML = ourData[1].PM_second;
         //document.getElementById("header__primary--nav-mode").innerHTML = ourData[1].PM_third;
         //document.getElementById("header__primary--nav-language").innerHTML = ourData[1].PM_fourth;
-        
-        document.getElementById("header__secondary--nav-about").innerHTML = ourData[1].SM_first;
-        document.getElementById("header__secondary--nav-services").innerHTML = ourData[1].SM_second;
-        document.getElementById("header__secondary--nav-courses").innerHTML = ourData[1].SM_third;
-        document.getElementById("header__secondary--nav-blog").innerHTML = ourData[1].SM_fourth;
-        document.getElementById("header__secondary--nav-faq").innerHTML = ourData[1].SM_fifth;
+        document.getElementById("header__primary--nav-language-pt").innerHTML = ourData[1].PM_fourth-lang-pt;
+        document.getElementById("header__primary--nav-language-en").innerHTML = ourData[1].PM_fourth-lang-en;
+        document.getElementById("header__secondary--nav-home").innerHTML = ourData[1].SM_first;
+        document.getElementById("header__secondary--nav-about").innerHTML = ourData[1].SM_second;
+        document.getElementById("header__secondary--nav-services").innerHTML = ourData[1].SM_third;
+        document.getElementById("header__secondary--nav-courses").innerHTML = ourData[1].SM_fourth;
+        document.getElementById("header__secondary--nav-blog").innerHTML = ourData[1].SM_fifth;
+        document.getElementById("header__secondary--nav-portifolio").innerHTML = ourData[1].SM_sixth;
+        document.getElementById("header__secondary--nav-faq").innerHTML = ourData[1].SM_seventh;
+        document.getElementById("header__secondary--nav-to_share").innerHTML = ourData[1].SM_eighth;
         
         //Footer options
         document.getElementById("footer__section--two-lb_contact").innerHTML = ourData[2].title; 
