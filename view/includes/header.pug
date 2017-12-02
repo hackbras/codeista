@@ -8,9 +8,8 @@ header(id="header" class='header container')
         input(id="header__primary--nav-search" type="search" name="sitesearch" placeholder="procure no site")        
       
         select(class="header__primary--nav-mode" onchange="change_mode()")            
-            option(value="daytime") Modo Diurno                  
-            option(value="nocturnal") Modo Noturno
-            option(value="color-blind") Modo Daltônico  
+            option(id="header__primary--nav-mode_daytime" value="daytime") Modo Diurno                  
+            option(id="header__primary--nav-mode_nocturnal" value="nocturnal") Modo Noturno
 
         select(class="header__primary--nav-language" onchange="onload()")            
             option(id="header__primary--nav-language-pt" value="pt-br" selected)

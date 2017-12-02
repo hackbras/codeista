@@ -14,9 +14,8 @@
     <nav class="header__primary--nav"> <img class="header__menu--phone-icon" src="view/style/images/menu.png" alt="Imagem do menu voltado para celulares"/><img id="header__primary--nav-logo" src="view/style/images/image_default_48.png" alt="Imagem de logo provisória do site codeísta, que se encontra no cabeçalho da página e ainda não possúi nenhum sentido ainda, apenas figurativa"/>
       <input id="header__primary--nav-search" type="search" name="sitesearch" placeholder="procure no site"/>
       <select class="header__primary--nav-mode" onchange="change_mode()">           
-        <option value="daytime">Modo Diurno                  </option>
-        <option value="nocturnal">Modo Noturno</option>
-        <option value="color-blind">Modo Daltônico  </option>
+        <option id="header__primary--nav-mode_daytime" value="daytime">Modo Diurno                  </option>
+        <option id="header__primary--nav-mode_nocturnal" value="nocturnal">Modo Noturno</option>
       </select>
       <select class="header__primary--nav-language" onchange="onload()">           
         <option id="header__primary--nav-language-pt" value="pt-br" selected="selected"></option>
