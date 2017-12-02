@@ -1,14 +1,14 @@
 span(id="header__modal--menu")
 header(id="header" class='header container')
     nav(class='header__primary--nav')  
-        img(class="header__menu--phone-icon" src="view/style/images/menu.png") 
+        img(class="header__menu--phone-icon" src="view/style/images/menu.png" alt="Imagem do menu voltado para celulares") 
         
-        img(id="header__primary--nav-logo" src="view/style/images/image_default_48.png")   
+        img(id="header__primary--nav-logo" src="view/style/images/image_default_48.png" alt="Imagem de logo provisória do site codeísta, que se encontra no cabeçalho da página e ainda não possúi nenhum sentido ainda, apenas figurativa")   
        
         input(id="header__primary--nav-search" type="search" name="sitesearch" placeholder="procure no site")        
       
         select(class="header__primary--nav-mode" onchange="change_mode()")            
-            option(value="daytime" selected) Modo Diurno                  
+            option(value="daytime") Modo Diurno                  
             option(value="nocturnal") Modo Noturno
             option(value="color-blind") Modo Daltônico  
 
@@ -17,19 +17,25 @@ header(id="header" class='header container')
             option(value="en-us") English         
 
     nav(class='header__secondary--nav header__menu--phone-hide')
-        a(id="header__secondary--nav-about" class="header__secondary--nav-option" href="#")            
+        a(id="header__secondary--nav-home" class="header__secondary--nav-option" href="#" onclick="changeMenu('home')") home           
         br(class="header__menu--phone-break_line" class="header__secondary--nav-option" )   
 
-        a(id="header__secondary--nav-services" class="header__secondary--nav-option"  href="#")            
+        a(id="header__secondary--nav-about" class="header__secondary--nav-option" href="#" onclick="changeMenu('about')")            
+        br(class="header__menu--phone-break_line" class="header__secondary--nav-option" )   
+
+        a(id="header__secondary--nav-services" class="header__secondary--nav-option"  href="#" onclick="changeMenu('services')")            
         br(class="header__menu--phone-break_line")   
 
-        a(id="header__secondary--nav-courses" class="header__secondary--nav-option"  href="#")            
+        a(id="header__secondary--nav-courses" class="header__secondary--nav-option"  href="#" onclick="changeMenu('courses')")            
         br(class="header__menu--phone-break_line")   
 
-        a(id="header__secondary--nav-blog" class="header__secondary--nav-option"  href="#")            
+        a(id="header__secondary--nav-blog" class="header__secondary--nav-option"  href="#" onclick="changeMenu('blog')")            
         br(class="header__menu--phone-break_line")  
 
-        a(id="header__secondary--nav-faq" class="header__secondary--nav-option"  href="#")            
+        a(id="header__secondary--nav-portifolio" class="header__secondary--nav-option"  href="#" onclick="changeMenu('portifolio')") portifólio           
+        br(class="header__menu--phone-break_line") 
+
+        a(id="header__secondary--nav-faq" class="header__secondary--nav-option"  href="#" onclick="changeMenu('faq')")            
         br(class="header__menu--phone-break_line")  
 
         label compartilhe no:               

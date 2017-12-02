@@ -33,9 +33,17 @@ html, body, ul, ol {
 .content {
   display: flex; }
 
-.content__section {
+.content__home {
   font-size: 18px;
   color: #000;
+  width: 74.97%; }
+
+#content__about, #content__services,
+#content__courses, #content__blog,
+#content__portifolio, #content__faq {
+  display: none; }
+
+.content__page {
   width: 74.97%; }
 
 .content__aside {
@@ -112,7 +120,7 @@ html, body, ul, ol {
   .content {
     display: block; }
 
-  .content__section {
+  .content__home {
     font-size: 18px;
     color: #000;
     width: 100%; }
@@ -130,7 +138,7 @@ html, body, ul, ol {
   .content {
     display: flex; }
 
-  .content__section {
+  .content__home {
     font-size: 18px;
     color: #000;
     width: 74.97%; }
@@ -180,7 +188,7 @@ html, body, ul, ol {
     margin-left: 7%; }
 
   #header__secondary--nav-faq {
-    margin-right: 46%; }
+    margin-right: 33%; }
 
   .header__primary--nav a,
   .header__secondary--nav a {
@@ -193,12 +201,12 @@ html, body, ul, ol {
     color: #fff; }
     .header__primary--nav a:hover,
     .header__secondary--nav a:hover {
-      color: #333; }
+      color: #800000; }
 
   .content {
     display: flex; }
 
-  .content__section {
+  .content__home {
     font-size: 18px;
     color: #000;
     width: 74.97%; }

@@ -1,5 +1,19 @@
 section(class="content")
-    section(id="content__section" class='content__section container') 
-        include sub-section.pug
-    aside(id="content__aside" class='content__aside container')
+
+    section(id="content__home" class='content__page content__home container') 
+        include home.pug
+    section(id="content__about" class='content__page content__section container') 
+        include pages/about.pug
+    section(id="content__services" class='content__page content__section container') 
+        include pages/services.pug
+    section(id="content__courses" class='content__page content__section container') 
+        include pages/courses.pug
+    section(id="content__blog" class='content__page content__section container') 
+        include pages/blog.pug
+    section(id="content__portifolio" class='content__page content__section container') 
+        include pages/portifolio.pug
+    section(id="content__faq" class='content__page content__section container') 
+        include pages/faq.pug
+
+    aside(id="content__aside" class='content__page content__aside container')
         include aside.pug
