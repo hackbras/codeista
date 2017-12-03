@@ -1,60 +1,64 @@
-function onload() {
-    let languageSelected = change_language();
+function onload(lang) {
+    //let languageSelected = change_language();
+    let languageSelected;
+
+    if(lang == undefined)
+        languageSelected = "pt-br";
+    else
+        languageSelected = lang;
+
     const path = "https://hackbras.github.io/codeista/model/"+languageSelected+".json";
     const xhttp = new XMLHttpRequest();
     xhttp.open("GET", path, true);
 
     xhttp.onload = function() {
         const ourData = JSON.parse(xhttp.responseText);
-        // document.getElementById("header__secondary--nav-services").innerHTML = ourData[0].title;
-        // document.getElementById("header__secondary--nav-courses").innerHTML = ourData[0].language;
-        // document.getElementById("header__secondary--nav-blog").innerHTML = ourData[0].name_site;
         //Menu options
-        //document.getElementById("header__primary--nav-logo").innerHTML = ourData[1].PM_first;
-        //document.getElementById("header__primary--nav-search").innerHTML = ourData[1].PM_second;
-        //document.getElementById("header__primary--nav-mode").innerHTML = ourData[1].PM_third;
-        //document.getElementById("header__primary--nav-language").innerHTML = ourData[1].PM_fourth;
-        document.getElementById("header__primary--nav-language-pt").innerHTML = ourData[1].PM_fourth_lang_pt;
-        document.getElementById("header__primary--nav-language-en").innerHTML = ourData[1].PM_fifth_lang_en;
-        document.getElementById("header__primary--nav-mode_daytime").innerHTML = ourData[1].PM_third_mode_daytime;
-        document.getElementById("header__primary--nav-mode_nocturnal").innerHTML = ourData[1].PM_third_mode_nocturnal;        
-        document.getElementById("header__secondary--nav-home").innerHTML = ourData[1].SM_first;
-        document.getElementById("header__secondary--nav-about").innerHTML = ourData[1].SM_second;
-        document.getElementById("header__secondary--nav-services").innerHTML = ourData[1].SM_third;
-        document.getElementById("header__secondary--nav-courses").innerHTML = ourData[1].SM_fourth;
-        document.getElementById("header__secondary--nav-blog").innerHTML = ourData[1].SM_fifth;
-        document.getElementById("header__secondary--nav-portifolio").innerHTML = ourData[1].SM_sixth;
-        document.getElementById("header__secondary--nav-faq").innerHTML = ourData[1].SM_seventh;
-        document.getElementById("header__secondary--nav-to_share").innerHTML = ourData[1].SM_eighth;
-        
-        //Footer options
-        document.getElementById("footer__section--two-lb_contact").innerHTML = ourData[2].title; 
-        
-        document.getElementById("footer__section--three-lb_dev").innerHTML = ourData[2].lb_dev;
-        document.getElementById("footer__section--three-dev").innerHTML = ourData[2].developer;
-        
-        document.getElementById("footer__section--two-lb_phone").innerHTML = ourData[2].lb_phone;        
-        document.getElementById("footer__section--two-phone").innerHTML = ourData[2].phone;
+        change_dom("header__primary--nav-language-pt",ourData[1].PM_fourth_lang_pt);
+        change_dom("header__primary--nav-language-en",ourData[1].PM_fifth_lang_en);
+        change_dom("header__primary--nav-mode_daytime",ourData[1].PM_third_mode_daytime);
+        change_dom("header__primary--nav-mode_nocturnal",ourData[1].PM_third_mode_nocturnal);
+        change_dom("header__secondary--nav-home",ourData[1].SM_first);
+        change_dom("header__secondary--nav-about",ourData[1].SM_second);
+        change_dom("header__secondary--nav-services",ourData[1].SM_third);
+        change_dom("header__secondary--nav-courses",ourData[1].SM_fourth);
+        change_dom("header__secondary--nav-blog",ourData[1].SM_fifth);
+        change_dom("header__secondary--nav-portifolio",ourData[1].SM_sixth);
+        change_dom("header__secondary--nav-faq",ourData[1].SM_seventh);
+        change_dom("header__secondary--nav-to_share",ourData[1].SM_eighth);
 
-        document.getElementById("footer__section--two-lb_email").innerHTML = ourData[2].lb_email;
-        document.getElementById("footer__section--two-email").innerHTML = ourData[2].email;
-        
-        document.getElementById("footer__section--two-lb_business_hours").innerHTML = ourData[2].lb_business_hours;     
-        document.getElementById("footer__section--two-business_hours").innerHTML = ourData[2].business_hours;
- 
-        //content
-        document.getElementById("content__first--section").innerHTML = ourData[3].test_text;
-        document.getElementById("content__second--section").innerHTML = ourData[3].test_text;
-        document.getElementById("content__third--section").innerHTML = ourData[3].test_text;
-        document.getElementById("content__aside").innerHTML = ourData[3].test_text;        
-   
+        //Footer options
+  
+        change_dom("footer__section--two-lb_contact",ourData[2].title);
+
+        change_dom("footer__section--three-lb_dev",ourData[2].lb_dev);
+        change_dom("footer__section--three-dev",ourData[2].developer);
+
+        change_dom("footer__section--two-lb_phone",ourData[2].lb_phone);
+        change_dom("footer__section--two-phone",ourData[2].phone);
+
+        change_dom("footer__section--two-lb_email",ourData[2].lb_email);
+        change_dom("footer__section--two-email",ourData[2].email);
+
+        change_dom("footer__section--two-lb_business_hours",ourData[2].lb_business_hours);
+        change_dom("footer__section--two-business_hours",ourData[2].business_hours);
+
+        //content 
+        change_dom("content__first--section",ourData[3].test_text);
+        change_dom("content__second--section",ourData[3].test_text);
+        change_dom("content__third--section",ourData[3].test_text);
+        change_dom("content__aside",ourData[3].test_text);
     };
     xhttp.send();
 }
 
+function change_dom(id,data){
+    document.getElementById(id).innerHTML = data;   
+}
+
 function change_language(){
     const languageSelected = getValueSelected("header__primary--nav-language");
-    return languageSelected;
+    onload(languageSelected);
 }
 
 function change_mode (){  

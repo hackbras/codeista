@@ -13,20 +13,20 @@
         "PM_fourth_lang_pt": "Português",
         "PM_fifth_lang_en": "Inglês",
         
-        "SM_first":"home",
+        "SM_first":"início",
         "SM_second": "sobre",
         "SM_third": "serviços",
         "SM_fourth": "cursos",
         "SM_fifth": "blog",
         "SM_sixth": "portifolio",
-        "SM_seventh":"faq",
+        "SM_seventh":"Dúvidas Frequentes",
         "SM_eighth":"Compartilhe: "
     },
     {  
         "title":"Contatos",    
 
         "developer": "codeista",
-        "lb_dev":"by: ",
+        "lb_dev":"Feito por: ",
 
         "phone": "(31) 9 9562-6585",
         "lb_phone": "Celular: ",      

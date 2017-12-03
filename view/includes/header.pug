@@ -8,12 +8,12 @@ header(id="header" class='header container')
         input(id="header__primary--nav-search" type="search" name="sitesearch" placeholder="procure no site")        
       
         select(class="header__primary--nav-mode" onchange="change_mode()")            
-            option(id="header__primary--nav-mode_daytime" value="daytime") Modo Diurno                  
-            option(id="header__primary--nav-mode_nocturnal" value="nocturnal") Modo Noturno
+            option(id="header__primary--nav-mode_daytime" value="daytime")               
+            option(id="header__primary--nav-mode_nocturnal" value="nocturnal")
 
-        select(class="header__primary--nav-language" onchange="onload()")            
-            option(id="header__primary--nav-language-pt" value="pt-br" selected)
-            option(id="header__primary--nav-language-en" value="en-us")       
+        select(class="header__primary--nav-language" onchange="change_language()")            
+            option(id="header__primary--nav-language-pt" value="pt-br" onclick="onload('pt-br')" selected)
+            option(id="header__primary--nav-language-en" value="en-us" onclick="onload('en-us')")   
 
     nav(class='header__secondary--nav header__menu--phone-hide')
         a(id="header__secondary--nav-home" class="header__secondary--nav-option" href="#" onclick="changeMenu('home')")       

@@ -1,22 +1,26 @@
 [    
     {  
-        "language": "pt-br",
+        "language": "en-us",
         "name_site": "Codeista",
-        "description": "Web developent e mobile"                
+        "description": "Web developent e mobile",
+        "title_payment_methods": "Payment Methods"                 
     },
     {          
         "PM_first": "logo",
         "PM_second":"search",
-        "PM_third":"mode",
-        "PM_fourth": "language",
+        "PM_third_mode_daytime":"Diurno",
+        "PM_third_mode_nocturnal":"Noturno",
+        "PM_fourth_lang_pt": "Portuguese",
+        "PM_fifth_lang_en": "English",
+        
         "SM_first": "about",
         "SM_second": "services",
         "SM_third": "courses",
         "SM_fourth": "blog",
-        "SM_fifth": "faq"
-    },
-    {
-        "test_text":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur"
+        "SM_fifth": "faq",
+        "SM_sixth": "portifolio",
+        "SM_seventh":"faq",
+        "SM_eighth":"Share: "
     },
     {  
         "title":"Contacts",    
@@ -32,5 +36,30 @@
 
         "business_hours":"Monday to friday of 08:00am until 06:00pm",        
         "lb_business_hours":"Business hours: "
+    },    
+    {
+        "test_text":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur",
+        "title_master_development":"Web Development",
+        "title_development":"Website Creation and Maintenance",
+        "image_development":"",
+        "development":"Improve your online presence, reach new customers and grow your business.",
+        "details":"know more"
+    },
+    {
+        "title_development":"Design Responsivo",
+        "image_development":"",
+        "development":"Need to increase your sales and dissemination of your services"
+    },
+    {
+        "title_development":"SEO",
+        "image_development":"",
+        "development":"Need to increase your sales and dissemination of your services"
+    },
+    {
+        "title_master_development":"Design",
+        "title_development":"Creation of logos, banners, invitations and arts in general",
+        "image_development":"",
+        "development":"
+Want to Create a your company logo, an invitation or banner for your company's new advertising campaign?"
     }
 ]
