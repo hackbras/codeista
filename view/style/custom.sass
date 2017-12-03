@@ -58,9 +58,11 @@
 
     .header__primary--nav
         display: inline-block
+        background-color: $second-background-color
+        padding: 15px
 
     .header__secondary--nav
-        display: block
+        display: none
 
     .header__secondary--nav
         color: $first-text-color
@@ -71,14 +73,22 @@
         font-size: $phone_font-size-menu
         font-weight: bold
     
-    .header__menu--phone,
-    .header__primary--nav-language,
-    .header__primary--nav-mode
+    .header__menu--phone
         width: 55px
         margin-left: 3px
         margin-right: 3px
 
-    #header__primary--nav-logo,
+    .header__primary--nav-language,
+    .header__primary--nav-mode
+        width: 65px
+        margin-left: 3px
+        margin-right: 3px
+
+    #header__primary--nav-logo
+        width: 12%
+        margin-left: 3px
+        margin-right: 3px
+
     #header__primary--nav-search
         width: 20%
         margin-left: 3px
@@ -121,6 +131,7 @@
     .header
         background-color: $second-background-color
         padding-top: 15px
+        padding-bottom: 15px
 
     .header__menu--phone-icon
         display: none
@@ -163,7 +174,9 @@
 
     .header__primary--nav a, 
     .header__secondary--nav a
-        padding: 10px
+        padding-top: 10px
+        padding-right: 10px
+        padding-left: 10px
         margin-left: 5px
         margin-right: 5px
         text-decoration: none

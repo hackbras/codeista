@@ -88,10 +88,12 @@ html, body, ul, ol {
     width: 100%; }
 
   .header__primary--nav {
-    display: inline-block; }
+    display: inline-block;
+    background-color: #4285f4;
+    padding: 15px; }
 
   .header__secondary--nav {
-    display: block; }
+    display: none; }
 
   .header__secondary--nav {
     color: #000; }
@@ -101,14 +103,22 @@ html, body, ul, ol {
     font-size: 32px;
     font-weight: bold; }
 
-  .header__menu--phone,
-  .header__primary--nav-language,
-  .header__primary--nav-mode {
+  .header__menu--phone {
     width: 55px;
     margin-left: 3px;
     margin-right: 3px; }
 
-  #header__primary--nav-logo,
+  .header__primary--nav-language,
+  .header__primary--nav-mode {
+    width: 65px;
+    margin-left: 3px;
+    margin-right: 3px; }
+
+  #header__primary--nav-logo {
+    width: 12%;
+    margin-left: 3px;
+    margin-right: 3px; }
+
   #header__primary--nav-search {
     width: 20%;
     margin-left: 3px;
@@ -149,7 +159,8 @@ html, body, ul, ol {
 @media screen and (min-width: 769px) {
   .header {
     background-color: #4285f4;
-    padding-top: 15px; }
+    padding-top: 15px;
+    padding-bottom: 15px; }
 
   .header__menu--phone-icon {
     display: none; }
@@ -192,7 +203,9 @@ html, body, ul, ol {
 
   .header__primary--nav a,
   .header__secondary--nav a {
-    padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
     margin-left: 5px;
     margin-right: 5px;
     text-decoration: none;
