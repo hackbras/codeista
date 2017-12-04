@@ -64,7 +64,7 @@ function change_language(){
 
 function change_mode (){  
     const scheema = ["daytime","nocturnal","color-blind"];
-    const valueSelected = getValueSelected('header__primary--nav-mode');
+    const valueSelected = getValueSelected('header__primary--nav-mode_options');
 
     switch(valueSelected.toString()){
     case scheema[0]: 
