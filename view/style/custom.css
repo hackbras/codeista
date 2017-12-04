@@ -15,6 +15,31 @@ html, body, ul, ol {
 /* Desktop */
 /* Tablet */
 /* Phone */
+/*Buttons */
+.buttom, .buttom-gray, .buttom-blue {
+  width: 5.99%;
+  height: 30px;
+  padding: 2px;
+  border-radius: 5px; }
+
+.buttom-gray {
+  color: #fff;
+  border: 2px solid #fff; }
+
+.buttom-blue {
+  color: #4285f4;
+  border: 2px solid #4285f4; }
+
+.buttom-black {
+  @extends buttom;
+  color: #000;
+  border: 2px solid #4285f4; }
+
+.buttom-white {
+  @extends buttom;
+  color: #fff;
+  border: 2px solid #4285f4; }
+
 /*Phones */
 @media (max-width: 480px) {
   .container {
@@ -85,17 +110,13 @@ html, body, ul, ol {
     height: 100%; }
 
   .header__primary--nav {
-    width: 100%; }
-
-  .header__primary--nav {
+    width: 100%;
     display: inline-block;
     background-color: #4285f4;
     padding: 15px; }
 
   .header__secondary--nav {
-    display: none; }
-
-  .header__secondary--nav {
+    display: none;
     color: #000; }
 
   .header__secondary--nav a {
@@ -108,13 +129,16 @@ html, body, ul, ol {
     margin-left: 3px;
     margin-right: 3px; }
 
-  .header__primary--nav-language,
   .header__primary--nav-mode {
+    display: inline-block; }
+
+  .header__primary--nav-language,
+  .header__primary--nav-mode_options {
     width: 65px;
     margin-left: 3px;
     margin-right: 3px; }
 
-  #header__primary--nav-logo {
+  .header__primary--nav-logo {
     width: 12%;
     margin-left: 3px;
     margin-right: 3px; }
@@ -124,7 +148,7 @@ html, body, ul, ol {
     margin-left: 3px;
     margin-right: 3px; }
 
-  .header__menu--phone-break_line {
+  .header__secondary--nav-menu_phone_break_line {
     display: block; }
 
   .content {
@@ -142,7 +166,7 @@ html, body, ul, ol {
   .header__menu--phone {
     display: block; }
 
-  .header__menu--phone-break_line {
+  .header__secondary--nav-menu_phone_break_line {
     display: none; }
 
   .content {
@@ -162,26 +186,35 @@ html, body, ul, ol {
     padding-top: 15px;
     padding-bottom: 15px; }
 
-  .header__menu--phone-icon {
+  .header__primary--nav {
+    width: 100%;
+    display: flex;
+    margin-bottom: 1%; }
+
+  .header__primary--nav-item {
+    width: 16.66%; }
+
+  #header__primary--nav-title_site {
+    width: 66.66%;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px; }
+
+  .header__primary--nav-mode {
+    width: 16.66%; }
+
+  .header__primary--nav-item-menu_phone_icon {
     display: none; }
 
-  .header__menu--phone-break_line {
+  .header__secondary--nav-menu_phone_break_line {
     display: none; }
 
-  #header__primary--nav-logo {
+  .header__primary--nav-item-logo {
     margin-left: 3%;
     margin-right: 48%; }
 
-  .header__primary--nav {
-    margin-bottom: 1%; }
-
-  #header__primary--nav-search {
-    border-radius: 5px;
-    border: 2px solid #000;
-    height: 30px;
-    padding-left: 1%; }
-
-  .header__primary--nav-mode {
+  .header__primary--nav-mode_options {
     border-radius: 5px;
     height: 30px;
     background-color: #333;
@@ -196,7 +229,8 @@ html, body, ul, ol {
     border: 2px solid #fff; }
 
   #header__secondary--nav {
-    margin-left: 7%; }
+    width: 100%;
+    display: flex; }
 
   #header__secondary--nav-faq {
     margin-right: 28%; }
@@ -215,6 +249,26 @@ html, body, ul, ol {
     .header__primary--nav a:hover,
     .header__secondary--nav a:hover {
       color: #800000; }
+
+  .breadcrumb {
+    width: 100%;
+    display: flex; }
+
+  .breadcrumb__way {
+    width: 73.97%;
+    margin-right: 0px; }
+
+  .breadcrumb__search {
+    background-color: #333;
+    width: 25.99%;
+    margin-left: 0px; }
+
+  .breadcrumb__search--text {
+    border-radius: 5px;
+    border: 2px solid #000;
+    height: 30px;
+    padding-left: 1%;
+    width: 74.97%; }
 
   .content {
     display: flex; }

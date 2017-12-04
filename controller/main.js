@@ -14,6 +14,7 @@ function onload(lang) {
     xhttp.onload = function() {
         const ourData = JSON.parse(xhttp.responseText);
         //Menu options
+        change_dom("header__primary--nav-title_site",ourData[0].name_site);
         change_dom("header__primary--nav-language-pt",ourData[1].PM_fourth_lang_pt);
         change_dom("header__primary--nav-language-en",ourData[1].PM_fifth_lang_en);
         change_dom("header__primary--nav-mode_daytime",ourData[1].PM_third_mode_daytime);
