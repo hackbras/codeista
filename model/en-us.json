@@ -48,17 +48,20 @@
     {
         "title":"Design Responsivo",
         "image":"",
-        "description":"Need to increase your sales and dissemination of your services"
-    },
-    {
-        "title":"SEO",
-        "image":"",
-        "description":"Need to increase your sales and dissemination of your services"
+        "description":"Need to increase your sales and dissemination of your services",
+        "details":"know more"
     },
     {
         "title_master":"Design",
         "title":"Creation of logos, banners, invitations and arts in general",
         "image":"",
-        "description":"Want to Create a your company logo, an invitation or banner for your company's new advertising campaign?"
+        "description":"Want to Create a your company logo, an invitation or banner for your company's new advertising campaign?",
+        "details":"know more"
+    },
+    {
+        "title":"SEO",
+        "image":"",
+        "description":"Need to increase your sales and dissemination of your services",
+        "details":"know more"
     }
 ]
