@@ -8,8 +8,8 @@
     {          
         "PM_first": "logo",
         "PM_second":"search",
-        "PM_third_mode_daytime":"Diurno",
-        "PM_third_mode_nocturnal":"Noturno",
+        "PM_third_mode_daytime":"Daytime",
+        "PM_third_mode_nocturnal":"Nocturnal",
         "PM_fourth_lang_pt": "Portuguese",
         "PM_fifth_lang_en": "English",
         
