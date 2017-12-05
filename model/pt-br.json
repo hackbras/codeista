@@ -39,26 +39,26 @@
     },    
     {
         "test_text":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur",
-        "title_master_development":"Desenvolvimento Web",
-        "title_development":"Criação e Manutenção de Sites",
-        "image_development":"",
-        "development":"Aumente sua presença online, alcance novos clientes e faça seu negócio crescer.",
+        "title_master":"Desenvolvimento Web",
+        "title":"Criação e Manutenção de Sites",
+        "image":"",
+        "description":"Aumente sua presença online, alcance novos clientes e faça seu negócio crescer.",
         "details":"Saiba mais"
     },
     {
-        "title_development":"Design Responsivo",
-        "image_development":"",
-        "development":"Precisa aumentar as suas vendas e divulgação de seus serviços?"
+        "title":"Design Responsivo",
+        "image":"",
+        "description":"Precisa aumentar as suas vendas e divulgação de seus serviços?"
     },
     {
-        "title_development":"SEO",
-        "image_development":"",
-        "development":"Precisa aumentar as suas vendas e divulgação de seus serviços?"
+        "title":"SEO",
+        "image":"",
+        "description":"Precisa aumentar as suas vendas e divulgação de seus serviços?"
     },
     {
-        "title_master_development":"Design",
-        "title_development":"Criação de logos, banners, convites e artes em geral",
-        "image_development":"",
-        "development":"Quer Criar um o logo de sua empresa, um convite ou banner para a nova campanha publicitária de sua empresa?"
+        "title_master":"Design",
+        "title":"Criação de logos, banners, convites e artes em geral",
+        "image":"",
+        "description":"Quer Criar um o logo de sua empresa, um convite ou banner para a nova campanha publicitária de sua empresa?"
     }
 ]

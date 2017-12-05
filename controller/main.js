@@ -45,9 +45,14 @@ function onload(lang) {
         change_dom("footer__section--two-business_hours",ourData[2].business_hours);
 
         //content 
-        change_dom("content__first--section",ourData[3].test_text);
-        change_dom("content__second--section",ourData[3].test_text);
-        change_dom("content__third--section",ourData[3].test_text);
+        change_dom("content__home--subsection-title1",ourData[5].title);
+        change_dom("content__home--subsection-text1",ourData[5].description);
+        
+        change_dom("content__home--subsection-title2",ourData[6].title);
+        change_dom("content__home--subsection-text2",ourData[6].description);
+        
+        change_dom("content__home--subsection-title3",ourData[7].title);
+        change_dom("content__home--subsection-text3",ourData[7].description);
         change_dom("content__aside",ourData[3].test_text);
     };
     xhttp.send();
