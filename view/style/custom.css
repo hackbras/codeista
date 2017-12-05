@@ -18,16 +18,17 @@ html, body, ul, ol {
 /*Buttons */
 .buttom, .buttom-gray, .buttom-blue {
   width: 5.99%;
-  height: 30px;
+  height: 40px;
   padding-top: 3px;
   padding-right: 9px;
-  padding-bottom: 3px;
+  padding-bottom: 6px;
   padding-left: 9px;
   border-radius: 5px; }
 
 .buttom-gray {
-  color: #fff;
-  border: 2px solid #fff; }
+  color: #800000;
+  border: 2px solid #800000;
+  text-weight: bold; }
 
 .buttom-blue {
   color: #4285f4;
@@ -176,6 +177,27 @@ html, body, ul, ol {
   .header__secondary--nav-menu_phone_break_line {
     display: block; }
 
+  .breadcrumb__way {
+    display: block;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 3px;
+    width: 100%;
+    padding-right: 3%;
+    padding-left: 3%;
+    border-top: 3px solid #fff; }
+
+  .breadcrumb__search--text {
+    border-radius: 5px;
+    height: 30px;
+    background-color: #fff;
+    color: #fff;
+    border: 2px solid #000;
+    margin-top: 3px;
+    margin-left: 3px;
+    padding-left: 5px; }
+
   .content {
     display: block; }
 
@@ -280,20 +302,19 @@ html, body, ul, ol {
     display: flex; }
 
   .breadcrumb__way {
-    width: 73.97%;
-    margin-right: 0px; }
+    width: 73.97%; }
 
   .breadcrumb__search {
-    background-color: #333;
-    width: 25.99%;
-    margin-left: 0px; }
+    background-color: #fff;
+    width: 25.99%; }
 
   .breadcrumb__search--text {
     border-radius: 5px;
-    border: 2px solid #000;
     height: 30px;
-    padding-left: 1%;
-    width: 74.97%; }
+    background-color: #fff;
+    color: #fff;
+    margin: 3px;
+    border: 2px solid #000; }
 
   .content {
     display: flex; }
