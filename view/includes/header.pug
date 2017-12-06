@@ -2,8 +2,13 @@ span(class="modal")
 header(id="header" class='header')
     nav(class='header__primary--nav')  
         div(class="header__primary--nav-item")
-            img(class="header__primary--nav-item-menu_phone_icon" src="view/style/images/menu.png" alt="Imagem do menu voltado para celulares")         
-            img(class="header__primary--nav-item-logo" src="view/style/images/image_default_48.png" alt="Imagem de logo provisória do site codeísta, que se encontra no cabeçalho da página e ainda não possúi nenhum sentido ainda, apenas figurativa")   
+            img(alt="Imagem do menu voltado para celulares"
+             class="header__primary--nav-item-menu_phone_icon" 
+             src="view/style/images/menu.png")         
+            img(alt="Imagem de logo provisória do site codeísta, que se encontra no cabeçalho da página e ainda não possúi nenhum sentido ainda, apenas figurativa"  
+             class="header__primary--nav-item-logo" 
+             onclick="changeMenu('home')" 
+             src="view/style/images/image_default_48.png")   
         
         span(id="header__primary--nav-title_site") 
        
@@ -13,49 +18,67 @@ header(id="header" class='header')
                 option(id="header__primary--nav-mode_nocturnal" value="nocturnal")
 
             select(class="header__primary--nav-language" onchange="change_language()")            
-                option(id="header__primary--nav-language-pt" value="pt-br" onclick="onload('pt-br')" selected)
-                option(id="header__primary--nav-language-en" value="en-us" onclick="onload('en-us')")   
+                option(id="header__primary--nav-language-pt" onclick="onload('pt-br')" selected value="pt-br" )
+                option(id="header__primary--nav-language-en" onclick="onload('en-us')" value="en-us" )   
 
     nav(class='header__secondary--nav header__menu--phone-hide')
-        a(id="header__secondary--nav-home" class="header__secondary--nav-option" href="#" onclick="changeMenu('home')")       
+        a(class="header__secondary--nav-option" 
+            href="#" 
+            id="header__secondary--nav-home" 
+            onclick="changeMenu('home')")       
         br(class="header__secondary--nav-menu_phone_break_line" class="header__secondary--nav-option" )   
 
-        a(id="header__secondary--nav-about" class="header__secondary--nav-option" href="#" onclick="changeMenu('about')")            
+        a(class="header__secondary--nav-option" 
+            href="#" 
+            id="header__secondary--nav-about" 
+            onclick="changeMenu('about')")            
         br(class="header__secondary--nav-menu_phone_break_line" class="header__secondary--nav-option" )   
 
-        a(id="header__secondary--nav-services" class="header__secondary--nav-option"  href="#" onclick="changeMenu('services')")            
+        a(class="header__secondary--nav-option" 
+            href="#" 
+            id="header__secondary--nav-services"  
+            onclick="changeMenu('services')")            
         br(class="header__secondary--nav-menu_phone_break_line")   
 
-        a(id="header__secondary--nav-courses" class="header__secondary--nav-option"  href="#" onclick="changeMenu('courses')")            
+        a(class="header__secondary--nav-option"  
+            href="#" 
+            id="header__secondary--nav-courses" 
+            onclick="changeMenu('courses')")            
         br(class="header__secondary--nav-menu_phone_break_line")   
 
-        a(id="header__secondary--nav-blog" class="header__secondary--nav-option"  href="#" onclick="changeMenu('blog')")            
+        a(class="header__secondary--nav-option"  
+            href="#" 
+            id="header__secondary--nav-blog" 
+            onclick="changeMenu('blog')")            
         br(class="header__secondary--nav-menu_phone_break_line")  
 
-        a(id="header__secondary--nav-portifolio" class="header__secondary--nav-option"  href="#" onclick="changeMenu('portifolio')")           
+        a(class="header__secondary--nav-option"  
+            href="#" 
+            id="header__secondary--nav-portifolio"
+            onclick="changeMenu('portifolio')")           
         br(class="header__secondary--nav-menu_phone_break_line") 
 
-        a(id="header__secondary--nav-faq" class="header__secondary--nav-option"  href="#" onclick="changeMenu('faq')")            
+        a(class="header__secondary--nav-option"  
+            href="#" 
+            id="header__secondary--nav-faq"
+            onclick="changeMenu('faq')")            
         br(class="header__secondary--nav-menu_phone_break_line")  
 
         label(id="header__secondary--nav-to_share")               
         br(class="header__secondary--nav-menu_phone_break_line") 
         
-        img(
+        img(alt="botão de compartilhamento dos serviços do site no facebook" 
             id="header__secondary--nav-share_facebook" 
-            alt="botão de compartilhamento dos serviços do site no facebook" 
             src="view/style/images/icons/facebook_blue.svg"
             width="35")
 
-        img(
+        img(alt="botão de compartilhamento dos serviços do site no twitter" 
             id="header__secondary--nav-share_twitter" 
-            alt="botão de compartilhamento dos serviços do site no twitter" 
             src="view/style/images/icons/twitter_black.svg"
             width="35")
 
-        img(
+        img(alt="botão de compartilhamento dos serviços do site no site de relacionamentos Google Mais" 
             id="header__secondary--nav-share_google_plus" 
-            alt="botão de compartilhamento dos serviços do site no site de relacionamentos Google Mais" 
             src="view/style/images/icons/google_plus-red.svg"
             width="35")
         

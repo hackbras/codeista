@@ -3,8 +3,8 @@
 <head>
   <title>Document</title>
   <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="description" content=""/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="" name="description"/>
   <link href="view/style/custom.css" rel="stylesheet"/>
   <script src="controller/main.js"></script>
   <script src="controller/lib/angular/angular.min.js"></script>
@@ -12,25 +12,25 @@
 <body class="row" onload="onload()" ng-app=""><span class="modal"></span>
   <header class="header" id="header">
     <nav class="header__primary--nav"> 
-      <div class="header__primary--nav-item"><img class="header__primary--nav-item-menu_phone_icon" src="view/style/images/menu.png" alt="Imagem do menu voltado para celulares"/><img class="header__primary--nav-item-logo" src="view/style/images/image_default_48.png" alt="Imagem de logo provisória do site codeísta, que se encontra no cabeçalho da página e ainda não possúi nenhum sentido ainda, apenas figurativa"/></div><span id="header__primary--nav-title_site"> </span>
+      <div class="header__primary--nav-item"><img class="header__primary--nav-item-menu_phone_icon" alt="Imagem do menu voltado para celulares" src="view/style/images/menu.png"/><img class="header__primary--nav-item-logo" alt="Imagem de logo provisória do site codeísta, que se encontra no cabeçalho da página e ainda não possúi nenhum sentido ainda, apenas figurativa" onclick="changeMenu('home')" src="view/style/images/image_default_48.png"/></div><span id="header__primary--nav-title_site"> </span>
       <div class="header__primary--nav-mode"> 
         <select class="header__primary--nav-mode_options" onchange="change_mode()">           
           <option id="header__primary--nav-mode_daytime" value="daytime">              </option>
           <option id="header__primary--nav-mode_nocturnal" value="nocturnal"></option>
         </select>
         <select class="header__primary--nav-language" onchange="change_language()">           
-          <option id="header__primary--nav-language-pt" value="pt-br" onclick="onload('pt-br')" selected="selected"></option>
-          <option id="header__primary--nav-language-en" value="en-us" onclick="onload('en-us')">  </option>
+          <option id="header__primary--nav-language-pt" onclick="onload('pt-br')" selected="selected" value="pt-br"></option>
+          <option id="header__primary--nav-language-en" onclick="onload('en-us')" value="en-us">  </option>
         </select>
       </div>
     </nav>
-    <nav class="header__secondary--nav header__menu--phone-hide"><a class="header__secondary--nav-option" id="header__secondary--nav-home" href="#" onclick="changeMenu('home')">      </a><br class="header__secondary--nav-menu_phone_break_line header__secondary--nav-option"/><a class="header__secondary--nav-option" id="header__secondary--nav-about" href="#" onclick="changeMenu('about')">           </a><br class="header__secondary--nav-menu_phone_break_line header__secondary--nav-option"/><a class="header__secondary--nav-option" id="header__secondary--nav-services" href="#" onclick="changeMenu('services')">           </a><br class="header__secondary--nav-menu_phone_break_line"/><a class="header__secondary--nav-option" id="header__secondary--nav-courses" href="#" onclick="changeMenu('courses')">           </a><br class="header__secondary--nav-menu_phone_break_line"/><a class="header__secondary--nav-option" id="header__secondary--nav-blog" href="#" onclick="changeMenu('blog')">           </a><br class="header__secondary--nav-menu_phone_break_line"/><a class="header__secondary--nav-option" id="header__secondary--nav-portifolio" href="#" onclick="changeMenu('portifolio')">          </a><br class="header__secondary--nav-menu_phone_break_line"/><a class="header__secondary--nav-option" id="header__secondary--nav-faq" href="#" onclick="changeMenu('faq')">           </a><br class="header__secondary--nav-menu_phone_break_line"/>
-      <label id="header__secondary--nav-to_share">              </label><br class="header__secondary--nav-menu_phone_break_line"/><img id="header__secondary--nav-share_facebook" alt="botão de compartilhamento dos serviços do site no facebook" src="view/style/images/icons/facebook_blue.svg" width="35"/><img id="header__secondary--nav-share_twitter" alt="botão de compartilhamento dos serviços do site no twitter" src="view/style/images/icons/twitter_black.svg" width="35"/><img id="header__secondary--nav-share_google_plus" alt="botão de compartilhamento dos serviços do site no site de relacionamentos Google Mais" src="view/style/images/icons/google_plus-red.svg" width="35"/>
+    <nav class="header__secondary--nav header__menu--phone-hide"><a class="header__secondary--nav-option" href="#" id="header__secondary--nav-home" onclick="changeMenu('home')">      </a><br class="header__secondary--nav-menu_phone_break_line header__secondary--nav-option"/><a class="header__secondary--nav-option" href="#" id="header__secondary--nav-about" onclick="changeMenu('about')">           </a><br class="header__secondary--nav-menu_phone_break_line header__secondary--nav-option"/><a class="header__secondary--nav-option" href="#" id="header__secondary--nav-services" onclick="changeMenu('services')">           </a><br class="header__secondary--nav-menu_phone_break_line"/><a class="header__secondary--nav-option" href="#" id="header__secondary--nav-courses" onclick="changeMenu('courses')">           </a><br class="header__secondary--nav-menu_phone_break_line"/><a class="header__secondary--nav-option" href="#" id="header__secondary--nav-blog" onclick="changeMenu('blog')">           </a><br class="header__secondary--nav-menu_phone_break_line"/><a class="header__secondary--nav-option" href="#" id="header__secondary--nav-portifolio" onclick="changeMenu('portifolio')">          </a><br class="header__secondary--nav-menu_phone_break_line"/><a class="header__secondary--nav-option" href="#" id="header__secondary--nav-faq" onclick="changeMenu('faq')">           </a><br class="header__secondary--nav-menu_phone_break_line"/>
+      <label id="header__secondary--nav-to_share">              </label><br class="header__secondary--nav-menu_phone_break_line"/><img alt="botão de compartilhamento dos serviços do site no facebook" id="header__secondary--nav-share_facebook" src="view/style/images/icons/facebook_blue.svg" width="35"/><img alt="botão de compartilhamento dos serviços do site no twitter" id="header__secondary--nav-share_twitter" src="view/style/images/icons/twitter_black.svg" width="35"/><img alt="botão de compartilhamento dos serviços do site no site de relacionamentos Google Mais" id="header__secondary--nav-share_google_plus" src="view/style/images/icons/google_plus-red.svg" width="35"/>
     </nav>
   </header>
   <section class="breadcrumb"> <span id="breadcrumb__way"> </span>
     <div class="breadcrumb__search">
-      <input class="breadcrumb__search--text" type="search" name="sitesearch" placeholder="Digite a palavra desejada"/>
+      <input class="breadcrumb__search--text" name="sitesearch" placeholder="Digite a palavra desejada" type="search"/>
       <buttom class="buttom-gray" id="breadcrumb__search--buttom"></buttom>
     </div>
   </section>
@@ -168,7 +168,7 @@
   <footer class="container" id="footer">           
     <section class="footer__section--one container">
       <header></header>
-      <h3><img src="view/style/images/image_default_48.png" alt="Imagem de logo provisória do site codeísta, que se encontra no rodapé da página e ainda não possúi nenhum sentido ainda, apenas figurativa"/></h3>
+      <h3><img alt="Imagem de logo provisória do site codeísta, que se encontra no rodapé da página e ainda não possúi nenhum sentido ainda, apenas figurativa" src="view/style/images/image_default_48.png"/></h3>
       <div>
         <label id="footer__section--one-lb_x"></label><span id="footer__section--one-y"></span><br/>
       </div>
