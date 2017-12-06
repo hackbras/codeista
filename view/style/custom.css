@@ -53,13 +53,18 @@ html, body, ul, ol {
     padding-left: 15px;
     padding-right: 15px; }
 
-  .modal {
+  .menu__modal--phone {
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.9);
+    padding-top: 7%;
+    padding-left: 7%;
     position: fixed;
-    width: 90%;
+    width: 80%;
     height: 115%;
     display: none; }
+
+  .menu__modal--phone a {
+    color: white; }
 
   .header__primary--nav {
     display: none; } }
@@ -73,6 +78,9 @@ html, body, ul, ol {
   .container {
     padding-left: 15px;
     padding-right: 15px; } }
+.header__primary--nav-item-logo {
+  cursor: pointer; }
+
 .content {
   display: flex; }
 
@@ -128,9 +136,6 @@ html, body, ul, ol {
   .header__menu--phone {
     display: none; }
 
-  .header__menu--phone-hide {
-    display: none; }
-
   .header__primary--nav {
     width: 100%;
     display: flex;
@@ -139,10 +144,27 @@ html, body, ul, ol {
     padding-bottom: 2px;
     padding-top: 2px; }
 
-  .header__primary--nav-item,
+  .header__primary--nav-item, #header__primary--nav-title_site,
+  .header__primary--nav-mode {
+    width: 33.33%; }
+
+  .header__primary--nav-item {
+    padding-top: 10px;
+    z-index: 1; }
+
+  .header__primary--nav-logo {
+    width: 12%;
+    margin-left: 3px;
+    margin-right: 3px; }
+
+  .header__primary--nav-logo_inverter {
+    width: 12%;
+    margin-left: 3px;
+    margin-right: 3px;
+    filter: inverter(100%); }
+
   #header__primary--nav-title_site {
     padding-top: 10px;
-    width: 50%;
     z-index: 1; }
 
   #header__primary--nav-title_site {
@@ -150,20 +172,6 @@ html, body, ul, ol {
     padding-top: 1.5%;
     padding-left: 1.5%;
     padding-right: 5%; }
-
-  .header__secondary--nav {
-    display: none;
-    color: #000; }
-
-  .header__secondary--nav a {
-    text-decoration: none;
-    font-size: 32px;
-    font-weight: bold; }
-
-  .header__menu--phone {
-    width: 55px;
-    margin-left: 3px;
-    margin-right: 3px; }
 
   .header__primary--nav-mode {
     display: inline-block; }
@@ -177,13 +185,21 @@ html, body, ul, ol {
     color: #fff;
     border: 2px solid #fff; }
 
-  .header__primary--nav-logo {
-    width: 12%;
+  #header__primary--nav-search {
+    width: 20%;
     margin-left: 3px;
     margin-right: 3px; }
 
-  #header__primary--nav-search {
-    width: 20%;
+  .header__secondary--nav {
+    color: #000; }
+
+  .header__secondary--nav a {
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold; }
+
+  .header__menu--phone {
+    width: 55px;
     margin-left: 3px;
     margin-right: 3px; }
 
@@ -248,14 +264,14 @@ html, body, ul, ol {
     width: 16.66%; }
 
   #header__primary--nav-title_site {
-    width: 66.66%;
+    width: 56.66%;
     text-align: center;
     font-size: 30px;
     margin-top: 0px;
     margin-bottom: 0px; }
 
   .header__primary--nav-mode {
-    width: 16.66%; }
+    width: 26.66%; }
 
   .header__primary--nav-item-menu_phone_icon {
     display: none; }
@@ -264,8 +280,7 @@ html, body, ul, ol {
     display: none; }
 
   .header__primary--nav-item-logo {
-    margin-left: 3%;
-    margin-right: 48%; }
+    margin-left: 3%; }
 
   .header__primary--nav-mode_options {
     border-radius: 5px;
@@ -284,9 +299,6 @@ html, body, ul, ol {
   #header__secondary--nav {
     width: 100%;
     display: flex; }
-
-  #header__secondary--nav-faq {
-    margin-right: 28%; }
 
   .header__primary--nav a,
   .header__secondary--nav a {
@@ -366,7 +378,7 @@ html, body, ul, ol {
     width: 16.66%; }
 
   #header__primary--nav-title_site {
-    width: 66.66%;
+    width: 56.66%;
     text-align: center;
     font-size: 30px;
     margin-top: 0px;
@@ -404,7 +416,7 @@ html, body, ul, ol {
     display: flex; }
 
   #header__secondary--nav-faq {
-    margin-right: 28%; }
+    margin-right: 18%; }
 
   .header__primary--nav a,
   .header__secondary--nav a {

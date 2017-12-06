@@ -123,17 +123,21 @@ function change_mode (){
 
 function change_color_scheema(color_background,color_text,val_bool){
     const header = document.getElementById('header');
+    const header_phone = document.getElementById('header__primary--nav');
     const footer = document.getElementById('footer');
     
     const sections = document.getElementById('content__home');
     const aside = document.getElementById('content__aside'); 
     
-    change_styles_master(header,footer,sections,aside,color_background,color_text,val_bool);
+    change_styles_master(header,header_phone,footer,sections,aside,color_background,color_text,val_bool);
 }
 
-function change_styles_master(var_header,var_footer,var_sections,var_aside,background,font_color,val_bool){
+function change_styles_master(var_header,var_header_phone,var_footer,var_sections,var_aside,background,font_color,val_bool){
     var_header.style.backgroundColor=background;
     var_header.style.color=font_color;
+
+    var_header_phone.style.backgroundColor=background;
+    var_header_phone.style.color=font_color;
 
     var_footer.style.backgroundColor=background;
     var_footer.style.color=font_color;
@@ -161,37 +165,58 @@ function changeMenu(op){
             changeDomMenu("content__home","content__about","content__services",
             "content__courses","content__blog","content__portifolio",
             "content__faq");
+            toggleMenuMobile();
             break;
         case "about":
             changeDomMenu("content__about","content__home","content__services",
             "content__courses","content__blog","content__portifolio",
             "content__faq");
-
+            toggleMenuMobile();
             break;
         case "services":
             changeDomMenu("content__services","content__home","content__about",
             "content__courses","content__blog","content__portifolio",
             "content__faq");
+            toggleMenuMobile();
             break;
         case "courses":
             changeDomMenu("content__courses","content__home","content__about","content__services",
             "content__blog","content__portifolio",
             "content__faq");
+            toggleMenuMobile();
             break;
         case "blog":
             changeDomMenu("content__blog","content__home","content__about","content__services",
             "content__courses","content__portifolio",
             "content__faq");
+            toggleMenuMobile();
             break;
         case "portifolio":
             changeDomMenu("content__portifolio","content__home","content__about","content__services",
             "content__courses","content__blog","content__faq");
+            toggleMenuMobile();
             break;
         case "faq":
             changeDomMenu("content__faq","content__home","content__about","content__services",
             "content__courses","content__blog","content__portifolio");
+            toggleMenuMobile();
             break;
         
+    }
+}
+
+function toggleMenuMobile(){
+    let state = document.getElementById('header__secondary--nav').style.display.toString();
+    let screen = window.screen.width
+
+    if (state == "none"){
+        document.getElementById('header__secondary--nav').style.display = "block"
+        document.getElementById("header__primary--nav-item-menu_phone_icon").src = "view/style/images/close_icon.png"
+        document.getElementById("header__primary--nav-item-menu_phone_icon").height = "48"
+    }else if (screen <= 480){
+        document.getElementById('header__secondary--nav').style.display = "none"
+        document.getElementById("header__primary--nav-item-menu_phone_icon").src = "view/style/images/menu.png"
+        document.getElementById("header__primary--nav-item-menu_phone_icon").width = "48"
     }
 }
 

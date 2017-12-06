@@ -1,4 +1,7 @@
 @import 'imports/_imports.sass'
+.header__primary--nav-item-logo
+    cursor: pointer
+
 .content
     display: flex
 
@@ -54,9 +57,6 @@
 
     .header__menu--phone
         display: none
-    
-    .header__menu--phone-hide
-        display: none
 
     .header__primary--nav
         width: 100%
@@ -65,11 +65,28 @@
         padding: 15px
         padding-bottom: 2px
         padding-top: 2px    
+    
+    .header__primary--nav-item,#header__primary--nav-title_site,
+    .header__primary--nav-mode
+        width: 33.33%
 
-    .header__primary--nav-item,
+    .header__primary--nav-item
+        padding-top: 10px   
+        z-index: 1
+    
+    .header__primary--nav-logo
+        width: 12%
+        margin-left: 3px
+        margin-right: 3px
+    
+    .header__primary--nav-logo_inverter
+        width: 12%
+        margin-left: 3px
+        margin-right: 3px
+        filter: inverter(100%)
+
     #header__primary--nav-title_site
-        padding-top: 10px
-        width: 50%        
+        padding-top: 10px  
         z-index: 1
 
     #header__primary--nav-title_site
@@ -77,20 +94,6 @@
         padding-top: 1.5%
         padding-left: 1.5%
         padding-right: 5%
-
-    .header__secondary--nav
-        display: none        
-        color: $first-text-color
-
-    .header__secondary--nav a
-        text-decoration: none
-        font-size: $phone_font-size-menu
-        font-weight: bold
-    
-    .header__menu--phone
-        width: 55px
-        margin-left: 3px
-        margin-right: 3px
 
     .header__primary--nav-mode
         display: inline-block
@@ -104,13 +107,21 @@
         color: $third-text-color
         border: 2px solid $third-text-color
 
-    .header__primary--nav-logo
-        width: 12%
+    #header__primary--nav-search
+        width: 20%
         margin-left: 3px
         margin-right: 3px
 
-    #header__primary--nav-search
-        width: 20%
+    .header__secondary--nav   
+        color: $first-text-color
+
+    .header__secondary--nav a
+        text-decoration: none
+        font-size: $phone_font-size-menu
+        font-weight: bold
+    
+    .header__menu--phone
+        width: 55px
         margin-left: 3px
         margin-right: 3px
 
@@ -127,7 +138,6 @@
         padding-right: 3%
         padding-left: 3%
         border-top: 3px solid $third-color
-
     
     .breadcrumb__search--text
         border-radius: 5px
@@ -177,14 +187,14 @@
         width: 16.66% //two columns
     
     #header__primary--nav-title_site
-        width: 66.66% //eight columns
+        width: 56.66% //eight columns
         text-align: center
         font-size: 30px
         margin-top: 0px
         margin-bottom: 0px
 
     .header__primary--nav-mode
-        width: 16.66% //two columns
+        width: 26.66% //two columns
 
     .header__primary--nav-item-menu_phone_icon
         display: none
@@ -194,7 +204,6 @@
     
     .header__primary--nav-item-logo
         margin-left: 3%
-        margin-right: 48%    
 
     .header__primary--nav-mode_options
         border-radius: 5px
@@ -213,9 +222,6 @@
     #header__secondary--nav   
         width: 100%
         display: flex
-
-    #header__secondary--nav-faq
-        margin-right: 28%
 
     .header__primary--nav a, 
     .header__secondary--nav a
@@ -295,7 +301,7 @@
         width: 16.66% //two columns
     
     #header__primary--nav-title_site
-        width: 66.66% //eight columns
+        width: 56.66% //eight columns
         text-align: center
         font-size: 30px
         margin-top: 0px
@@ -333,7 +339,7 @@
         display: flex
 
     #header__secondary--nav-faq
-        margin-right: 28%
+        margin-right: 18%
 
     .header__primary--nav a, 
     .header__secondary--nav a

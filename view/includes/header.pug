@@ -1,9 +1,10 @@
-span(class="modal")
 header(id="header" class='header')
-    nav(class='header__primary--nav')  
+    nav(id='header__primary--nav' class='header__primary--nav')  
         div(class="header__primary--nav-item")
             img(alt="Imagem do menu voltado para celulares"
              class="header__primary--nav-item-menu_phone_icon" 
+             id="header__primary--nav-item-menu_phone_icon"
+             onclick="toggleMenuMobile()"
              src="view/style/images/menu.png")         
             img(alt="Imagem de logo provisória do site codeísta, que se encontra no cabeçalho da página e ainda não possúi nenhum sentido ainda, apenas figurativa"  
              class="header__primary--nav-item-logo" 
@@ -21,7 +22,7 @@ header(id="header" class='header')
                 option(id="header__primary--nav-language-pt" onclick="onload('pt-br')" selected value="pt-br" )
                 option(id="header__primary--nav-language-en" onclick="onload('en-us')" value="en-us" )   
 
-    nav(class='header__secondary--nav header__menu--phone-hide')
+    nav(id='header__secondary--nav' class='header__secondary--nav menu__modal--phone')
         a(class="header__secondary--nav-option" 
             href="#" 
             id="header__secondary--nav-home" 
