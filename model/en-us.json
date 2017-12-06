@@ -7,11 +7,12 @@
     },
     {          
         "PM_first": "logo",
-        "PM_second":"search",
+        "PM_second_search":"search",
         "PM_third_mode_daytime":"Daytime",
         "PM_third_mode_nocturnal":"Nocturnal",
         "PM_fourth_lang_pt": "Portuguese",
         "PM_fifth_lang_en": "English",
+        "PM_sixth_Breadcrumb":"Breadcrumb",
         
         "SM_first": "home",
         "SM_second": "about",

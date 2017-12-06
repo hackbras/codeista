@@ -19,6 +19,8 @@ function onload(lang) {
         change_dom("header__primary--nav-language-en",ourData[1].PM_fifth_lang_en);
         change_dom("header__primary--nav-mode_daytime",ourData[1].PM_third_mode_daytime);
         change_dom("header__primary--nav-mode_nocturnal",ourData[1].PM_third_mode_nocturnal);
+        change_dom("breadcrumb__search--buttom",ourData[1].PM_second_search);
+        change_dom("breadcrumb__way",ourData[1].PM_sixth_breadcrumb);
         change_dom("header__secondary--nav-home",ourData[1].SM_first);
         change_dom("header__secondary--nav-about",ourData[1].SM_second);
         change_dom("header__secondary--nav-services",ourData[1].SM_third);
