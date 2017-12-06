@@ -30,22 +30,6 @@ function onload(lang) {
         change_dom("header__secondary--nav-faq",ourData[1].SM_seventh);
         change_dom("header__secondary--nav-to_share",ourData[1].SM_eighth);
 
-        //Footer options
-  
-        change_dom("footer__section--two-lb_contact",ourData[2].title);
-
-        change_dom("footer__section--three-lb_dev",ourData[2].lb_dev);
-        change_dom("footer__section--three-dev",ourData[2].developer);
-
-        change_dom("footer__section--two-lb_phone",ourData[2].lb_phone);
-        change_dom("footer__section--two-phone",ourData[2].phone);
-
-        change_dom("footer__section--two-lb_email",ourData[2].lb_email);
-        change_dom("footer__section--two-email",ourData[2].email);
-
-        change_dom("footer__section--two-lb_business_hours",ourData[2].lb_business_hours);
-        change_dom("footer__section--two-business_hours",ourData[2].business_hours);
-
         //content 
         change_dom("content__home--subsection-title1",ourData[4].title);
         change_dom("content__home--subsection-text1",ourData[4].description);
@@ -62,6 +46,47 @@ function onload(lang) {
         change_dom("content__home--subsection-title4",ourData[7].title);
         change_dom("content__home--subsection-text4",ourData[7].description);
         change_dom("content__home--subsection-link4",ourData[7].details);
+
+        /* Pages of Site */
+        change_dom("content__about--subsection-title",ourData[3].about_title);
+        change_dom("content__about--subsection-sub_title",ourData[3].about_sub_title);
+        change_dom("content__about--subsection-text",ourData[3].about_text);
+
+        change_dom("content__services--subsection-title",ourData[3].services_title);
+        change_dom("content__services--subsection-sub_title",ourData[3].services_sub_title);
+        change_dom("content__services--subsection-text",ourData[3].services_text);
+
+        change_dom("content__courses--subsection-title",ourData[3].courses_title);
+        change_dom("content__courses--subsection-sub_title",ourData[3].courses_sub_title);
+        change_dom("content__courses--subsection-text",ourData[3].courses_text);
+
+        change_dom("content__blog--subsection-title",ourData[3].blog_title);
+        change_dom("content__blog--subsection-sub_title",ourData[3].blog_sub_title);
+        change_dom("content__blog--subsection-text",ourData[3].blog_text);
+
+        change_dom("content__portifolio--subsection-title",ourData[3].portifolio_title);
+        change_dom("content__portifolio--subsection-sub_title",ourData[3].portifolio_sub_title);
+        change_dom("content__portifolio--subsection-text",ourData[3].portifolio_text);
+
+        change_dom("content__faq--subsection-title",ourData[3].faq_title);
+        change_dom("content__faq--subsection-sub_title",ourData[3].faq_sub_title);
+        change_dom("content__faq--subsection-text",ourData[3].faq_text);
+
+        //Footer options
+  
+        change_dom("footer__section--two-lb_contact",ourData[2].title);
+
+        change_dom("footer__section--three-lb_dev",ourData[2].lb_dev);
+        change_dom("footer__section--three-dev",ourData[2].developer);
+
+        change_dom("footer__section--two-lb_phone",ourData[2].lb_phone);
+        change_dom("footer__section--two-phone",ourData[2].phone);
+
+        change_dom("footer__section--two-lb_email",ourData[2].lb_email);
+        change_dom("footer__section--two-email",ourData[2].email);
+
+        change_dom("footer__section--two-lb_business_hours",ourData[2].lb_business_hours);
+        change_dom("footer__section--two-business_hours",ourData[2].business_hours);
         
         change_dom("content__aside",ourData[0].default_text);
     };
