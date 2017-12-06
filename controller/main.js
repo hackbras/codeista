@@ -47,23 +47,23 @@ function onload(lang) {
         change_dom("footer__section--two-business_hours",ourData[2].business_hours);
 
         //content 
-        change_dom("content__home--subsection-title1",ourData[3].title);
-        change_dom("content__home--subsection-text1",ourData[3].description);
-        change_dom("content__home--subsection-link1",ourData[3].details);
+        change_dom("content__home--subsection-title1",ourData[4].title);
+        change_dom("content__home--subsection-text1",ourData[4].description);
+        change_dom("content__home--subsection-link1",ourData[4].details);
 
-        change_dom("content__home--subsection-title2",ourData[4].title);
-        change_dom("content__home--subsection-text2",ourData[4].description);
-        change_dom("content__home--subsection-link2",ourData[4].details);
+        change_dom("content__home--subsection-title2",ourData[5].title);
+        change_dom("content__home--subsection-text2",ourData[5].description);
+        change_dom("content__home--subsection-link2",ourData[5].details);
         
-        change_dom("content__home--subsection-title3",ourData[5].title);
-        change_dom("content__home--subsection-text3",ourData[5].description);
-        change_dom("content__home--subsection-link3",ourData[5].details);
+        change_dom("content__home--subsection-title3",ourData[6].title);
+        change_dom("content__home--subsection-text3",ourData[6].description);
+        change_dom("content__home--subsection-link3",ourData[6].details);
 
-        change_dom("content__home--subsection-title4",ourData[6].title);
-        change_dom("content__home--subsection-text4",ourData[6].description);
-        change_dom("content__home--subsection-link4",ourData[6].details);
+        change_dom("content__home--subsection-title4",ourData[7].title);
+        change_dom("content__home--subsection-text4",ourData[7].description);
+        change_dom("content__home--subsection-link4",ourData[7].details);
         
-        change_dom("content__aside",ourData[3].test_text);
+        change_dom("content__aside",ourData[0].default_text);
     };
     xhttp.send();
 }

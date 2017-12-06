@@ -163,22 +163,121 @@
 
 /* Tablet */     
 @media screen and (max-width: 768px) and (min-width: 481px)
-    .header__menu--phone
-        display: block
+    .header
+        background-color: $second-background-color
+        padding-top: 15px
+        padding-bottom: 15px
+    
+    .header__primary--nav
+        width: 100%
+        display: flex
+        margin-bottom: 1%
+    
+    .header__primary--nav-item
+        width: 16.66% //two columns
+    
+    #header__primary--nav-title_site
+        width: 66.66% //eight columns
+        text-align: center
+        font-size: 30px
+        margin-top: 0px
+        margin-bottom: 0px
+
+    .header__primary--nav-mode
+        width: 16.66% //two columns
+
+    .header__primary--nav-item-menu_phone_icon
+        display: none
     
     .header__secondary--nav-menu_phone_break_line
         display: none
+    
+    .header__primary--nav-item-logo
+        margin-left: 3%
+        margin-right: 48%    
+
+    .header__primary--nav-mode_options
+        border-radius: 5px
+        height: 30px
+        background-color: $third-background-color
+        color: $third-text-color
+        border: 2px solid $third-text-color
+
+    .header__primary--nav-language
+        border-radius: 5px
+        height: 30px
+        background-color: $third-background-color
+        color: $third-text-color
+        border: 2px solid $third-text-color
+
+    #header__secondary--nav   
+        width: 100%
+        display: flex
+
+    #header__secondary--nav-faq
+        margin-right: 28%
+
+    .header__primary--nav a, 
+    .header__secondary--nav a
+        padding-top: 10px
+        padding-right: 5px
+        padding-left: 5px
+        margin-left: 1.5px
+        margin-right: 1.5px
+        text-decoration: none
+        font-size: $font-size-menu
+        color: $third-color
+        &:hover
+            color: $fourth-color
+
+    .breadcrumb
+        width: 100%   
+        display: flex     
+
+    #breadcrumb__way
+        width: 73.97% 
+    
+    .breadcrumb__search
+        background-color: $third-color
+        width: 25.99%
+
+    .breadcrumb__search--text
+        border-radius: 5px
+        height: 30px
+        background-color: #fff
+        color: #fff
+        margin: 3px
+        border: 2px solid #000
 
     .content
         display: flex
 
-    .content__home
+    #content__pages
         font-size: $default-font-size
         color: $first-text-color
         width: 74.97% 
 
     .content__aside
         width: 24.99%  
+        background-color: $fifth-background-color
+    
+    .content__home--subsection
+        display: flex
+        padding-top: 0.5px
+        padding-bottom: 15px
+
+    .content__home--subsection-content
+        display: flex
+
+    .content__home--subsection-image
+        border-radius: 7px
+
+    .content__home--subsection-image,
+    .content__home--subsection-text
+        width: 50%
+        height: 50%
+        text-align: center
+        padding-left: 3% 
 
 /*desktop*/
 @media screen and (min-width: 769px)        

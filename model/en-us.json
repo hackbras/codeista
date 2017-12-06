@@ -3,7 +3,8 @@
         "language": "en-us",
         "name_site": "Codeista",
         "description": "Web developent e mobile",
-        "title_payment_methods": "Payment Methods"                 
+        "title_payment_methods": "Payment Methods",
+        "texto_padrao": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur"                               
     },
     {          
         "PM_first": "logo",
@@ -39,7 +40,49 @@
         "lb_business_hours":"Business hours: "
     },    
     {
-        "test_text":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur",
+        "home_title":"",
+        "home_banner_src":"",
+        "home_sub_title":"",
+        "home_image":"",
+        "home_text":"", 
+
+        "about_title":"",
+        "about_banner_src":"",
+        "about_sub_title":"",
+        "about_image":"",
+        "about_text":"", 
+
+        "services_title":"",
+        "services_banner_src":"",
+        "services_sub_title":"",
+        "services_image":"",
+        "services_text":"", 
+
+        "courses_title":"",
+        "courses_banner_src":"",
+        "courses_sub_title":"",
+        "courses_image":"",
+        "courses_text":"", 
+
+        "blog_title":"",
+        "blog_banner_src":"",
+        "blog_sub_title":"",
+        "blog_image":"",
+        "blog_text":"", 
+
+        "portifolio_title":"",
+        "portifolio_banner_src":"",
+        "portifolio_sub_title":"",
+        "portifolio_image":"",
+        "portifolio_text":"", 
+
+        "faq_title":"",
+        "faq_banner_src":"",
+        "faq_sub_title":"",
+        "faq_image":"",
+        "faq_text":""
+    },
+    {          
         "title_master":"Web Development",
         "title":"Website Creation and Maintenance",
         "image":"",
@@ -53,16 +96,16 @@
         "details":"know more"
     },
     {
+        "title":"SEO",
+        "image":"",
+        "description":"Need to increase your sales and dissemination of your services",
+        "details":"know more"
+    },
+    {
         "title_master":"Design",
         "title":"Creation of logos, banners, invitations and arts in general",
         "image":"",
         "description":"Want to Create a your company logo, an invitation or banner for your company's new advertising campaign?",
-        "details":"know more"
-    },
-    {
-        "title":"SEO",
-        "image":"",
-        "description":"Need to increase your sales and dissemination of your services",
         "details":"know more"
     }
 ]
