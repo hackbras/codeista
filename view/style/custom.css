@@ -253,7 +253,8 @@ html, body, ul, ol {
   .header {
     background-color: #4285f4;
     padding-top: 15px;
-    padding-bottom: 15px; }
+    padding-bottom: 15px;
+    position: relative; }
 
   .header__primary--nav {
     width: 100%;
@@ -271,16 +272,16 @@ html, body, ul, ol {
     margin-bottom: 0px; }
 
   .header__primary--nav-mode {
-    width: 26.66%; }
+    width: 26.66%;
+    position: absolute;
+    right: 0.5px; }
 
   .header__primary--nav-item-menu_phone_icon {
     display: none; }
 
-  .header__secondary--nav-menu_phone_break_line {
-    display: none; }
-
   .header__primary--nav-item-logo {
-    margin-left: 3%; }
+    position: absolute;
+    left: 31%; }
 
   .header__primary--nav-mode_options {
     border-radius: 5px;
@@ -298,7 +299,8 @@ html, body, ul, ol {
 
   #header__secondary--nav {
     width: 100%;
-    display: flex; }
+    display: flex;
+    position: relative; }
 
   .header__primary--nav a,
   .header__secondary--nav a {
@@ -313,6 +315,13 @@ html, body, ul, ol {
     .header__primary--nav a:hover,
     .header__secondary--nav a:hover {
       color: #800000; }
+
+  .header__secondary--nav-menu_phone_break_line {
+    display: none; }
+
+  #header__secondary--nav-share {
+    position: absolute;
+    right: 5px; }
 
   .breadcrumb {
     width: 100%;
@@ -367,12 +376,13 @@ html, body, ul, ol {
   .header {
     background-color: #4285f4;
     padding-top: 15px;
-    padding-bottom: 15px; }
+    position: relative; }
 
   .header__primary--nav {
+    height: 50px;
     width: 100%;
     display: flex;
-    margin-bottom: 1%; }
+    position: relative; }
 
   .header__primary--nav-item {
     width: 16.66%; }
@@ -384,9 +394,6 @@ html, body, ul, ol {
     margin-top: 0px;
     margin-bottom: 0px; }
 
-  .header__primary--nav-mode {
-    width: 16.66%; }
-
   .header__primary--nav-item-menu_phone_icon {
     display: none; }
 
@@ -395,7 +402,18 @@ html, body, ul, ol {
 
   .header__primary--nav-item-logo {
     margin-left: 3%;
-    margin-right: 48%; }
+    margin-right: 48%;
+    position: absolute;
+    left: 31%; }
+
+  .header__primary--nav-mode {
+    width: 16.66%;
+    position: absolute;
+    right: 0.5px; }
+
+  #header__secondary--nav-share {
+    position: absolute;
+    right: 5px; }
 
   .header__primary--nav-mode_options {
     border-radius: 5px;
@@ -412,6 +430,7 @@ html, body, ul, ol {
     border: 2px solid #fff; }
 
   #header__secondary--nav {
+    height: 50px;
     width: 100%;
     display: flex; }
 
@@ -419,18 +438,17 @@ html, body, ul, ol {
     margin-right: 18%; }
 
   .header__primary--nav a,
-  .header__secondary--nav a {
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
+  .header__secondary--nav-option {
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
     text-decoration: none;
-    width: 50px;
     font-size: 22px;
     color: #fff; }
     .header__primary--nav a:hover,
-    .header__secondary--nav a:hover {
+    .header__secondary--nav-option:hover {
       color: #800000; }
 
   .breadcrumb {

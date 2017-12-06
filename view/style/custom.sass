@@ -177,6 +177,7 @@
         background-color: $second-background-color
         padding-top: 15px
         padding-bottom: 15px
+        position: relative
     
     .header__primary--nav
         width: 100%
@@ -195,15 +196,15 @@
 
     .header__primary--nav-mode
         width: 26.66% //two columns
+        position: absolute
+        right: 0.5px
 
     .header__primary--nav-item-menu_phone_icon
         display: none
     
-    .header__secondary--nav-menu_phone_break_line
-        display: none
-    
     .header__primary--nav-item-logo
-        margin-left: 3%
+        position: absolute
+        left: 31%
 
     .header__primary--nav-mode_options
         border-radius: 5px
@@ -222,6 +223,7 @@
     #header__secondary--nav   
         width: 100%
         display: flex
+        position: relative
 
     .header__primary--nav a, 
     .header__secondary--nav a
@@ -235,6 +237,13 @@
         color: $third-color
         &:hover
             color: $fourth-color
+
+    .header__secondary--nav-menu_phone_break_line
+        display: none
+    
+    #header__secondary--nav-share
+        position: absolute
+        right: 5px
 
     .breadcrumb
         width: 100%   
@@ -290,12 +299,13 @@
     .header
         background-color: $second-background-color
         padding-top: 15px
-        padding-bottom: 15px
+        position: relative
     
     .header__primary--nav
+        height: 50px
         width: 100%
         display: flex
-        margin-bottom: 1%
+        position: relative
     
     .header__primary--nav-item
         width: 16.66% //two columns
@@ -307,9 +317,6 @@
         margin-top: 0px
         margin-bottom: 0px
 
-    .header__primary--nav-mode
-        width: 16.66% //two columns
-
     .header__primary--nav-item-menu_phone_icon
         display: none
     
@@ -318,14 +325,25 @@
     
     .header__primary--nav-item-logo
         margin-left: 3%
-        margin-right: 48%    
+        margin-right: 48% 
+        position: absolute
+        left: 31%
+    
+    .header__primary--nav-mode
+        width: 16.66% //two columns
+        position: absolute
+        right: 0.5px
+    
+    #header__secondary--nav-share
+        position: absolute
+        right: 5px
 
     .header__primary--nav-mode_options
         border-radius: 5px
         height: 30px
         background-color: $third-background-color
         color: $third-text-color
-        border: 2px solid $third-text-color
+        border: 2px solid $third-text-color        
 
     .header__primary--nav-language
         border-radius: 5px
@@ -335,6 +353,7 @@
         border: 2px solid $third-text-color
 
     #header__secondary--nav   
+        height: 50px
         width: 100%
         display: flex
 
@@ -342,14 +361,13 @@
         margin-right: 18%
 
     .header__primary--nav a, 
-    .header__secondary--nav a
-        padding-top: 10px
-        padding-right: 10px
-        padding-left: 10px
-        margin-left: 5px
-        margin-right: 5px
+    .header__secondary--nav-option
+        padding-top: 5px
+        padding-right: 5px
+        padding-left: 5px
+        margin-left: 2.5px
+        margin-right: 2.5px
         text-decoration: none
-        width: 50px
         font-size: $font-size-menu
         color: $third-color
         &:hover
