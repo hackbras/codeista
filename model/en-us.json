@@ -14,6 +14,7 @@
         "PM_fourth_lang_pt": "Portuguese",
         "PM_fifth_lang_en": "English",
         "PM_sixth_Breadcrumb":"Breadcrumb",
+        "PM_seventh_search_pleaceholder":"enter with your wished word",
         
         "SM_first": "home",
         "SM_second": "about",
@@ -87,25 +88,25 @@
         "title":"Website Creation and Maintenance",
         "image":"view/style/images/image1.png",
         "description":"Improve your online presence, reach new customers and grow your business.",
-        "details":"know more"
+        "details":"View Details"
     },
     {
         "title":"Responsive Design",
         "image":"",
         "description":"Need to increase your sales and dissemination of your services",
-        "details":"know more"
+        "details":"View Details"
     },
     {
         "title":"SEO",
         "image":"",
         "description":"Need to increase your sales and dissemination of your services",
-        "details":"know more"
+        "details":"View Details"
     },
     {
         "title_master":"Design",
         "title":"Creation of logos, banners, invitations and arts in general",
         "image":"",
         "description":"Want to Create a your company logo, an invitation or banner for your company's new advertising campaign?",
-        "details":"know more"
+        "details":"View Details"
     }
 ]

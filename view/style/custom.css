@@ -31,7 +31,7 @@ html, body, ul, ol {
   text-weight: bold; }
 
 .buttom-blue {
-  color: #4285f4;
+  color: #42eef4;
   border: 2px solid #4285f4; }
 
 .buttom-black {
@@ -108,7 +108,7 @@ html, body, ul, ol {
   display: none; }
 
 #footer {
-  background-color: #4285f4;
+  background-color: #42eef4;
   width: 100%;
   color: #333; }
 
@@ -139,10 +139,15 @@ html, body, ul, ol {
   .header__primary--nav {
     width: 100%;
     display: flex;
-    background-color: #4285f4;
+    background-color: #42eef4;
     padding: 15px;
     padding-bottom: 2px;
     padding-top: 2px; }
+
+  .header__primary--nav-item-menu_phone_icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px; }
 
   .header__primary--nav-item, #header__primary--nav-title_site,
   .header__primary--nav-mode {
@@ -152,8 +157,8 @@ html, body, ul, ol {
     padding-top: 10px;
     z-index: 1; }
 
-  .header__primary--nav-logo {
-    width: 12%;
+  .header__primary--nav-item-logo {
+    width: 30px;
     margin-left: 3px;
     margin-right: 3px; }
 
@@ -178,10 +183,10 @@ html, body, ul, ol {
 
   .header__primary--nav-language,
   .header__primary--nav-mode_options {
-    width: 95%;
-    padding: 7px;
+    width: 88%;
+    padding: 1px;
     border-radius: 5px;
-    background-color: #333;
+    background-color: #a97f7f;
     color: #fff;
     border: 2px solid #fff; }
 
@@ -209,13 +214,14 @@ html, body, ul, ol {
   #breadcrumb__way {
     display: block;
     width: 100%;
-    background-color: #333;
+    height: 14px;
+    background-color: #a97f7f;
     color: #fff;
-    padding: 3px;
     width: 100%;
     padding-right: 3%;
     padding-left: 3%;
-    border-top: 3px solid #fff; }
+    border-top: 3px solid #fff;
+    font-size: 13px; }
 
   .breadcrumb__search--text {
     border-radius: 5px;
@@ -251,7 +257,7 @@ html, body, ul, ol {
 /* Tablet */
 @media screen and (max-width: 768px) and (min-width: 481px) {
   .header {
-    background-color: #4285f4;
+    background-color: #42eef4;
     padding-top: 15px;
     padding-bottom: 15px;
     position: relative; }
@@ -286,14 +292,14 @@ html, body, ul, ol {
   .header__primary--nav-mode_options {
     border-radius: 5px;
     height: 30px;
-    background-color: #333;
+    background-color: #a97f7f;
     color: #fff;
     border: 2px solid #fff; }
 
   .header__primary--nav-language {
     border-radius: 5px;
     height: 30px;
-    background-color: #333;
+    background-color: #a97f7f;
     color: #fff;
     border: 2px solid #fff; }
 
@@ -374,7 +380,7 @@ html, body, ul, ol {
 /*desktop */
 @media screen and (min-width: 769px) {
   .header {
-    background-color: #4285f4;
+    background-color: #42eef4;
     padding-top: 15px;
     position: relative; }
 
@@ -418,14 +424,14 @@ html, body, ul, ol {
   .header__primary--nav-mode_options {
     border-radius: 5px;
     height: 30px;
-    background-color: #333;
+    background-color: #a97f7f;
     color: #fff;
     border: 2px solid #fff; }
 
   .header__primary--nav-language {
     border-radius: 5px;
     height: 30px;
-    background-color: #333;
+    background-color: #a97f7f;
     color: #fff;
     border: 2px solid #fff; }
 
