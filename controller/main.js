@@ -110,7 +110,7 @@ function change_mode (){
 
     switch(valueSelected.toString()){
     case scheema[0]: 
-        change_color_scheema("#4285f4","#000",false);
+        change_color_scheema("#ffad6a","#000",false);
         break;
     case scheema[1]:
         change_color_scheema("#333","#fff",true); 
@@ -125,6 +125,7 @@ function change_color_scheema(color_background,color_text,val_bool){
     const header = document.getElementById('header');
     const header_phone = document.getElementById('header__primary--nav');
     const footer = document.getElementById('footer');
+    const images = document.getElementById('header__primary--nav-item-logo');
     
     const sections = document.getElementById('content__home');
     const aside = document.getElementById('content__aside'); 
@@ -150,6 +151,10 @@ function change_styles_master(var_header,var_header_phone,var_footer,var_section
         var_sections.style.backgroundColor="#fff";
         var_aside.style.backgroundColor="#f3f3f3";
     }    
+}
+
+function toInverterImages(id,percent){
+    
 }
 
 function getValueSelected(className){
