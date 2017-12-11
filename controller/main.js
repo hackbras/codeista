@@ -30,9 +30,28 @@ function onload(lang) {
         change_dom("header__secondary--nav-blog",ourData[1].SM_fifth);
         change_dom("header__secondary--nav-portifolio",ourData[1].SM_sixth);
         change_dom("header__secondary--nav-faq",ourData[1].SM_seventh);
-        change_dom("header__secondary--nav-to_share",ourData[1].SM_eighth);
+        change_dom("header__secondary--nav-to_share",ourData[1].SM_eighth);       
 
-        //content 
+        //Footer options
+  
+        change_dom("footer__section--two-lb_contact",ourData[2].title);
+
+        change_dom("footer__section--three-lb_dev",ourData[2].lb_dev);
+        change_dom("footer__section--three-dev",ourData[2].developer);
+
+        change_dom("footer__section--two-lb_phone",ourData[2].lb_phone);
+        change_dom("footer__section--two-phone",ourData[2].phone);
+
+        change_dom("footer__section--two-lb_email",ourData[2].lb_email);
+        change_dom("footer__section--two-email",ourData[2].email);
+
+        change_dom("footer__section--two-lb_business_hours",ourData[2].lb_business_hours);
+        change_dom("footer__section--two-business_hours",ourData[2].business_hours);
+        
+        change_dom("content__aside",ourData[0].default_text);
+
+        /* Pages of Site */
+
         change_dom("content__home--subsection-title1",ourData[4].title);
         change_dom("content__home--subsection-text1",ourData[4].description);
         change_dom("content__home--subsection-link1",ourData[4].details);
@@ -49,7 +68,6 @@ function onload(lang) {
         change_dom("content__home--subsection-text4",ourData[7].description);
         change_dom("content__home--subsection-link4",ourData[7].details);
 
-        /* Pages of Site */
         change_dom("content__about--subsection-title",ourData[3].about_title);
         change_dom("content__about--subsection-sub_title",ourData[3].about_sub_title);
         change_dom("content__about--subsection-text",ourData[3].about_text);
@@ -74,23 +92,6 @@ function onload(lang) {
         change_dom("content__faq--subsection-sub_title",ourData[3].faq_sub_title);
         change_dom("content__faq--subsection-text",ourData[3].faq_text);
 
-        //Footer options
-  
-        change_dom("footer__section--two-lb_contact",ourData[2].title);
-
-        change_dom("footer__section--three-lb_dev",ourData[2].lb_dev);
-        change_dom("footer__section--three-dev",ourData[2].developer);
-
-        change_dom("footer__section--two-lb_phone",ourData[2].lb_phone);
-        change_dom("footer__section--two-phone",ourData[2].phone);
-
-        change_dom("footer__section--two-lb_email",ourData[2].lb_email);
-        change_dom("footer__section--two-email",ourData[2].email);
-
-        change_dom("footer__section--two-lb_business_hours",ourData[2].lb_business_hours);
-        change_dom("footer__section--two-business_hours",ourData[2].business_hours);
-        
-        change_dom("content__aside",ourData[0].default_text);
     };
     xhttp.send();
 }
@@ -103,6 +104,7 @@ function change_language(){
     const languageSelected = getValueSelected("header__primary--nav-language");
     onload(languageSelected);
 }
+
 
 function change_mode (){  
     const scheema = ["daytime","nocturnal","color-blind"];
@@ -171,40 +173,54 @@ function changeMenu(op){
             "content__courses","content__blog","content__portifolio",
             "content__faq");
             toggleMenuMobile();
+            document.getElementById('content__aside').style.display = "block";
+            document.getElementById('content__pages').style.width = "74.97%";
             break;
         case "about":
             changeDomMenu("content__about","content__home","content__services",
             "content__courses","content__blog","content__portifolio",
             "content__faq");
             toggleMenuMobile();
+            document.getElementById('content__aside').style.display = "block";
+            document.getElementById('content__pages').style.width = "74.97%";
             break;
         case "services":
             changeDomMenu("content__services","content__home","content__about",
             "content__courses","content__blog","content__portifolio",
             "content__faq");
             toggleMenuMobile();
+            document.getElementById('content__aside').style.display = "none";
+            document.getElementById('content__pages').style.width = "100%"
             break;
         case "courses":
             changeDomMenu("content__courses","content__home","content__about","content__services",
             "content__blog","content__portifolio",
             "content__faq");
             toggleMenuMobile();
+            document.getElementById('content__aside').style.display = "block";
+            document.getElementById('content__pages').style.width = "74.97%";
             break;
         case "blog":
             changeDomMenu("content__blog","content__home","content__about","content__services",
             "content__courses","content__portifolio",
             "content__faq");
             toggleMenuMobile();
+            document.getElementById('content__aside').style.display = "block";
+            document.getElementById('content__pages').style.width = "74.97%";
             break;
         case "portifolio":
             changeDomMenu("content__portifolio","content__home","content__about","content__services",
             "content__courses","content__blog","content__faq");
             toggleMenuMobile();
+            document.getElementById('content__aside').style.display = "none";
+            document.getElementById('content__pages').style.width = "100%";
             break;
         case "faq":
             changeDomMenu("content__faq","content__home","content__about","content__services",
             "content__courses","content__blog","content__portifolio");
             toggleMenuMobile();
+            document.getElementById('content__aside').style.display = "block";
+            document.getElementById('content__pages').style.width = "74.97%";
             break;
         
     }

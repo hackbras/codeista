@@ -12,19 +12,23 @@ html, body, ul, ol {
 /* Tablet */
 /* Phone */
 /*Buttons */
-.buttom, .buttom-gray, .buttom-blue {
+.buttom, .buttom-transparent, .buttom-gray, .buttom-blue {
   width: 5.99%;
   height: 40px;
   padding-top: 3px;
   padding-right: 9px;
   padding-bottom: 6px;
   padding-left: 9px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  text-weight: bold; }
+
+.buttom-transparent {
+  color: #333;
+  border: 2px solid #a97f7f; }
 
 .buttom-gray {
-  color: #333;
-  border: 2px solid #a97f7f;
-  text-weight: bold; }
+  color: #ffad6a;
+  border: 2px solid #4285f4; }
 
 .buttom-blue {
   color: #ffad6a;
@@ -40,8 +44,23 @@ html, body, ul, ol {
   color: #800000;
   border: 2px solid #4285f4; }
 
+.label {
+  color: #000;
+  font-weight: bold; }
+
 .contrast {
   background-color: #f3f3f3; }
+
+.select_options {
+  border-radius: 5px;
+  height: 30px;
+  background-color: #a97f7f;
+  color: #fff;
+  border: 2px solid #fff; }
+
+.text {
+  background-color: #fff;
+  color: #000; }
 
 /*Phones */
 @media (max-width: 480px) {
@@ -63,7 +82,15 @@ html, body, ul, ol {
     color: white; }
 
   .header__primary--nav {
-    display: none; } }
+    display: none; }
+
+  .select_options {
+    width: 88%;
+    padding: 1px;
+    border-radius: 5px;
+    background-color: #a97f7f;
+    color: #fff;
+    border: 2px solid #fff; } }
 /* Tablet */
 @media screen and (max-width: 768px) and (min-width: 481px) {
   .container {
@@ -89,8 +116,7 @@ html, body, ul, ol {
   padding-top: 0.5px;
   padding-bottom: 15px; }
 
-#content__home--subsection-title1, #content__home--subsection-title2,
-#content__home--subsection-title3, #content__home--subsection-title4 {
+.title-2 {
   text-align: center; }
 
 .content__home--subsection-link {
@@ -121,18 +147,8 @@ html, body, ul, ol {
   color: #a97f7f;
   font-weight: bold; }
 
-#footer__section--one-lb_dev,
-#footer__section--one-lb_phone, #footer__section--one-lb_email,
-#footer__section--one-lb_business_hours {
-  color: #800000;
-  font-weight: bold; }
-
 #footer__section--two-lb_contact {
   color: #800000; }
-
-#footer__section--two-lb_phone, #footer__section--two-lb_email,
-#footer__section--two-lb_business_hours, #footer__section--three-lb_dev {
-  font-weight: bold; }
 
 /*Phones */
 @media (max-width: 480px) {
@@ -186,15 +202,6 @@ html, body, ul, ol {
 
   .header__primary--nav-mode {
     display: inline-block; }
-
-  .header__primary--nav-language,
-  .header__primary--nav-mode_options {
-    width: 88%;
-    padding: 1px;
-    border-radius: 5px;
-    background-color: #a97f7f;
-    color: #fff;
-    border: 2px solid #fff; }
 
   #header__primary--nav-search {
     width: 20%;
@@ -296,20 +303,6 @@ html, body, ul, ol {
   .header__primary--nav-item-logo {
     position: absolute;
     left: 31%; }
-
-  .header__primary--nav-mode_options {
-    border-radius: 5px;
-    height: 30px;
-    background-color: #a97f7f;
-    color: #fff;
-    border: 2px solid #fff; }
-
-  .header__primary--nav-language {
-    border-radius: 5px;
-    height: 30px;
-    background-color: #a97f7f;
-    color: #fff;
-    border: 2px solid #fff; }
 
   #header__secondary--nav {
     width: 100%;
@@ -431,14 +424,7 @@ html, body, ul, ol {
     position: absolute;
     right: 5px; }
 
-  .header__primary--nav-mode_options {
-    border-radius: 5px;
-    height: 30px;
-    background-color: #a97f7f;
-    color: #fff;
-    border: 2px solid #fff; }
-
-  .header__primary--nav-language {
+  .select_options {
     border-radius: 5px;
     height: 30px;
     background-color: #a97f7f;
