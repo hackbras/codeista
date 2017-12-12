@@ -48,6 +48,12 @@ html, body, ul, ol {
   color: #000;
   font-weight: bold; }
 
+.container {
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px; }
+
 .contrast {
   background-color: #f3f3f3; }
 
@@ -59,15 +65,144 @@ html, body, ul, ol {
   border: 2px solid #fff; }
 
 .text {
-  background-color: #fff;
   color: #000; }
+
+.imagem_produto {
+  width: 40%; }
+
+.imagem_banner {
+  width: 100%;
+  height: 200px; }
+
+.lista_sem_marcacao {
+  list-style-type: none; }
+
+.item1 {
+  grid-area: header; }
+
+.item2 {
+  grid-area: menu; }
+
+.item3 {
+  grid-area: web-projects; }
+
+.item4 {
+  grid-area: web-codeista; }
+
+.item5 {
+  grid-area: web-codeista-image; }
+
+.item6 {
+  grid-area: web-codeista-text; }
+
+.item7 {
+  grid-area: web-print-shop; }
+
+.item8 {
+  grid-area: web-print-shop-image; }
+
+.item9 {
+  grid-area: web-print-shop-text; }
+
+.item10 {
+  grid-area: web-suportedesk; }
+
+.item11 {
+  grid-area: web-suportedesk-v6; }
+
+.item12 {
+  grid-area: web-suportedesk-image-v6; }
+
+.item13 {
+  grid-area: web-suportedesk-text-v6; }
+
+.item14 {
+  grid-area: web-suportedesk-v5; }
+
+.item15 {
+  grid-area: web-image-suportedesk-v5; }
+
+.item16 {
+  grid-area: web-text-suportedesk-v5; }
+
+.item17 {
+  grid-area: web-suportedesk-v4; }
+
+.item18 {
+  grid-area: web-image-suportedesk-v4; }
+
+.item19 {
+  grid-area: web-text-suportedesk-v4; }
+
+.item20 {
+  grid-area: web-suportedesk-v3; }
+
+.item21 {
+  grid-area: web-image-suportedesk-v3; }
+
+.item22 {
+  grid-area: web-text-suportedesk-v3; }
+
+.item23 {
+  grid-area: mobile; }
+
+.item24 {
+  grid-area: mobile-image; }
+
+.item25 {
+  grid-area: mobile-text; }
+
+.item26 {
+  grid-area: desktop; }
+
+.item27 {
+  grid-area: desktop-banner; }
+
+.item28 {
+  grid-area: desktop-a; }
+
+.item29 {
+  grid-area: desktop-image-a; }
+
+.item30 {
+  grid-area: desktop-text-a; }
+
+.item31 {
+  grid-area: desktop-b; }
+
+.item32 {
+  grid-area: desktop-image-b; }
+
+.item33 {
+  grid-area: desktop-text-b; }
+
+.item34 {
+  grid-area: desktop-c; }
+
+.item35 {
+  grid-area: desktop-image-c; }
+
+.item36 {
+  grid-area: desktop-text-c; }
+
+.item37 {
+  grid-area: machine; }
+
+.item38 {
+  grid-area: machine-image; }
+
+.item39 {
+  grid-area: machine-text; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "header	header	header	header	header	header" "menu	menu	web-projects	web-projects	web-projects	web-projects" "menu	menu	web-codeista	web-codeista	web-codeista	web-codeista" "menu	menu	web-codeista-image	web-codeista-image	web-codeista-text	web-codeista-text" "menu	menu	web-codeista-image	web-codeista-image	web-codeista-text	web-codeista-text" "menu	menu	web-print-shop	web-print-shop	web-print-shop	web-print-shop" "menu	menu	web-print-shop-image	web-print-shop-image	web-print-shop-text	web-print-shop-text" "menu	menu	web-print-shop-image	web-print-shop-image	web-print-shop-text	web-print-shop-text" "menu	menu	web-suportedesk	web-suportedesk	web-suportedesk	web-suportedesk" "menu	menu	web-suportedesk-container	web-suportedesk-container	web-suportedesk-container	web-suportedesk-container" "menu	menu	web-suportedesk-image-v6	web-suportedesk-image-v6	web-suportedesk-text-v6	web-suportedesk-text-v6" "menu	menu	web-suportedesk-image-v6	web-suportedesk-image-v6	web-suportedesk-text-v6	web-suportedesk-text-v6" "menu	menu	web-suportedesk-image-v5	web-suportedesk-image-v5	web-suportedesk-text-v5	web-suportedesk-text-v5" "menu	menu	web-suportedesk-image-v5	web-suportedesk-image-v5	web-suportedesk-text-v5	web-suportedesk-text-v5" "menu	menu	web-suportedesk-image-v4	web-suportedesk-image-v4	web-suportedesk-text-v4	web-suportedesk-text-v4" "menu	menu	web-suportedesk-image-v4	web-suportedesk-image-v4	web-suportedesk-text-v4	web-suportedesk-text-v4" "menu	menu	web-suportedesk-image-v3	web-suportedesk-image-v3	web-suportedesk-text-v3	web-suportedesk-text-v3" "menu	menu	web-suportedesk-image-v3	web-suportedesk-image-v3	web-suportedesk-text-v3	web-suportedesk-text-v3" "menu	menu	mobile	mobile	mobile	mobile" "menu	menu	mobile-image	mobile-image	mobile-text	mobile-text" "menu	menu	mobile-image	mobile-image	mobile-text	mobile-text" "menu	menu	desktop-banner	desktop-banner	desktop-banner	desktop-banner" "menu	menu	desktop	desktop	desktop	desktop" "menu	menu	desktop-a	desktop-a	desktop-a	desktop-a" "menu	menu	desktop-image-a	desktop-image-a	desktop-text-a	desktop-text-a" "menu	menu	desktop-image-a	desktop-image-a	desktop-text-a	desktop-text-a" "menu	menu	desktop-b	desktop-b	desktop-b	desktop-b" "menu	menu	desktop-image-b	desktop-image-b	desktop-image-b	desktop-image-b" "menu	menu	desktop-image-b	desktop-image-b	desktop-image-b	desktop-image-b" "menu	menu	desktop-c	desktop-c	desktop-c	desktop-c" "menu	menu	desktop-image-c	desktop-image-c	desktop-image-c	desktop-image-c" "menu	menu	desktop-image-c	desktop-image-c	desktop-image-c	desktop-image-c" "menu	menu	machine	machine	machine	machine" "menu	menu	machine-image	machine-image	machine-text	machine-text" "menu	menu	machine-image	machine-image	machine-text	machine-text"; }
+
+.description {
+  width: 30%; }
 
 /*Phones */
 @media (max-width: 480px) {
-  .container {
-    padding-left: 15px;
-    padding-right: 15px; }
-
   .menu__modal--phone {
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.9);
@@ -92,15 +227,7 @@ html, body, ul, ol {
     color: #fff;
     border: 2px solid #fff; } }
 /* Tablet */
-@media screen and (max-width: 768px) and (min-width: 481px) {
-  .container {
-    padding-left: 15px;
-    padding-right: 15px; } }
 /*desktop */
-@media screen and (min-width: 769px) {
-  .container {
-    padding-left: 15px;
-    padding-right: 15px; } }
 .header__primary--nav-item-logo {
   cursor: pointer; }
 
