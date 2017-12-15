@@ -1,442 +1,68 @@
-div(class='content__portifolio--subsection grid-container')
-    header(id="content__portifolio--subsection-banner item1")
+div(class='content__portifolio--subsection grid-portifolio')
+    header(id="content__portifolio--subsection-banner" class="item1")
         h1(id="content__portifolio--subsection-title")       
 
     aside(class="container item2")   
         ul
-            li Projetos Web
-            li Projetos Desktop
-            li Projetos Mobile
-            li Projetos Máquina
+            li(class="lista_sem_marcacao")  Projetos Web
+            li(class="lista_sem_marcacao")  Projetos Desktop
+            li(class="lista_sem_marcacao")  Projetos Mobile
+            li(class="lista_sem_marcacao")  Projetos Máquina
 
-    //Web
-    section(class="container item3")        
-        h2(class="title-2") projetos web
-
-        article(class="contrast container item4")
-            //Imagem do Primeiro Projeto
-            img(alt="imagem padrão sem nenhum sentido definido ainda. Apenas ilustrativa" 
-                class="imagem_banner item5"
-                src="view/style/images/image_default_256.png")
-            h3 3º Projeto
-            h3 nome: Codeísta
-                h5 Versão: N/A
-
+    //Mobile
+    section(class="container item3")
+        //banner mobile
+        span
+            h2
+                label(class="item4") Mobile projects 
                 //Imagem do Primeiro Projeto
                 img(alt="imagem padrão sem nenhum sentido definido ainda. Apenas ilustrativa" 
-                    class="imagem_produto item5"
-                    src="view/style/images/projetos/codeista.png") 
-                ul(class="description item6")
-                    li(class="lista_sem_marcacao") 
-                        label(class="label") Descrição: 
-                        span(class="text") Descrição do Projeto
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Tipo de Projeto:  
-                        span(class="text") Web Site
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Link:  
-                        span(class="text") https://hackbras.github.io/codeista/
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Repositório no Github:  
-                        span(class="text") https://github.com/hackbras/codeista
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Linguagens:
-                        span(class="text") Javascript, html5, css3, 
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Bibliotecas, Frameworks e API's: 
-                        span(class="text")  Animate.css, 
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Tecnologias utilizadas:
-                        span(class="text")   ajax, json,  Git (svc)
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Pré-processadores e transpiladores:
-                        span(class="text")  Sass e pug
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Ferramentas:
-                        span(class="text")  Chrome DevTools e CorelDraw
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Técnicas:
-                        span(class="text")  SEO  
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Métodos de Escrita:
-                        span(class="text") BEM 
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Ferramenta de Mockup ou Wireframes:
-                        span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Técnicas e Ferramentas de documentação:
-                        span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label")  Técnicas e Ferramentas de teste:
-                        ul(class="label container")  
-                            li
-                                label(class="label") Teste unitário:
-                                span(class="text") n/a
-                            li
-                                label(class="label") Teste de Integração:
-                                span(class="text") n/a
-                            li
-                                label(class="label") Teste de Interface:
-                            li
-                                label(class="label") Teste de Compatibilidade:
-                                span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Metodologia de desenvolvimento ágil:
-                        span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Sistema Operacional:
-                        span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Ambiente de Desenvolvimento:
-                        span(class="text") Windows
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Implementações Futuras:
-                        span(class="text") Regex, parallax, Carroussel, chatbot, integração com sistemas de pagamento
-        footer
-
-        article(class="container item7")
-            h3 2º Projeto
-            h4 Nome: PrintShop
-                h5  Versão: N/A
-
-                //Imagem do Primeiro Projeto
-                img(alt="Imagem da página inicial do sistema web printshop com as ferramentas de customização de artes como: banners, cartões de visita e panfletos." 
-                    class="imagem_produto item8"
-                    src="view/style/images/projetos/printshop.png") 
-                ul(class="description item9")
-                    li(class="lista_sem_marcacao") 
-                        label(class="label") Descrição:
-                        span(class="text") Sistema feito para uma gráfica da minha região, com o objetivo de auxiliar os clientes a criarem sua própria arte, sem necessidade de nenhum conhecimento prévio de uma  ferramenta de desenho vetorial ou de edição de imagens.
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Tipo de Projeto: 
-                        span(class="text") Sistema Web 
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Link: 
-                        span(class="text") https://hackbras.github.io/printshop/
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Repositório no Github: 
-                        span(class="text") https://github.com/hackbras/printshop
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Linguagens:
-                        span(class="text")  Javascript, html5 e css3
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Bibliotecas, Frameworks e API's: :
-                        span(class="text")  API FIleReader
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Tecnologias utilizadas:
-                        span(class="text")  Git (svc)
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Pré-processadores e transpiladores:
-                        span(class="text")  n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Ferramentas:
-                        span(class="text")  CorelDraw,Chrome DevTools 
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Técnicas:
-                        span(class="text")  SEO
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Métodos de Escrita:
-                        span(class="text") 
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Ferramenta de Mockup ou Wireframes:
-                        span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Técnicas e Ferramentas de documentação:
-                        span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Técnicas e Ferramentas de teste:
-                        ul(class="label container")  
-                            li
-                                label(class="label") Teste unitário:
-                                span(class="text") n/a
-                            li
-                                label(class="label") Teste de Integração:
-                                span(class="text") n/a
-                            li
-                                label(class="label") Teste de Interface:
-                            li
-                                label(class="label") Teste de Compatibilidade:
-                                span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Metodologia de desenvolvimento ágil:
-                        span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Sistema Operacional:
-                        span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Ambiente de Desenvolvimento:
-                        span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Implementações Futuras:
-                        span(class="text") Regex, parallax, Carroussel, chatbot, integração com sistemas de pagamento
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Implementações Futuras:
-                        span(class="text") Este projeto será refatorado e adicionarei novas funcionalidades para que o sistema seja responsivo, utilize o estilo de escrita "BEM" para facilitar a manutenção e favorecer uma melhor organização do código css, para possibilitar a formatação de texto das artes e utilizar os conceitos de UX, pois o dono da gráfica disse que o sistema deveria ser mais simples, intuitivo e ter guias de utilização, para que os seus clientes tivessem mais facilidade em usá-lo.
-        footer
-        
-        article(class="item10")
-            section(class="contrast container item11")
-                h3 1º Projeto
-                h4 nome: SuporteDesk
-                    h5 6.0 Beta (Em breve após algumas melhorias e correções)
+                    class="imagem_banner"
+                    src="view/style/images/image_default_256.png") 
+        article(id="project" class="project")     
+            //versions mobile projects          
+            div
+                span(class="titles_project") 
+                    h3 
+                    h4 Nome: 
+                div(class="product container")  
+                    span(class="block sub_titles_project") 
+                        h5  Versão: N/A      
                     //Imagem do Primeiro Projeto
-                    img(alt="Imagem de inicial da versão 6.5 do site suportedesk.com.br, com o fundo fosco e possúi um desenvolvedor digitando o código de um programa" 
-                        class="imagem_produto item12"
-                        src="view/style/images/projetos/suportedesk65.png") 
-                    ul(class="description item13")
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Descrição: 
-                            span(id="content__portifolio--subsection-text" class="label") Descrição do Projeto
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Tipo de Projeto: 
-                            span(class="text") Single-Page Responsiva
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Link: 
-                            span(class="text") https://suportedesk.com.br/version/beta/
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Repositório no Github: 
-                            span(class="text") n/a
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Linguagens e Tecnologias utilizadas:
-                            span(class="text") Javascript, html5 e css3
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Bibliotecas, Frameworks e API's: 
-                            span(class="text")  Angular 4, Materializecss, Animate.css
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Tecnologias utilizadas:
-                            span(class="text")  Sass
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Pré-processadores e transpiladores:
-                            span(class="text")  n/a
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Ferramentas:
-                            span(class="text")  CorelDraw, Chrome DevTools e Git (svc)
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Técnicas:
-                            span(class="text")   SEO 
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Métodos de Escrita:
-                            span(class="text") 
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Ferramenta de Mockup ou Wireframes:
-                            span(class="text") n/a
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Técnicas e Ferramentas de documentação:
-                            span(class="text") n/a
-                        li(class="lista_sem_marcacao container")
-                            label(class="label") 
-                            ul(class="label container") Técnicas e Ferramentas de teste:  
-                                li
-                                    label(class="label") Teste unitário:
-                                    span(class="text") n/a
-                                li
-                                    label(class="label") Teste de Integração:
-                                    span(class="text") n/a
-                                li
-                                    label(class="label") Teste de Interface:
-                                li
-                                    label(class="label") Teste de Compatibilidade:
-                                    span(class="text") n/a
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Metodologia de desenvolvimento ágil:
-                            span(class="text") n/a
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Sistema Operacional:
-                            span(class="text") n/a
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Ambiente de Desenvolvimento:
-                            span(class="text") n/a
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Implementações Futuras:
-                            span(class="text") Regex, parallax, Carroussel, chatbot, integração com sistemas de pagamento
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Implementações Futuras:
-                            span(class="text")  n/a
-            section(class="container item14")        
-                    h5  5.0 (Versão Utilizada Atualmente)
-                    //Imagem do Primeiro Projeto
-                    img(alt="Imagem de inicial da versão 5.0 do site suportedesk.com.br, com o fundo fosco e possúi um desenvolvedor digitando o código de um programa" 
-                      class="imagem_produto item15"
-                      src="view/style/images/projetos/suportedesk60.png") 
-                    ul(class="description item16")
+                    img(alt="imagem padrão sem nenhum sentido definido ainda. Apenas ilustrativa"                    
+                        class="block imagem_produto"
+                        src="view/style/images/image_default_256.png") 
+                    ul(class="block description")
                         li(class="lista_sem_marcacao") 
                             label(class="label") Descrição:
-                            span(class="label") criado com o objetivo de divulgar meus serviços em Infraestrutura e para explorar as tecnologias de desenvolvimento. 
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Tipo de Projeto: 
-                            span(class="text") Single-Page Responsiva
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Link: 
-                            span(class="text") https://suportedesk.com.br
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Repositório no Github: 
-                            span(class="text") https://github.com/hackbras/SuporteDesk
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Linguagens e Tecnologias utilizadas:
-                            span(class="text") Javascript, html5, css3 e Git (svc)
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Pré-processadores e transpiladores:
-                            span(class="text")  Sass, 
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Bibliotecas, Frameworks e API's: 
-                            span(class="text")  Angular 4 e Materializecss
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Tecnologias utilizadas:
-                            span(class="text")  
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Ferramentas:
-                            span(class="text")  CorelDraw e Chrome DevTools 
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Técnicas:
-                            span(class="text")  SEO
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Métodos de Escrita:
                             span(class="text") 
                         li(class="lista_sem_marcacao")
-                            label(class="label") Ferramenta de Mockup ou Wireframes:
-                            span(class="text") n/a
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Técnicas e Ferramentas de documentação:
-                            span(class="text") n/a
-                        li(class="lista_sem_marcacao  container")
-                            label(class="label") Técnicas e Ferramentas de teste:
-                            ul(class="label container")    
-                                li
-                                    label(class="label") Teste unitário:
-                                    span(class="text") n/a
-                                li
-                                    label(class="label") Teste de Integração:
-                                    span(class="text") n/a
-                                li
-                                    label(class="label") Teste de Interface:
-                                li
-                                    label(class="label") Teste de Compatibilidade:
-                                    span(class="text") n/a
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Metodologia de desenvolvimento ágil:
-                            span(class="text") n/a
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Sistema Operacional:
-                            span(class="text") n/a
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Ambiente de Desenvolvimento:
-                            span(class="text") n/a
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Implementações Futuras:
-                            span(class="text") Regex, parallax, Carroussel, chatbot, integração com sistemas de pagamento
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Implementações Futuras:
-                            span(class="text")  
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Observações:
-                            span(class="text") Achei interessante demonstrar algumas versões que o meu site passou e as tecnologias que utilizei em cada uma.
-               
-            section(class="contrast container item17") 
-                    h5 Versão: 4.0
-                    //Imagem do Primeiro Projeto
-                    img(alt="Imagem de inicial da versão 4.0 do site suportedesk.com.br e possúi um técnico de informática com um computador desmontado e segurando uma placa mãe." 
-                        class="imagem_produto item18"
-                        src="view/style/images/projetos/suportedesk40.png") 
-                    ul(class="description item19")
-                        li(class="lista_sem_marcacao") 
-                            label(class="label") Descrição:
-                            span(class="label" id="content__portifolio--subsection-text" ) Descrição do Projeto
-                        li(class="lista_sem_marcacao")
                             label(class="label") Tipo de Projeto: 
-                            span(class="text") Single Page Applications
+                            span(class="text")
                         li(class="lista_sem_marcacao")
                             label(class="label") Link: 
-                            span(class="text") https://suportedesk.com.br/version/5.0/
+                            span(class="text") n/a
                         li(class="lista_sem_marcacao")
                             label(class="label") Repositório no Github: 
-                            span(class="text") https://github.com/hackbras/SuporteDesk
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Linguagens e Tecnologias utilizadas:
-                            span(class="text") PHP, Javascript, Angular, html5, css3, Sass, Firebase, CorelDraw, Cross Browser, Chrome DevTools e Git (svc).
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Bibliotecas, Frameworks e API's: 
-                            span(class="text")  
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Tecnologias utilizadas:
                             span(class="text") 
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Pré-processadores e transpiladores:
-                            span(class="text")  n/a
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Ferramentas:
-                            span(class="text")  
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Técnicas:
-                            span(class="text")  
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Métodos de Escrita:
-                            span(class="text") 
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Ferramenta de Mockup ou Wireframes:
-                            span(class="text") n/a
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Técnicas e Ferramentas de documentação:
-                            span(class="text") n/a
-                        li(class="lista_sem_marcacao container")
-                            label(class="label") Técnicas e Ferramentas de teste:
-                            ul(class="label container")    
-                                li
-                                    label(class="label") Teste unitário:
-                                    span(class="text") n/a
-                                li
-                                    label(class="label") Teste de Integração:
-                                    span(class="text") n/a
-                                li
-                                    label(class="label") Teste de Interface:
-                                li
-                                    label(class="label") Teste de Compatibilidade:
-                                    span(class="text") n/a
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Metodologia de desenvolvimento ágil:
-                            span(class="text") n/a
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Sistema Operacional:
-                            span(class="text") n/a
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Ambiente de Desenvolvimento:
-                            span(class="text") n/a
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Implementações Futuras:
-                            span(class="text") Regex, parallax, Carroussel, chatbot, integração com sistemas de pagamento
-            section(class="container item20")                         
-                    h5 Versão: 3.0
-                    //Imagem do Primeiro Projeto
-                    img(alt="Imagem de inicial da versão 3.0 do site suportedesk.com.br e possúi um técnico de informática com um computador desmontado e segurando uma placa mãe." 
-                        class="imagem_produto item21"
-                        src="view/style/images/projetos/suportedesk30.PNG") 
-                    ul(class="description item22")
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Tipo de Projeto: 
-                            span(class="text")  Web Site                        
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Link: 
-                            span(class="text") https://suportedesk.com.br/version/3.0/
-                        li(class="lista_sem_marcacao")
-                            label(class="label") Repositório no Github: 
-                            span(class="text") n/a
                         li(class="lista_sem_marcacao")
                             label(class="label") Linguagens:
-                            span(class="text") PHP, html5 e css.
+                            span(class="text") 
                         li(class="lista_sem_marcacao")
                             label(class="label") Bibliotecas, Frameworks e API's: 
-                            span(class="text")  Bootstrap 
+                            span(class="text")  
                         li(class="lista_sem_marcacao")
                             label(class="label") Tecnologias utilizadas:
-                            span(class="text") Git (svc)
+                            span(class="text")  
                         li(class="lista_sem_marcacao")
                             label(class="label") Pré-processadores e transpiladores:
                             span(class="text")  n/a
                         li(class="lista_sem_marcacao")
                             label(class="label") Ferramentas:
-                            span(class="text")  CorelDraw e Chrome DevTools 
+                            span(class="text") 
                         li(class="lista_sem_marcacao")
                             label(class="label") Técnicas:
-                            span(class="text")  Cross Browser
+                            span(class="text")  
                         li(class="lista_sem_marcacao")
                             label(class="label") Métodos de Escrita:
                             span(class="text") 
@@ -446,7 +72,7 @@ div(class='content__portifolio--subsection grid-container')
                         li(class="lista_sem_marcacao")
                             label(class="label") Técnicas e Ferramentas de documentação:
                             span(class="text") n/a
-                        li(class="lista_sem_marcacao container")
+                        li(class="lista_sem_marcacao")
                             label(class="label") Técnicas e Ferramentas de teste:
                             ul(class="label container")  
                                 li
@@ -471,291 +97,97 @@ div(class='content__portifolio--subsection grid-container')
                             span(class="text") n/a
                         li(class="lista_sem_marcacao")
                             label(class="label") Implementações Futuras:
-                            span(class="text") Regex, parallax, Carroussel, chatbot, integração com sistemas de pagamento
-            
-        footer
-    
-    //Mobile
-    section(class="container item23")
-        h2 projetos mobile  
-        //Imagem do Primeiro Projeto
-        img(alt="imagem padrão sem nenhum sentido definido ainda. Apenas ilustrativa" 
-            class="imagem_banner item24"
-            src="view/style/images/image_default_256.png") 
-        div(class="description item25")
-            h3 IOS  
-                span Descrição
-            h3 Android 
-                span Descrição
-
-    //Desktop
-    section(class="container item26")
-        h2(class="title-2") projetos desktop            
-        //Imagem do Primeiro Projeto
-        img(alt="imagem padrão sem nenhum sentido definido ainda. Apenas ilustrativa"  
-            class="imagem_banner item27"
-            src="view/style/images/image_default_256.png") 
-        h3 skeleton
-             span(class="text") Descrição
-        
-        h3 c#
-        article(class="contrast container item28")
-            h3 xº Projeto
-            h4 Nome: Verbs
-                h5  Versão: N/A
-                //Imagem do Primeiro Projeto
-                img(alt="imagem padrão sem nenhum sentido definido ainda. Apenas ilustrativa" 
-                    class="imagem_produto item29"
-                    src="view/style/images/image_default_256.png") 
-                ul(class="description item30")
-                    li(class="lista_sem_marcacao") 
-                        label(class="label") Descrição:
-                        span(class="text") Programa criado para auxiliar no processo de estudo de um novo idioma, com exercícios para adquirir vocabulário e enter tempos verbais.
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Tipo de Projeto: 
-                        span(class="text") Desktop 
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Link: 
-                        span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Repositório no Github: 
-                        span(class="text") https://github.com/hackbras/Verbs
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Linguagens e Tecnologias utilizadas:
-                        span(class="text")  Asp net MVC em c#
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Bibliotecas, Frameworks e API's: 
-                        span(class="text")  DotNEt
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Tecnologias utilizadas:
-                        span(class="text")  
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Pré-processadores e transpiladores:
-                        span(class="text")  n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Ferramentas:
-                        span(class="text")  
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Técnicas:
-                        span(class="text")  
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Métodos de Escrita:
-                        span(class="text") 
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Ferramenta de Mockup ou Wireframes:
-                        span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Técnicas e Ferramentas de documentação:
-                        span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label")  Técnicas e Ferramentas de teste:
-                        ul(class="label container")  
-                            li
-                                label(class="label") Teste unitário:
-                                span(class="text") n/a
-                            li
-                                label(class="label") Teste de Integração:
-                                span(class="text") n/a
-                            li
-                                label(class="label") Teste de Interface:
-                            li
-                                label(class="label") Teste de Compatibilidade:
-                                span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Metodologia de desenvolvimento ágil:
-                        span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Sistema Operacional:
-                        span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Ambiente de Desenvolvimento:
-                        span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Implementações Futuras:
-                        span(class="text") Regex, parallax, Carroussel, chatbot, integração com sistemas de pagamento
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Implementações Futuras:
-                        span(class="text") Adicionarei novas funcionalidades para que o sistema faça gráficos e acompanhe o desempenho do usuário, utilize os conceitos de Orientação a objetos, testes unitários, Será alterado para projeto web, arquitetura de projetos mvc, conexão com sql server, fazer o deplay em hospedagem gratuita.
+                            span(class="text")  
+ 
+                div(class="product container") 
+                    span(class="sub_titles_project") 
+                        h5  Versão: N/A   
+                    //Imagem do Primeiro Projeto
+                    img(alt="imagem padrão sem nenhum sentido definido ainda. Apenas ilustrativa"                    
+                        class="imagem_produto"
+                        src="view/style/images/image_default_256.png") 
+                    ul(class="description")
+                        li(class="lista_sem_marcacao") 
+                            label(class="label") Descrição:
+                            span(class="text") 
+                        li(class="lista_sem_marcacao")
+                            label(class="label") Tipo de Projeto: 
+                            span(class="text")
+                        li(class="lista_sem_marcacao")
+                            label(class="label") Link: 
+                            span(class="text") n/a
+                        li(class="lista_sem_marcacao")
+                            label(class="label") Repositório no Github: 
+                            span(class="text") 
+                        li(class="lista_sem_marcacao")
+                            label(class="label") Linguagens:
+                            span(class="text") 
+                        li(class="lista_sem_marcacao")
+                            label(class="label") Bibliotecas, Frameworks e API's: 
+                            span(class="text")  
+                        li(class="lista_sem_marcacao")
+                            label(class="label") Tecnologias utilizadas:
+                            span(class="text")  
+                        li(class="lista_sem_marcacao")
+                            label(class="label") Pré-processadores e transpiladores:
+                            span(class="text")  n/a
+                        li(class="lista_sem_marcacao")
+                            label(class="label") Ferramentas:
+                            span(class="text") 
+                        li(class="lista_sem_marcacao")
+                            label(class="label") Técnicas:
+                            span(class="text")  
+                        li(class="lista_sem_marcacao")
+                            label(class="label") Métodos de Escrita:
+                            span(class="text") 
+                        li(class="lista_sem_marcacao")
+                            label(class="label") Ferramenta de Mockup ou Wireframes:
+                            span(class="text") n/a
+                        li(class="lista_sem_marcacao")
+                            label(class="label") Técnicas e Ferramentas de documentação:
+                            span(class="text") n/a
+                        li(class="lista_sem_marcacao")
+                            label(class="label") Técnicas e Ferramentas de teste:
+                            ul(class="label container")  
+                                li
+                                    label(class="label") Teste unitário:
+                                    span(class="text") n/a
+                                li
+                                    label(class="label") Teste de Integração:
+                                    span(class="text") n/a
+                                li
+                                    label(class="label") Teste de Interface:
+                                li
+                                    label(class="label") Teste de Compatibilidade:
+                                    span(class="text") n/a
+                        li(class="lista_sem_marcacao")
+                            label(class="label") Metodologia de desenvolvimento ágil:
+                            span(class="text") n/a
+                        li(class="lista_sem_marcacao")
+                            label(class="label") Sistema Operacional:
+                            span(class="text") n/a
+                        li(class="lista_sem_marcacao")
+                            label(class="label") Ambiente de Desenvolvimento:
+                            span(class="text") n/a
+                        li(class="lista_sem_marcacao")
+                            label(class="label") Implementações Futuras:
+                            span(class="text")  
+                       
         footer
 
-        article(class="container item31 ")
-            h3 xº Projeto
-            h4 Nome: NotepadM (Novo nome WordM)
-                h5  Versão: N/A
-
-                //Imagem do Primeiro Projeto
-                img(alt="imagem padrão sem nenhum sentido definido ainda. Apenas ilustrativa" 
-                    class="imagem_produto item32"
-                    src="view/style/images/image_default_256.png") 
-                ul(class="description item33")
-                    li(class="lista_sem_marcacao") 
-                        label(class="label") Descrição:
-                        span(class="text") Programa Alternativo ao pacote office da Microsoft
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Tipo de Projeto: 
-                        span(class="text") Desktop (Será alterado para Web) 
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Link: 
-                        span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Repositório no Github: 
-                        span(class="text") https://github.com/hackbras/NotepadM
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Linguagens e Tecnologias utilizadas:
-                        span(class="text")  Asp net MVC em c# 
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Bibliotecas, Frameworks e API's: 
-                        span(class="text")  DotNet
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Tecnologias utilizadas:
-                        span(class="text")  
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Pré-processadores e transpiladores:
-                        span(class="text")  n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Ferramentas:
-                        span(class="text")  
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Técnicas:
-                        span(class="text")  
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Métodos de Escrita:
-                        span(class="text") 
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Ferramenta de Mockup ou Wireframes:
-                        span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Técnicas e Ferramentas de documentação:
-                        span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label")  Técnicas e Ferramentas de teste:
-                        ul(class="label container")  
-                            li
-                                label(class="label") Teste unitário:
-                                span(class="text") n/a
-                            li
-                                label(class="label") Teste de Integração:
-                                span(class="text") n/a
-                            li
-                                label(class="label") Teste de Interface:
-                            li
-                                label(class="label") Teste de Compatibilidade:
-                                span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Metodologia de desenvolvimento ágil:
-                        span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Sistema Operacional:
-                        span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Ambiente de Desenvolvimento:
-                        span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Implementações Futuras:
-                        span(class="text") Regex, parallax, Carroussel, chatbot, integração com sistemas de pagamento
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Implementações Futuras:
-                        span(class="text") Adicionarei novas funcionalidades para que o sistema tenha o máximo possível de características que as ferramentas office da microsoft, utilize os conceitos de Orientação a objetos, testes unitários, Será alterado para projeto web, arquitetura de projetos mvc, conexão com sql server e fazer o deplay em hospedagem gratuita.
-        footer
-
-        article(class="contrast container item34")
-            h3 xº Projeto
-            h4 Nome: CalcConsoleM
-                h5  Versão: N/A
-
-                //Imagem do Primeiro Projeto
-                img(alt="imagem padrão sem nenhum sentido definido ainda. Apenas ilustrativa"                    
-                    class="imagem_produto item35"
-                    src="view/style/images/image_default_256.png") 
-                ul(class="description item36")
-                    li(class="lista_sem_marcacao") 
-                        label(class="label") Descrição:
-                        span(class="text") Programa Alternativo a calculadora do windows
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Tipo de Projeto: 
-                        span(class="text") Desktop (Será alterado para Web) 
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Link: 
-                        span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Repositório no Github: 
-                        span(class="text") https://github.com/hackbras/CalcConsoleM
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Linguagens:
-                        span(class="text")  c#
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Bibliotecas, Frameworks e API's: 
-                        span(class="text")  
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Tecnologias utilizadas:
-                        span(class="text")  
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Pré-processadores e transpiladores:
-                        span(class="text")  n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Ferramentas:
-                        span(class="text") 
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Técnicas:
-                        span(class="text")  
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Métodos de Escrita:
-                        span(class="text") 
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Ferramenta de Mockup ou Wireframes:
-                        span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Técnicas e Ferramentas de documentação:
-                        span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Técnicas e Ferramentas de teste:
-                        ul(class="label container")  
-                            li
-                                label(class="label") Teste unitário:
-                                span(class="text") n/a
-                            li
-                                label(class="label") Teste de Integração:
-                                span(class="text") n/a
-                            li
-                                label(class="label") Teste de Interface:
-                            li
-                                label(class="label") Teste de Compatibilidade:
-                                span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Metodologia de desenvolvimento ágil:
-                        span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Sistema Operacional:
-                        span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Ambiente de Desenvolvimento:
-                        span(class="text") n/a
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Implementações Futuras:
-                        span(class="text") Regex, parallax, Carroussel, chatbot, integração com sistemas de pagamento 
-                    li(class="lista_sem_marcacao")
-                        label(class="label") Implementações Futuras:
-                        span(class="text") Adicionarei novas funcionalidades para que o sistema efetue cálculos complexos, utilize os conceitos de Orientação a objetos, testes unitários, Será alterado para projeto web, arquitetura de projetos mvc, conexão com sql server, Criar modo de cálculos simples, de números binários, hexadecimal, fazer o deplay em hospedagem gratuita.
-
-        footer
-
-    //Máquina
-    section(class="container item37 ")
-        h2(class="title-2") projetos em linguagem de máquina
-        //Imagem do Primeiro Projeto
-        img(alt="imagem padrão sem nenhum sentido definido ainda. Apenas ilustrativa" 
-            class="imagem_banner item38"
-            src="view/style/images/image_default_256.png") 
-        div(class="description item39")
-            h3 Projetos em hardware aberto 
-                h4 Arduíno
-                    span(class="text") Descrição
-
-                h4 Raspberry 
-                    span(class="text") Descrição
-
-            h3 Processamento de Imagem, áudio e Vídeos
-                h4 Python, c ou c++
-                    span(class="text") Descrição 
-
-    footer
+    section(class="tools container contrast")       
+        form(class="container")
+            //Add project
+            buttom(id="toAdd" class="buttom-gray") adicionar
+            //Delete project
+            buttom(id="toDelete" class="buttom-gray") deletar
+            //Edit project
+            buttom(id="toEdit" class="buttom-gray") editar
+            buttom(id="toSave" class="buttom-gray") salvar
+            //Select project
+            label(for="check" class="label") selecionar 
+            input(name="check" type="checkbox") 
+            //Project's filter            
+            select(class="select-option")
+                option linguagem
+            //Pagination
