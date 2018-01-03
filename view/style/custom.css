@@ -54,14 +54,8 @@ html, body, ul, ol {
   padding-right: 20px;
   padding-bottom: 5px; }
 
-.tools {
-  text-align: center; }
-
 .block {
   display: inline-block; }
-
-.tools {
-  display: block; }
 
 .contrast {
   background-color: #f3f3f3; }
@@ -86,6 +80,16 @@ html, body, ul, ol {
 .lista_sem_marcacao {
   list-style-type: none; }
 
+.grid-portifolio {
+  display: grid;
+  grid-template-coluns: "auto auto auto"; }
+
+.tools {
+  text-align: center;
+  display: block;
+  grid-column: 1/span 3;
+  grid-row: 2; }
+
 .item1 {
   grid-column: 1/span 3;
   grid-row: 1; }
@@ -101,10 +105,6 @@ html, body, ul, ol {
 .item4 {
   grid-column: 2/span 3;
   grid-row: 2; }
-
-.grid-portifolio {
-  display: grid;
-  grid-template-coluns: "auto auto auto"; }
 
 .description {
   width: 30%; }

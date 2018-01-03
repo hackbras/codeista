@@ -10,6 +10,18 @@
   <script src="controller/lib/angular/angular.min.js"></script>
 </head>
 <body class="row" onload="onload()" ng-app="">
+  <div id="fb-root"></div>
+  <script>
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.11';
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    
+    
+  </script>
   <header class="header" id="header">
     <nav class="header__primary--nav" id="header__primary--nav"> 
       <div class="header__primary--nav-item"><img class="header__primary--nav-item-menu_phone_icon" alt="Imagem do menu voltado para celulares" id="header__primary--nav-item-menu_phone_icon" onclick="toggleMenuMobile()" src="view/style/images/menu.png"/><img class="header__primary--nav-item-logo" alt="Imagem de logo provisória do site codeísta, que se encontra no cabeçalho da página e ainda não possúi nenhum sentido ainda, apenas figurativa" onclick="changeMenu('home')" src="view/style/images/image_default_48.png"/></div><span id="header__primary--nav-title_site"> </span>
@@ -369,6 +381,8 @@
         <label class="label" id="footer__section--two-lb_phone"> </label><span id="footer__section--two-phone"></span><br/>
         <label class="label" id="footer__section--two-lb_email"></label><span id="footer__section--two-email"></span><br/>
         <label class="label" id="footer__section--two-lb_business_hours"></label><span id="footer__section--two-business_hours"></span><br/>
+        <div class="fb-like" data-href="https://www.facebook.com/tecnologiaseinformacoes/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ftecnologiaseinformacoes%2F&amp;width=450&amp;layout=standard&amp;action=like&amp;size=small&amp;show_faces=true&amp;share=true&amp;height=80&amp;appId" width="450" height="80" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
       </div>
       <footer></footer>
     </section>
