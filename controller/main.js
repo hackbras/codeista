@@ -212,15 +212,15 @@ function changeMenu(op){
             changeDomMenu("content__portifolio","content__home","content__about","content__services",
             "content__courses","content__blog","content__faq");
             toggleMenuMobile();
-            document.getElementById('content__aside').style.display = "none";
-            document.getElementById('content__pages').style.width = "100%";
+            $('content__aside').css("display", "none");
+            $('content__pages').css("width", "100%");
             break;
         case "faq":
             changeDomMenu("content__faq","content__home","content__about","content__services",
             "content__courses","content__blog","content__portifolio");
             toggleMenuMobile();
-            document.getElementById('content__aside').style.display = "block";
-            document.getElementById('content__pages').style.width = "74.97%";
+            $('content__aside').css("display","block");
+            $('content__pages').css("width","74.97%");
             break;
         
     }
