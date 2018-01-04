@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 html(lang="pt-br")
-head
-    title Document
-    include view/includes/meta-tags.pug
-    include view/includes/stylesheets.pug
-    include view/includes/scripts.pug
-      
-body(onload="onload()" ng-app="" class="row")
-    div(id="fb-root")
-    script.
-      (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.11';
-      fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
+    head
+        title Document
+        include view/includes/meta-tags.pug
+        include view/includes/stylesheets.pug
+        include view/includes/scripts.pug
+        
+    body(onload="onload()" class="row")
+        div(id="fb-root")
+        script.
+            (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.11';
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
 
 
-    include view/includes/header.pug
+        include view/includes/header.pug
 
-    include view/includes/breadcrumb.pug
-    
-    include view/includes/content.pug
+        include view/includes/breadcrumb.pug
+        
+        include view/includes/content.pug
 
-    include view/includes/footer.pug
+        include view/includes/footer.pug

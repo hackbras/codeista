@@ -84,9 +84,9 @@ function onload(lang) {
         change_dom("content__blog--subsection-sub_title",ourData[3].blog_sub_title);
         change_dom("content__blog--subsection-text",ourData[3].blog_text);
 
-        change_dom("content__portifolio--subsection-title",ourData[3].portifolio_title);
-        change_dom("content__portifolio--subsection-sub_title",ourData[3].portifolio_sub_title);
-        change_dom("content__portifolio--subsection-text",ourData[3].portifolio_text);
+        // change_dom("content__portifolio--subsection-title",ourData[3].portifolio_title);
+        // change_dom("content__portifolio--subsection-sub_title",ourData[3].portifolio_sub_title);
+        // change_dom("content__portifolio--subsection-text",ourData[3].portifolio_text);
 
         change_dom("content__faq--subsection-title",ourData[3].faq_title);
         change_dom("content__faq--subsection-sub_title",ourData[3].faq_sub_title);
@@ -108,7 +108,7 @@ function change_language(){
 
 function change_mode (){  
     const scheema = ["daytime","nocturnal","color-blind"];
-    const valueSelected = getValueSelected('header__primary--nav-mode_options');
+    const valueSelected = getValueSelected('header__primary--nav-mode');
 
     switch(valueSelected.toString()){
     case scheema[0]: 
@@ -250,3 +250,27 @@ function changeDomMenu(opActive,op1,op2,op3,op4,op5,op6){
     document.getElementById(op5).style.display="none";
     document.getElementById(op6).style.display="none";
 }
+
+//Get Username
+let dribbble = 'creativemints';
+//Amoung of shots to display
+let limit = 18;
+let accessToken = '1c73ffb7859f2c1c37450789dce2369af5caa9e18c3df1fa30485cfad79081d8';
+//Call Dribble API
+$.ajax({
+    url: 'https://api.dribbble.com/v1/users/'+dribbble+'/shots?access_token='+accessToken,
+    dataType: 'json',
+    type: 'GET',
+    success: function(data) {  
+        for (let i = 0; i < limit; i++) {
+            //Shots with width 400x300
+            let images_teaser = $("<img/>").attr("src", data[i].images.teaser).attr("alt", data[i].title).attr("class","shots");  
+            let likes = $("<li>").html("<i class='fa fa-heart'></li> " + data[i].likes_count);
+            let comments = $("<li>").html("<i class='fa fa-comment'></li> " + data[i].comments_count);
+            let views = $("<li>").html("<i class='fa fa-eye'></li> " + data[i].views_count);
+            let post_stats = $("<ul>").append(views,likes,comments);
+            let shots = $("<div class='shot'>").append(images_teaser,post_stats);
+            $('#wrapper').append(shots); 
+        }
+    } 
+});
