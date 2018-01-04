@@ -110,53 +110,7 @@ body
             i
                 font-size: 25px
 
-#wrapper
-    margin: 20px
-    width: 1000px
-    margin: 0 auto
 
-.shot
-    float: left
-    background: #FFF
-    border: solid 1px #EEE
-    padding: 12px
-    margin: 0px 20px 20px 0px
-    border-radius: 3px
-    width: 226px
-    img
-        min-height: 150px
-    &:hover
-        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2)
-        -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2)
-    ul
-        padding: 0px
-        margin: 0px
-        li
-            float: left
-            list-style: none
-            margin-right: 8px
-            color: #888
-            font-size: 11px
-        i
-            margin-right: 5px
-
-.bar
-    position: relative
-    border-bottom: 1px solid #e5e5e5
-    background: rgba(255, 255, 255, 0.6)
-    text-align: center
-    padding: 15px
-    margin-bottom: 20px
-
-.shots
-    cursor: pointer
-// .shots:target
-//     transform: scale(2, 2)
-//     -webkit-transform: scale(2, 2)
-//     -moz-transform: scale(2, 2)
-
-#fb-root
-    width: 100%
 
 /*Phones*/
 @media (max-width: 480px)  
@@ -275,6 +229,50 @@ body
         width: 100%
         height: 100%
         text-align: center
+    
+    #wrapper
+        padding-left: auto
+        padding-right: auto
+
+    .shot
+        float: left
+        background: #FFF
+        border: solid 1px #EEE
+        padding: 12px
+        margin: 0px 20px 20px 0px
+        border-radius: 3px
+        width: 100%
+        img
+            min-height: 150px
+            width: 100%
+        &:hover
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2)
+            -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2)
+        ul
+            padding: 0px
+            margin: 0px
+            li
+                float: left
+                list-style: none
+                margin-right: 8px
+                color: #888
+                font-size: 11px
+            i
+                margin-right: 5px
+
+    .bar
+        position: relative
+        border-bottom: 1px solid #e5e5e5
+        background: rgba(255, 255, 255, 0.6)
+        text-align: center
+        padding: 15px
+        margin-bottom: 20px
+
+    .shots
+        cursor: pointer
+    
+    #fb-root
+        width: 100%
 
 /* Tablet */     
 @media screen and (max-width: 768px) and (min-width: 481px)
@@ -386,6 +384,49 @@ body
         height: 50%
         text-align: center
         padding-left: 3% 
+    /*shot*/
+    
+    #wrapper
+        padding-left: auto
+        padding-right: auto
+
+    .shot
+        float: left
+        background: #FFF
+        border: solid 1px #EEE
+        padding: 12px
+        margin: 0px 20px 20px 0px
+        border-radius: 3px
+        img
+            min-height: 150px
+        &:hover
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2)
+            -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2)
+        ul
+            padding: 0px
+            margin: 0px
+            li
+                float: left
+                list-style: none
+                margin-right: 8px
+                color: #888
+                font-size: 11px
+            i
+                margin-right: 5px
+
+    .bar
+        position: relative
+        border-bottom: 1px solid #e5e5e5
+        background: rgba(255, 255, 255, 0.6)
+        text-align: center
+        padding: 15px
+        margin-bottom: 20px
+
+    .shots
+        cursor: pointer
+    
+    #fb-root
+        width: 100%
 
 /*desktop*/
 @media screen and (min-width: 769px)        
@@ -509,3 +550,46 @@ body
         height: 50%
         text-align: center
         padding-left: 3%
+    /*shots*/
+    
+    #wrapper
+        padding-left: auto
+        padding-right: auto
+
+    .shot
+        float: left
+        background: #FFF
+        border: solid 1px #EEE
+        padding: 12px
+        margin: 0px 20px 20px 0px
+        border-radius: 3px
+        img
+            min-height: 150px
+        &:hover
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2)
+            -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2)
+        ul
+            padding: 0px
+            margin: 0px
+            li
+                float: left
+                list-style: none
+                margin-right: 8px
+                color: #888
+                font-size: 11px
+            i
+                margin-right: 5px
+
+    .bar
+        position: relative
+        border-bottom: 1px solid #e5e5e5
+        background: rgba(255, 255, 255, 0.6)
+        text-align: center
+        padding: 15px
+        margin-bottom: 20px
+
+    .shots
+        cursor: pointer
+    
+    #fb-root
+        width: 100%

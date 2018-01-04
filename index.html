@@ -155,7 +155,7 @@
                     success: function(data) {  
                         for (let i = 0; i < limit; i++) {
                             //Shot with width 200x150
-                            //let images_normal = $("<img/>").attr("src", data[i].images.normal).attr("alt", data[i].title); 
+                            let images_normal = $("<img/>").attr("src", data[i].images.normal).attr("alt", data[i].title); 
                             //Shots with width 400x300
                             let images_teaser = $("<img/>").attr("src", data[i].images.teaser).attr("alt", data[i].title).attr("class","shots").attr("id","shot"+i).attr("onclick","resizeImage(this.id)");  
                             let likes = $("<li>").html("<i class='fa fa-heart'></li> " + data[i].likes_count);
