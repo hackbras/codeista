@@ -48,7 +48,7 @@ function onload(lang) {
         change_dom("footer__section--two-lb_business_hours",ourData[2].lb_business_hours);
         change_dom("footer__section--two-business_hours",ourData[2].business_hours);
         
-        change_dom("content__aside",ourData[0].default_text);
+        //change_dom("content__aside",ourData[0].default_text);
 
         /* Pages of Site */
 
@@ -251,26 +251,16 @@ function changeDomMenu(opActive,op1,op2,op3,op4,op5,op6){
     document.getElementById(op6).style.display="none";
 }
 
-//Get Username
-let dribbble = 'creativemints';
-//Amoung of shots to display
-let limit = 18;
-let accessToken = '1c73ffb7859f2c1c37450789dce2369af5caa9e18c3df1fa30485cfad79081d8';
-//Call Dribble API
-$.ajax({
-    url: 'https://api.dribbble.com/v1/users/'+dribbble+'/shots?access_token='+accessToken,
-    dataType: 'json',
-    type: 'GET',
-    success: function(data) {  
-        for (let i = 0; i < limit; i++) {
-            //Shots with width 400x300
-            let images_teaser = $("<img/>").attr("src", data[i].images.teaser).attr("alt", data[i].title).attr("class","shots");  
-            let likes = $("<li>").html("<i class='fa fa-heart'></li> " + data[i].likes_count);
-            let comments = $("<li>").html("<i class='fa fa-comment'></li> " + data[i].comments_count);
-            let views = $("<li>").html("<i class='fa fa-eye'></li> " + data[i].views_count);
-            let post_stats = $("<ul>").append(views,likes,comments);
-            let shots = $("<div class='shot'>").append(images_teaser,post_stats);
-            $('#wrapper').append(shots); 
-        }
-    } 
-});
+function resizeImage(id){
+    let width = document.getElementById(id).style.width;
+    
+    if(width == undefined || width =="")
+        width = 200;
+    else
+        width = width.replace("px","");
+
+    if(parseInt(width) < 225)
+       document.getElementById(id).style.width= "225px"
+    else
+       document.getElementById(id).style.width= "200px"
+}

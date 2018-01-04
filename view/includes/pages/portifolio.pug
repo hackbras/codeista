@@ -1,1 +1,55 @@
-div(id="wrapper")
+div(class='content__portifolio--subsection grid-portifolio')
+    div(id="wrapper")
+        script.
+            //Get Username
+            let dribbble = 'creativemints';
+            //Amoung of shots to display
+            let limit = 18;
+            let accessToken = '1c73ffb7859f2c1c37450789dce2369af5caa9e18c3df1fa30485cfad79081d8';
+            //Call Dribble API
+            $.ajax({
+                url: 'https://api.dribbble.com/v1/users/'+dribbble+'/shots?access_token='+accessToken,
+                dataType: 'json',
+                type: 'GET',
+                success: function(data) {  
+                    for (let i = 0; i < limit; i++) {
+                        //Shot with width 200x150
+                        //let images_normal = $("<img/>").attr("src", data[i].images.normal).attr("alt", data[i].title); 
+                        //Shots with width 400x300
+                        let images_teaser = $("<img/>").attr("src", data[i].images.teaser).attr("alt", data[i].title).attr("class","shots").attr("id","shot"+i).attr("onclick","resizeImage(this.id)");  
+                        let likes = $("<li>").html("<i class='fa fa-heart'></li> " + data[i].likes_count);
+                        let comments = $("<li>").html("<i class='fa fa-comment'></li> " + data[i].comments_count);
+                        let views = $("<li>").html("<i class='fa fa-eye'></li> " + data[i].views_count);
+                        let post_stats = $("<ul>").append(views,likes,comments);
+                        //Wrap link around image to make clickable image
+                        //let link = $("<a class='link' target='_blank'>").attr("href",data[i].html_url).append(images_teaser);
+                        let shots = $("<div class='shot'>").append(images_teaser,post_stats);
+                            $('#wrapper').append(shots); 
+                    }
+                } 
+            });
+
+    div(id="fb-root")
+        script.
+            (function(d, s, id) {
+            let js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.11";
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+            // Your like button code
+
+        div(class="fb-like" 
+            data-href="https://www.facebook.com/tecnologiaseinformacoes/" 
+            data-layout="standard" 
+            data-action="like" 
+            data-show-faces="true")
+
+        iframe(src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ftecnologiaseinformacoes%2F&width=450&layout=standard&action=like&size=small&show_faces=true&share=true&height=80&appId" 
+            width="450" 
+            height="80" 
+            style="border:none;overflow:hidden" 
+            scrolling="no" 
+            frameborder="0" 
+            allowtransparency="true")

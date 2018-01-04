@@ -5,24 +5,17 @@
     <meta charset="UTF-8"/>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <meta content="" name="description"/>
+    <meta property="og:url" content="www.codeista.com"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Your Website Title"/>
+    <meta property="og:description" content="Your description"/>
+    <meta property="og:image" content="www.codeista.com/view/style/images/image1.jpg"/>
     <link href="view/style/custom.css" rel="stylesheet"/>
     <script src="controller/main.js"></script>
     <script src="controller/lib/angular/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body class="row" onload="onload()">
-    <div id="fb-root"></div>
-    <script>
-      (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.11';
-      fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-      
-      
-    </script>
     <header class="header" id="header">
       <nav class="header__primary--nav" id="header__primary--nav"> 
         <div class="header__primary--nav-item"><img class="header__primary--nav-item-menu_phone_icon" alt="Imagem do menu voltado para celulares" id="header__primary--nav-item-menu_phone_icon" onclick="toggleMenuMobile()" src="view/style/images/menu.png"/><img class="header__primary--nav-item-logo" alt="Imagem de logo provisória do site codeísta, que se encontra no cabeçalho da página e ainda não possúi nenhum sentido ainda, apenas figurativa" onclick="changeMenu('home')" src="view/style/images/image_default_48.png"/></div><span id="header__primary--nav-title_site"> </span>
@@ -146,7 +139,55 @@
           </div>
         </section>
         <section class="content__page content__section container" id="content__portifolio"> 
-          <div id="wrapper"></div>
+          <div class="content__portifolio--subsection grid-portifolio">
+            <div id="wrapper">
+              <script>
+                //Get Username
+                let dribbble = 'creativemints';
+                //Amoung of shots to display
+                let limit = 18;
+                let accessToken = '1c73ffb7859f2c1c37450789dce2369af5caa9e18c3df1fa30485cfad79081d8';
+                //Call Dribble API
+                $.ajax({
+                    url: 'https://api.dribbble.com/v1/users/'+dribbble+'/shots?access_token='+accessToken,
+                    dataType: 'json',
+                    type: 'GET',
+                    success: function(data) {  
+                        for (let i = 0; i < limit; i++) {
+                            //Shot with width 200x150
+                            //let images_normal = $("<img/>").attr("src", data[i].images.normal).attr("alt", data[i].title); 
+                            //Shots with width 400x300
+                            let images_teaser = $("<img/>").attr("src", data[i].images.teaser).attr("alt", data[i].title).attr("class","shots").attr("id","shot"+i).attr("onclick","resizeImage(this.id)");  
+                            let likes = $("<li>").html("<i class='fa fa-heart'></li> " + data[i].likes_count);
+                            let comments = $("<li>").html("<i class='fa fa-comment'></li> " + data[i].comments_count);
+                            let views = $("<li>").html("<i class='fa fa-eye'></li> " + data[i].views_count);
+                            let post_stats = $("<ul>").append(views,likes,comments);
+                            //Wrap link around image to make clickable image
+                            //let link = $("<a class='link' target='_blank'>").attr("href",data[i].html_url).append(images_teaser);
+                            let shots = $("<div class='shot'>").append(images_teaser,post_stats);
+                                $('#wrapper').append(shots); 
+                        }
+                    } 
+                });
+                
+              </script>
+            </div>
+            <div id="fb-root">
+              <script>
+                (function(d, s, id) {
+                let js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.11";
+                fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+                // Your like button code
+                
+              </script>
+              <div class="fb-like" data-href="https://www.facebook.com/tecnologiaseinformacoes/" data-layout="standard" data-action="like" data-show-faces="true"></div>
+              <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ftecnologiaseinformacoes%2F&amp;width=450&amp;layout=standard&amp;action=like&amp;size=small&amp;show_faces=true&amp;share=true&amp;height=80&amp;appId" width="450" height="80" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+            </div>
+          </div>
         </section>
         <section class="content__page content__section container" id="content__faq"> 
           <div class="content__faq--subsection container">
@@ -187,7 +228,6 @@
           <label class="label" id="footer__section--two-lb_phone"> </label><span id="footer__section--two-phone"></span><br/>
           <label class="label" id="footer__section--two-lb_email"></label><span id="footer__section--two-email"></span><br/>
           <label class="label" id="footer__section--two-lb_business_hours"></label><span id="footer__section--two-business_hours"></span><br/>
-          <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ftecnologiaseinformacoes%2F&amp;width=450&amp;layout=standard&amp;action=like&amp;size=small&amp;show_faces=true&amp;share=true&amp;height=80&amp;appId" width="450" height="80" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
         </div>
         <footer></footer>
       </section>
