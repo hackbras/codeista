@@ -12,6 +12,6 @@
 * css3, sass, BEM;
 * git svc 
 
-Start project with two commands:
-     pug -w -P index.pug index.html5
-     sass -w custom.sass:custom.css
+**Start project with two commands:**
+* pug -w -P index.pug index.html5
+* sass -w custom.sass:custom.css
