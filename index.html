@@ -38,8 +38,8 @@
     </header>
     <section class="breadcrumb"> <span id="breadcrumb__way"> </span>
       <div class="breadcrumb__search">
-        <input class="breadcrumb__search--text" name="sitesearch" placeholder="Digite a palavra desejada" type="search"/>
-        <buttom class="buttom-transparent" id="breadcrumb__search--buttom"></buttom>
+        <input class="breadcrumb__search--text" id="breadcrumb__search--text" name="sitesearch" placeholder="Digite a palavra desejada" type="search"/>
+        <buttom class="buttom-transparent" id="breadcrumb__search--buttom" onclick="search()"></buttom>
       </div>
     </section>
     <section class="content">
@@ -140,39 +140,7 @@
         </section>
         <section class="content__page content__section container" id="content__portifolio"> 
           <div class="content__portifolio--subsection grid-portifolio">
-            <div id="wrapper">
-              <script>
-                //Get Username
-                let dribbble = 'creativemints';
-                //Amoung of shots to display
-                let limit = 18;
-                let accessToken = '1c73ffb7859f2c1c37450789dce2369af5caa9e18c3df1fa30485cfad79081d8';
-                //Call Dribble API
-                $.ajax({
-                    url: 'https://api.dribbble.com/v1/users/'+dribbble+'/shots?access_token='+accessToken,
-                    dataType: 'json',
-                    type: 'GET',
-                    success: function(data) {  
-                        for (let i = 0; i < limit; i++) {
-                            //Shot with width 200x150
-                            let images_normal = $("<img/>").attr("src", data[i].images.normal).attr("alt", data[i].title); 
-                            //Shots with width 400x300
-                            let images_teaser = $("<img/>").attr("src", data[i].images.teaser).attr("alt", data[i].title).attr("class","shots").attr("id","shot"+i).attr("onclick","resizeImage(this.id)");  
-                            let likes = $("<li>").html("<i class='fa fa-heart'></li> " + data[i].likes_count);
-                            let comments = $("<li>").html("<i class='fa fa-comment'></li> " + data[i].comments_count);
-                            let views = $("<li>").html("<i class='fa fa-eye'></li> " + data[i].views_count);
-                            let post_stats = $("<ul>").append(views,likes,comments);
-                            let title = $("<h6>").html(data[i].title +"<h6/>");
-                            //Wrap link around image to make clickable image
-                            //let link = $("<a class='link' target='_blank'>").attr("href",data[i].html_url).append(images_teaser);
-                            let shots = $("<div class='shot'>").append(title,images_teaser,post_stats);
-                                $('#wrapper').append(shots); 
-                        }
-                    } 
-                });
-                
-              </script>
-            </div>
+            <div id="wrapper"></div>
             <div id="fb-root">
               <script>
                 (function(d, s, id) {

@@ -94,6 +94,8 @@ function onload(lang) {
 
     };
     xhttp.send();
+
+    portifolio();
 }
 
 function change_dom(id,data){
@@ -263,4 +265,65 @@ function resizeImage(id){
        document.getElementById(id).style.width= "225px"
     else
        document.getElementById(id).style.width= "200px"
+}
+
+
+function removechild(element,node){
+    element.removeChild(element.childNodes[node]);
+}
+
+function search(){
+   let j = document.getElementsByClassName("shots").length;
+   let textDigited = $("#breadcrumb__search--text").val();
+   let i;
+   
+   if(textDigited == undefined || textDigited == ""){
+            for (i = 0; i < j; i ++){
+                let child = document.getElementById("wrapper");
+                removechild(child,0);
+            }
+            portifolio();
+        }
+   else
+        for (i = 0; i < j; i ++){
+            let nameProjectDribbble = document.getElementById("shot"+i).alt;
+            let expSearch = new RegExp(textDigited);
+            let status = expSearch.test(nameProjectDribbble);
+            console.log("Id: "+"shot"+i+", Nome do Projeto: "+nameProjectDribbble+", status: "+status);
+            
+            if(!status)
+                document.getElementById("shot"+i).parentElement.style.display = "none"
+        }
+        alert("pronto");
+}
+
+function portifolio(){
+    //Get Username
+    let dribbble = 'creativemints';
+    //Amoung of shots to display
+    let limit = 18;
+    let accessToken = '1c73ffb7859f2c1c37450789dce2369af5caa9e18c3df1fa30485cfad79081d8';
+    //Call Dribble API
+    $.ajax({
+        url: 'https://api.dribbble.com/v1/users/'+dribbble+'/shots?access_token='+accessToken,
+        dataType: 'json',
+        type: 'GET',
+        success: function(data) {  
+            for (let i = 0; i < limit; i++) {
+                //Shot with width 200x150
+                let images_normal = $("<img/>").attr("src", data[i].images.normal).attr("alt", data[i].title); 
+                //Shots with width 400x300
+                let images_teaser = $("<img/>").attr("src", data[i].images.teaser).attr("alt", data[i].title).attr("class","shots").attr("id","shot"+i).attr("onclick","resizeImage(this.id)");  
+                let likes = $("<li>").html("<i class='fa fa-heart'></li> " + data[i].likes_count);
+                let comments = $("<li>").html("<i class='fa fa-comment'></li> " + data[i].comments_count);
+                let views = $("<li>").html("<i class='fa fa-eye'></li> " + data[i].views_count);
+                let post_stats = $("<ul>").append(views,likes,comments);
+                let title = $("<h6>").html(data[i].title +"<h6/>");
+                //Wrap link around image to make clickable image
+                //let link = $("<a class='link' target='_blank'>").attr("href",data[i].html_url).append(images_teaser);
+                let shots = $("<div class='shot'>").append(title,images_teaser,post_stats);
+                    $('#wrapper').append(shots); 
+            }
+        } 
+    });
 }
