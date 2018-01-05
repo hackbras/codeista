@@ -402,7 +402,8 @@ body {
     cursor: pointer; }
 
   #fb-root {
-    width: 100%; } }
+    width: 100%;
+    display: block; } }
 /* Tablet */
 @media screen and (max-width: 768px) and (min-width: 481px) {
   .header {
@@ -556,7 +557,8 @@ body {
     cursor: pointer; }
 
   #fb-root {
-    width: 100%; } }
+    width: 100%;
+    display: block; } }
 /*desktop */
 @media screen and (min-width: 769px) {
   .header {
@@ -722,6 +724,7 @@ body {
     cursor: pointer; }
 
   #fb-root {
-    width: 100%; } }
+    width: 100%;
+    display: block; } }
 
 /*# sourceMappingURL=custom.css.map */
